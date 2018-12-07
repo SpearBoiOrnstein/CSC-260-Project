@@ -1,0 +1,10 @@
+c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\bin\Debug\DarkSoulsIIICalculator.exe.config
+c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\bin\Debug\DarkSoulsIIICalculator.exe
+c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\bin\Debug\DarkSoulsIIICalculator.pdb
+c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.csprojAssemblyReference.cache
+c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.Calculator.resources
+c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.Properties.Resources.resources
+c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.csproj.GenerateResource.cache
+c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.csproj.CoreCompileInputs.cache
+c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.exe
+c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.pdb
