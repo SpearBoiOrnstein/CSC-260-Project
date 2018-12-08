@@ -55,10 +55,10 @@ namespace DarkSoulsIIICalculator
         public int minDEX { get; private set; }
         public int minINT { get; private set; }
         public int minFTH { get; private set; }
-        public int scaleSTR { get; private set; }
-        public int scaleDEX { get; private set; }
-        public int scaleINT { get; private set; }
-        public int scaleFTH { get; private set; }
+        public double scaleSTR { get; private set; }
+        public double scaleDEX { get; private set; }
+        public double scaleINT { get; private set; }
+        public double scaleFTH { get; private set; }
         public char rateSTR { get; private set; }
         public char rateDEX { get; private set; }
         public char rateINT { get; private set; }
@@ -68,7 +68,7 @@ namespace DarkSoulsIIICalculator
         public int DUR { get; private set; }
         public int saturation { get; private set; }
 
-        public Weapon( string name, int baseAttack, double WGT, int STB, int DUR, int minSTR = 0, int minDEX = 0, int minINT = 0, int minFTH = 0, int scaleSTR = 0, int scaleDEX = 0, int scaleINT = 0, int scaleFTH = 0, char rateSTR = '-', char rateDEX = '-', char rateINT = '-', char rateFTH = '-', int staturation = 0)
+        public Weapon( string name, int baseAttack, double WGT, int STB, int DUR, int minSTR = 0, int minDEX = 0, int minINT = 0, int minFTH = 0, double scaleSTR = 0, double scaleDEX = 0, double scaleINT = 0, double scaleFTH = 0, char rateSTR = '-', char rateDEX = '-', char rateINT = '-', char rateFTH = '-', int saturation = 0)
         {
             this.name = name;
             this.baseAttack = baseAttack;
@@ -92,9 +92,14 @@ namespace DarkSoulsIIICalculator
 
         public double weaponAR( int STR, int DEX, int INT, int FTH )
         {
+            double ar;
+            double strBonus = ((scaleSTR/100.0) * (curveIndex[saturation][STR]/100.0));
+            double dexBonus = (scaleDEX/100.0) * (curveIndex[saturation][DEX]/100.0);
+            double intBonus = (scaleINT/100.0) * (curveIndex[saturation][INT]/100.0);
+            double fthBonus = (scaleFTH/100.0) * (curveIndex[saturation][FTH]/100.0);
 
-            //ar = baseAttack + (baseAttack * PhysicalSaturation) * (scaleSTR + scaleDEX + scaleINT + scaleFTH)
-            return curveIndex[0][3] ;
+            ar = this.baseAttack + (this.baseAttack * (strBonus + dexBonus + intBonus + fthBonus));
+            return ar;
         }
     }
 }

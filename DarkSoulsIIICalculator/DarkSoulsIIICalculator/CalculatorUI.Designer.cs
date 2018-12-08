@@ -237,6 +237,11 @@
             this.LuckPlusbtn = new System.Windows.Forms.Button();
             this.LuckMinusbtn = new System.Windows.Forms.Button();
             this.ClearSpellsbtn = new System.Windows.Forms.Button();
+            this.clearWeaponsbtn = new System.Windows.Forms.Button();
+            this.ClearArmourbtn = new System.Windows.Forms.Button();
+            this.ClearRingsbtn = new System.Windows.Forms.Button();
+            this.ResetCalculatorbtn = new System.Windows.Forms.Button();
+            this.ResetLevelbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StartingClasscmb
@@ -267,6 +272,7 @@
             this.SoulLeveltxt.ReadOnly = true;
             this.SoulLeveltxt.Size = new System.Drawing.Size(36, 20);
             this.SoulLeveltxt.TabIndex = 2;
+            this.SoulLeveltxt.Text = "0";
             this.SoulLeveltxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Attributeslbl
@@ -905,9 +911,10 @@
             // RWeapon3txt
             // 
             this.RWeapon3txt.Location = new System.Drawing.Point(555, 529);
+            this.RWeapon3txt.MaxLength = 5;
             this.RWeapon3txt.Name = "RWeapon3txt";
             this.RWeapon3txt.ReadOnly = true;
-            this.RWeapon3txt.Size = new System.Drawing.Size(30, 20);
+            this.RWeapon3txt.Size = new System.Drawing.Size(41, 20);
             this.RWeapon3txt.TabIndex = 106;
             this.RWeapon3txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -924,9 +931,10 @@
             // RWeapon2txt
             // 
             this.RWeapon2txt.Location = new System.Drawing.Point(555, 510);
+            this.RWeapon2txt.MaxLength = 5;
             this.RWeapon2txt.Name = "RWeapon2txt";
             this.RWeapon2txt.ReadOnly = true;
-            this.RWeapon2txt.Size = new System.Drawing.Size(30, 20);
+            this.RWeapon2txt.Size = new System.Drawing.Size(41, 20);
             this.RWeapon2txt.TabIndex = 104;
             this.RWeapon2txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -943,9 +951,10 @@
             // RWeapon1txt
             // 
             this.RWeapon1txt.Location = new System.Drawing.Point(555, 491);
+            this.RWeapon1txt.MaxLength = 5;
             this.RWeapon1txt.Name = "RWeapon1txt";
             this.RWeapon1txt.ReadOnly = true;
-            this.RWeapon1txt.Size = new System.Drawing.Size(30, 20);
+            this.RWeapon1txt.Size = new System.Drawing.Size(41, 20);
             this.RWeapon1txt.TabIndex = 102;
             this.RWeapon1txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -972,9 +981,10 @@
             // LWeapon3txt
             // 
             this.LWeapon3txt.Location = new System.Drawing.Point(555, 586);
+            this.LWeapon3txt.MaxLength = 5;
             this.LWeapon3txt.Name = "LWeapon3txt";
             this.LWeapon3txt.ReadOnly = true;
-            this.LWeapon3txt.Size = new System.Drawing.Size(30, 20);
+            this.LWeapon3txt.Size = new System.Drawing.Size(41, 20);
             this.LWeapon3txt.TabIndex = 112;
             this.LWeapon3txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -991,9 +1001,10 @@
             // LWeapon2txt
             // 
             this.LWeapon2txt.Location = new System.Drawing.Point(555, 567);
+            this.LWeapon2txt.MaxLength = 5;
             this.LWeapon2txt.Name = "LWeapon2txt";
             this.LWeapon2txt.ReadOnly = true;
-            this.LWeapon2txt.Size = new System.Drawing.Size(30, 20);
+            this.LWeapon2txt.Size = new System.Drawing.Size(41, 20);
             this.LWeapon2txt.TabIndex = 110;
             this.LWeapon2txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1010,9 +1021,10 @@
             // LWeapon1txt
             // 
             this.LWeapon1txt.Location = new System.Drawing.Point(555, 548);
+            this.LWeapon1txt.MaxLength = 5;
             this.LWeapon1txt.Name = "LWeapon1txt";
             this.LWeapon1txt.ReadOnly = true;
-            this.LWeapon1txt.Size = new System.Drawing.Size(30, 20);
+            this.LWeapon1txt.Size = new System.Drawing.Size(41, 20);
             this.LWeapon1txt.TabIndex = 108;
             this.LWeapon1txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -2000,6 +2012,7 @@
             this.Faithtxt.ReadOnly = true;
             this.Faithtxt.Size = new System.Drawing.Size(36, 20);
             this.Faithtxt.TabIndex = 224;
+            this.Faithtxt.Text = "0";
             this.Faithtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Intelligencetxt
@@ -2010,6 +2023,7 @@
             this.Intelligencetxt.ReadOnly = true;
             this.Intelligencetxt.Size = new System.Drawing.Size(36, 20);
             this.Intelligencetxt.TabIndex = 223;
+            this.Intelligencetxt.Text = "0";
             this.Intelligencetxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Dexteritytxt
@@ -2020,6 +2034,7 @@
             this.Dexteritytxt.ReadOnly = true;
             this.Dexteritytxt.Size = new System.Drawing.Size(36, 20);
             this.Dexteritytxt.TabIndex = 222;
+            this.Dexteritytxt.Text = "0";
             this.Dexteritytxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Strengthtxt
@@ -2030,6 +2045,7 @@
             this.Strengthtxt.ReadOnly = true;
             this.Strengthtxt.Size = new System.Drawing.Size(36, 20);
             this.Strengthtxt.TabIndex = 221;
+            this.Strengthtxt.Text = "0";
             this.Strengthtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Vitalitytxt
@@ -2040,6 +2056,7 @@
             this.Vitalitytxt.ReadOnly = true;
             this.Vitalitytxt.Size = new System.Drawing.Size(36, 20);
             this.Vitalitytxt.TabIndex = 220;
+            this.Vitalitytxt.Text = "0";
             this.Vitalitytxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Endurancetxt
@@ -2050,6 +2067,7 @@
             this.Endurancetxt.ReadOnly = true;
             this.Endurancetxt.Size = new System.Drawing.Size(36, 20);
             this.Endurancetxt.TabIndex = 219;
+            this.Endurancetxt.Text = "0";
             this.Endurancetxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Attunementtxt
@@ -2060,6 +2078,7 @@
             this.Attunementtxt.ReadOnly = true;
             this.Attunementtxt.Size = new System.Drawing.Size(36, 20);
             this.Attunementtxt.TabIndex = 218;
+            this.Attunementtxt.Text = "0";
             this.Attunementtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Vigortxt
@@ -2070,6 +2089,7 @@
             this.Vigortxt.ReadOnly = true;
             this.Vigortxt.Size = new System.Drawing.Size(36, 20);
             this.Vigortxt.TabIndex = 217;
+            this.Vigortxt.Text = "0";
             this.Vigortxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Vigortxt.TextChanged += new System.EventHandler(this.Vigortxt_TextChanged);
             // 
@@ -2081,6 +2101,7 @@
             this.Lucktxt.ReadOnly = true;
             this.Lucktxt.Size = new System.Drawing.Size(36, 20);
             this.Lucktxt.TabIndex = 225;
+            this.Lucktxt.Text = "0";
             this.Lucktxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // VigorMinusbtn
@@ -2291,11 +2312,66 @@
             this.ClearSpellsbtn.UseVisualStyleBackColor = true;
             this.ClearSpellsbtn.Click += new System.EventHandler(this.ClearSpellsbtn_Click);
             // 
+            // clearWeaponsbtn
+            // 
+            this.clearWeaponsbtn.Location = new System.Drawing.Point(288, 10);
+            this.clearWeaponsbtn.Name = "clearWeaponsbtn";
+            this.clearWeaponsbtn.Size = new System.Drawing.Size(112, 23);
+            this.clearWeaponsbtn.TabIndex = 245;
+            this.clearWeaponsbtn.Text = "Clear Weapons";
+            this.clearWeaponsbtn.UseVisualStyleBackColor = true;
+            this.clearWeaponsbtn.Click += new System.EventHandler(this.clearWeaponsbtn_Click);
+            // 
+            // ClearArmourbtn
+            // 
+            this.ClearArmourbtn.Location = new System.Drawing.Point(288, 100);
+            this.ClearArmourbtn.Name = "ClearArmourbtn";
+            this.ClearArmourbtn.Size = new System.Drawing.Size(112, 23);
+            this.ClearArmourbtn.TabIndex = 246;
+            this.ClearArmourbtn.Text = "Clear Armour";
+            this.ClearArmourbtn.UseVisualStyleBackColor = true;
+            this.ClearArmourbtn.Click += new System.EventHandler(this.ClearArmourbtn_Click);
+            // 
+            // ClearRingsbtn
+            // 
+            this.ClearRingsbtn.Location = new System.Drawing.Point(288, 193);
+            this.ClearRingsbtn.Name = "ClearRingsbtn";
+            this.ClearRingsbtn.Size = new System.Drawing.Size(112, 23);
+            this.ClearRingsbtn.TabIndex = 247;
+            this.ClearRingsbtn.Text = "Clear Rings";
+            this.ClearRingsbtn.UseVisualStyleBackColor = true;
+            this.ClearRingsbtn.Click += new System.EventHandler(this.ClearRingsbtn_Click);
+            // 
+            // ResetCalculatorbtn
+            // 
+            this.ResetCalculatorbtn.Location = new System.Drawing.Point(288, 647);
+            this.ResetCalculatorbtn.Name = "ResetCalculatorbtn";
+            this.ResetCalculatorbtn.Size = new System.Drawing.Size(164, 37);
+            this.ResetCalculatorbtn.TabIndex = 248;
+            this.ResetCalculatorbtn.Text = "Reset Calculator";
+            this.ResetCalculatorbtn.UseVisualStyleBackColor = true;
+            this.ResetCalculatorbtn.Click += new System.EventHandler(this.ResetCalculatorbtn_Click);
+            // 
+            // ResetLevelbtn
+            // 
+            this.ResetLevelbtn.Location = new System.Drawing.Point(117, 94);
+            this.ResetLevelbtn.Name = "ResetLevelbtn";
+            this.ResetLevelbtn.Size = new System.Drawing.Size(82, 23);
+            this.ResetLevelbtn.TabIndex = 249;
+            this.ResetLevelbtn.Text = "Clear Levels";
+            this.ResetLevelbtn.UseVisualStyleBackColor = true;
+            this.ResetLevelbtn.Click += new System.EventHandler(this.ResetLevelbtn_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 696);
+            this.Controls.Add(this.ResetLevelbtn);
+            this.Controls.Add(this.ResetCalculatorbtn);
+            this.Controls.Add(this.ClearRingsbtn);
+            this.Controls.Add(this.ClearArmourbtn);
+            this.Controls.Add(this.clearWeaponsbtn);
             this.Controls.Add(this.ClearSpellsbtn);
             this.Controls.Add(this.LuckPlusbtn);
             this.Controls.Add(this.LuckMinusbtn);
@@ -2723,6 +2799,11 @@
         private System.Windows.Forms.Button LuckMinusbtn;
         public System.Windows.Forms.ComboBox StartingClasscmb;
         private System.Windows.Forms.Button ClearSpellsbtn;
+        private System.Windows.Forms.Button clearWeaponsbtn;
+        private System.Windows.Forms.Button ClearArmourbtn;
+        private System.Windows.Forms.Button ClearRingsbtn;
+        private System.Windows.Forms.Button ResetCalculatorbtn;
+        private System.Windows.Forms.Button ResetLevelbtn;
     }
 }
 

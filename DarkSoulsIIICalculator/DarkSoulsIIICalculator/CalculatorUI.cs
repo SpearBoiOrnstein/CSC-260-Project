@@ -38,7 +38,8 @@ namespace DarkSoulsIIICalculator
 
         Weapon[] weapons = {
             new Weapon("none", 0, 0, 0, 0),
-            new Weapon("Farron Greatsword", 258, 12.5, 45, 90, minSTR : 18, minDEX : 20, rateSTR : 'D', rateDEX : 'C')
+            new Weapon("Farron Greatsword", 258, 12.5, 45, 90, minSTR : 18, minDEX : 20, rateSTR : 'D', rateDEX : 'C', saturation : 0, scaleDEX : 102.2, scaleSTR : 57.4),
+            new Weapon("Test Falchion", 112, 0,0,0, minSTR : 15, minDEX : 17, scaleSTR : 30, scaleDEX : 54, saturation : 0 )
         };
 
         Head[] heads = {
@@ -107,7 +108,7 @@ namespace DarkSoulsIIICalculator
             {
                 StartingClasscmb.Items.Add(startingClasses[k].name);
             }
-
+           
             for (int k = 0; k < weapons.Count(); k++)
             {
                 R1cmb.Items.Add(weapons[k].name);
@@ -395,7 +396,12 @@ namespace DarkSoulsIIICalculator
             UnusedSlotstxt.Text = attuneSlots.ToString();
 
             //Attack stats
-            RWeapon1txt.Text = weapons[R1cmb.SelectedIndex].weaponAR(strength,dexterity,intelligence,faith).ToString();
+            RWeapon1txt.Text = String.Format("{0:0.00}", weapons[R1cmb.SelectedIndex].weaponAR(strength, dexterity, intelligence, faith));
+            RWeapon2txt.Text = String.Format("{0:0.00}", weapons[R2cmb.SelectedIndex].weaponAR(strength, dexterity, intelligence, faith));
+            RWeapon3txt.Text = String.Format("{0:0.00}", weapons[R3cmb.SelectedIndex].weaponAR(strength, dexterity, intelligence, faith));
+            LWeapon1txt.Text = String.Format("{0:0.00}", weapons[L1cmb.SelectedIndex].weaponAR(strength, dexterity, intelligence, faith));
+            LWeapon2txt.Text = String.Format("{0:0.00}", weapons[L2cmb.SelectedIndex].weaponAR(strength, dexterity, intelligence, faith));
+            LWeapon3txt.Text = String.Format("{0:0.00}", weapons[L3cmb.SelectedIndex].weaponAR(strength, dexterity, intelligence, faith));
 
             //refresh weapon table
 
@@ -517,31 +523,200 @@ namespace DarkSoulsIIICalculator
 
         private void R1cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int strength = Convert.ToInt32(Strengthtxt.Text);
+            int dexterity = Convert.ToInt32(Dexteritytxt.Text);
+            int intelligence = Convert.ToInt32(Intelligencetxt.Text);
+            int faith = Convert.ToInt32(Faithtxt.Text);
+
+            if (strength < weapons[R1cmb.SelectedIndex].minSTR)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R1cmb.SelectedIndex].minSTR - strength).ToString() + " more strength.", "Insufficient Strength:");
+                R1cmb.SelectedIndex = 0;
+            }
+            else if (dexterity < weapons[R1cmb.SelectedIndex].minDEX)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R1cmb.SelectedIndex].minDEX - dexterity).ToString() + " more dexterity.", "Insufficient Dexterity:");
+                R1cmb.SelectedIndex = 0;
+            }
+            else if (intelligence < weapons[R1cmb.SelectedIndex].minINT)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R1cmb.SelectedIndex].minINT - intelligence).ToString() + " more intelligence.", "Insufficient Intelligence:");
+                R1cmb.SelectedIndex = 0;
+            }
+            else if (faith < weapons[R1cmb.SelectedIndex].minFTH)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R1cmb.SelectedIndex].minFTH - faith).ToString() + " more faith.", "Insufficient Faith:");
+                R1cmb.SelectedIndex = 0;
+            }
+            else{ }
+
+
             refresh();
         }
 
         private void R2cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int strength = Convert.ToInt32(Strengthtxt.Text);
+            int dexterity = Convert.ToInt32(Dexteritytxt.Text);
+            int intelligence = Convert.ToInt32(Intelligencetxt.Text);
+            int faith = Convert.ToInt32(Faithtxt.Text);
+
+            if (strength < weapons[R2cmb.SelectedIndex].minSTR)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R2cmb.SelectedIndex].minSTR - strength).ToString() + " more strength.", "Insufficient Strength:");
+                R2cmb.SelectedIndex = 0;
+            }
+            else if (dexterity < weapons[R2cmb.SelectedIndex].minDEX)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R2cmb.SelectedIndex].minDEX - dexterity).ToString() + " more dexterity.", "Insufficient Dexterity:");
+                R2cmb.SelectedIndex = 0;
+            }
+            else if (intelligence < weapons[R2cmb.SelectedIndex].minINT)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R2cmb.SelectedIndex].minINT - intelligence).ToString() + " more intelligence.", "Insufficient Intelligence:");
+                R2cmb.SelectedIndex = 0;
+            }
+            else if (faith < weapons[R2cmb.SelectedIndex].minFTH)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R2cmb.SelectedIndex].minFTH - faith).ToString() + " more faith.", "Insufficient Faith:");
+                R2cmb.SelectedIndex = 0;
+            }
+            else { }
+
+
+            refresh();
+
             refresh();
         }
 
         private void R3cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int strength = Convert.ToInt32(Strengthtxt.Text);
+            int dexterity = Convert.ToInt32(Dexteritytxt.Text);
+            int intelligence = Convert.ToInt32(Intelligencetxt.Text);
+            int faith = Convert.ToInt32(Faithtxt.Text);
+
+            if (strength < weapons[R3cmb.SelectedIndex].minSTR)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R3cmb.SelectedIndex].minSTR - strength).ToString() + " more strength.", "Insufficient Strength:");
+                R3cmb.SelectedIndex = 0;
+            }
+            else if (dexterity < weapons[R3cmb.SelectedIndex].minDEX)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R3cmb.SelectedIndex].minDEX - dexterity).ToString() + " more dexterity.", "Insufficient Dexterity:");
+                R3cmb.SelectedIndex = 0;
+            }
+            else if (intelligence < weapons[R3cmb.SelectedIndex].minINT)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R3cmb.SelectedIndex].minINT - intelligence).ToString() + " more intelligence.", "Insufficient Intelligence:");
+                R3cmb.SelectedIndex = 0;
+            }
+            else if (faith < weapons[R3cmb.SelectedIndex].minFTH)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[R3cmb.SelectedIndex].minFTH - faith).ToString() + " more faith.", "Insufficient Faith:");
+                R3cmb.SelectedIndex = 0;
+            }
+            else { }
+
             refresh();
         }
 
         private void L1cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int strength = Convert.ToInt32(Strengthtxt.Text);
+            int dexterity = Convert.ToInt32(Dexteritytxt.Text);
+            int intelligence = Convert.ToInt32(Intelligencetxt.Text);
+            int faith = Convert.ToInt32(Faithtxt.Text);
+
+            if (strength < weapons[L1cmb.SelectedIndex].minSTR)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L1cmb.SelectedIndex].minSTR - strength).ToString() + " more strength.", "Insufficient Strength:");
+                L1cmb.SelectedIndex = 0;
+            }
+            else if (dexterity < weapons[L1cmb.SelectedIndex].minDEX)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L1cmb.SelectedIndex].minDEX - dexterity).ToString() + " more dexterity.", "Insufficient Dexterity:");
+                L1cmb.SelectedIndex = 0;
+            }
+            else if (intelligence < weapons[L1cmb.SelectedIndex].minINT)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L1cmb.SelectedIndex].minINT - intelligence).ToString() + " more intelligence.", "Insufficient Intelligence:");
+                L1cmb.SelectedIndex = 0;
+            }
+            else if (faith < weapons[L1cmb.SelectedIndex].minFTH)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L1cmb.SelectedIndex].minFTH - faith).ToString() + " more faith.", "Insufficient Faith:");
+                L1cmb.SelectedIndex = 0;
+            }
+            else { }
+
+
             refresh();
         }
 
         private void L2cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int strength = Convert.ToInt32(Strengthtxt.Text);
+            int dexterity = Convert.ToInt32(Dexteritytxt.Text);
+            int intelligence = Convert.ToInt32(Intelligencetxt.Text);
+            int faith = Convert.ToInt32(Faithtxt.Text);
+
+            if (strength < weapons[L2cmb.SelectedIndex].minSTR)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L2cmb.SelectedIndex].minSTR - strength).ToString() + " more strength.", "Insufficient Strength:");
+                L2cmb.SelectedIndex = 0;
+            }
+            else if (dexterity < weapons[L2cmb.SelectedIndex].minDEX)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L2cmb.SelectedIndex].minDEX - dexterity).ToString() + " more dexterity.", "Insufficient Dexterity:");
+                L2cmb.SelectedIndex = 0;
+            }
+            else if (intelligence < weapons[L2cmb.SelectedIndex].minINT)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L2cmb.SelectedIndex].minINT - intelligence).ToString() + " more intelligence.", "Insufficient Intelligence:");
+                L2cmb.SelectedIndex = 0;
+            }
+            else if (faith < weapons[L2cmb.SelectedIndex].minFTH)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L2cmb.SelectedIndex].minFTH - faith).ToString() + " more faith.", "Insufficient Faith:");
+                L2cmb.SelectedIndex = 0;
+            }
+            else { }
+
+
             refresh();
         }
 
         private void L3cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int strength = Convert.ToInt32(Strengthtxt.Text);
+            int dexterity = Convert.ToInt32(Dexteritytxt.Text);
+            int intelligence = Convert.ToInt32(Intelligencetxt.Text);
+            int faith = Convert.ToInt32(Faithtxt.Text);
+
+            if (strength < weapons[L3cmb.SelectedIndex].minSTR)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L3cmb.SelectedIndex].minSTR - strength).ToString() + " more strength.", "Insufficient Strength:");
+                L3cmb.SelectedIndex = 0;
+            }
+            else if (dexterity < weapons[L3cmb.SelectedIndex].minDEX)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L3cmb.SelectedIndex].minDEX - dexterity).ToString() + " more dexterity.", "Insufficient Dexterity:");
+                L3cmb.SelectedIndex = 0;
+            }
+            else if (intelligence < weapons[L3cmb.SelectedIndex].minINT)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L3cmb.SelectedIndex].minINT - intelligence).ToString() + " more intelligence.", "Insufficient Intelligence:");
+                L3cmb.SelectedIndex = 0;
+            }
+            else if (faith < weapons[L3cmb.SelectedIndex].minFTH)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (weapons[L3cmb.SelectedIndex].minFTH - faith).ToString() + " more faith.", "Insufficient Faith:");
+                L3cmb.SelectedIndex = 0;
+            }
+            else { }
+
+
             refresh();
         }
 
@@ -865,6 +1040,11 @@ namespace DarkSoulsIIICalculator
 
         private void AddSpellbtn_Click(object sender, EventArgs e)
         {
+            if (AddSpellcmb.SelectedIndex < 0)
+            {
+                return;
+            }
+
             if (attuneSlots < spells[AddSpellcmb.SelectedIndex].attunement)
             {
                 System.Windows.Forms.MessageBox.Show("need " + (spells[AddSpellcmb.SelectedIndex].attunement - attuneSlots).ToString() + " more slot(s).", "Insufficient Attunement:");
@@ -890,6 +1070,91 @@ namespace DarkSoulsIIICalculator
         {
             Spellslb.Items.Clear();
             character.attuneSlotModifier = 0;
+            refresh();
+        }
+
+        private void clearWeaponsbtn_Click(object sender, EventArgs e)
+        {
+            R1cmb.SelectedIndex = 0;
+            R2cmb.SelectedIndex = 0;
+            R3cmb.SelectedIndex = 0;
+            L1cmb.SelectedIndex = 0;
+            L2cmb.SelectedIndex = 0;
+            L3cmb.SelectedIndex = 0;
+
+            refresh();
+        }
+
+        private void ClearArmourbtn_Click(object sender, EventArgs e)
+        {
+            Headcmb.SelectedIndex = 0;
+            Chestcmb.SelectedIndex = 0;
+            Armscmb.SelectedIndex = 0;
+            Leggingscmb.SelectedIndex = 0;
+
+            refresh();
+        }
+
+        private void ClearRingsbtn_Click(object sender, EventArgs e)
+        {
+            Ring1cmb.SelectedIndex = 0;
+            Ring2cmb.SelectedIndex = 0;
+            Ring3cmb.SelectedIndex = 0;
+            Ring4cmb.SelectedIndex = 0;
+
+            refresh();
+        }
+
+        private void ResetLevelbtn_Click(object sender, EventArgs e)
+        {
+            character.soulLevelModifier = 0;
+            character.vigorModifier = 0;
+            character.attunementModifier = 0;
+            character.attuneSlotModifier = 0;
+            character.enduranceModifier = 0;
+            character.vitalityModifier = 0;
+            character.strengthModifier = 0;
+            character.dexterityModifier = 0;
+            character.intelligenceModifier = 0;
+            character.faithModifier = 0;
+            character.luckModifier = 0;
+
+            refresh();
+        }
+
+        private void ResetCalculatorbtn_Click(object sender, EventArgs e)
+        {
+            R1cmb.SelectedIndex = 0;
+            R2cmb.SelectedIndex = 0;
+            R3cmb.SelectedIndex = 0;
+            L1cmb.SelectedIndex = 0;
+            L2cmb.SelectedIndex = 0;
+            L3cmb.SelectedIndex = 0;
+
+            Headcmb.SelectedIndex = 0;
+            Chestcmb.SelectedIndex = 0;
+            Armscmb.SelectedIndex = 0;
+            Leggingscmb.SelectedIndex = 0;
+
+            Ring1cmb.SelectedIndex = 0;
+            Ring2cmb.SelectedIndex = 0;
+            Ring3cmb.SelectedIndex = 0;
+            Ring4cmb.SelectedIndex = 0;
+
+            Spellslb.Items.Clear();
+
+            character.soulLevelModifier = 0;
+            character.vigorModifier = 0;
+            character.attunementModifier = 0;
+            character.attuneSlotModifier = 0;
+            character.enduranceModifier = 0;
+            character.vitalityModifier = 0;
+            character.strengthModifier = 0;
+            character.dexterityModifier = 0;
+            character.intelligenceModifier = 0;
+            character.faithModifier = 0;
+            character.luckModifier = 0;
+
             refresh();
         }
     }
