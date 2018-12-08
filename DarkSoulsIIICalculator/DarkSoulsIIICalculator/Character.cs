@@ -11,6 +11,7 @@ namespace DarkSoulsIIICalculator
         private int _soulLevelModifier;
         private int _vigorModifier;
         private int _attunementModifier;
+        private int _attuneSlotModifier;
         private int _enduranceModifier;
         private int _vitalityModifier;
         private int _strengthModifier;
@@ -22,6 +23,7 @@ namespace DarkSoulsIIICalculator
         public int soulLevelModifier { get; set; }
         public int vigorModifier { get; set; }
         public int attunementModifier { get; set; }
+        public int attuneSlotModifier { get; set; }
         public int vitalityModifier { get; set; }
         public int enduranceModifier { get; set; }
         public int strengthModifier { get; set; }
@@ -35,6 +37,7 @@ namespace DarkSoulsIIICalculator
             this.soulLevelModifier = 0;
             this.vigorModifier = 0;
             this.attunementModifier = 0;
+            this.attuneSlotModifier = 0;
             this.enduranceModifier = 0;
             this.vitalityModifier = 0;
             this.strengthModifier = 0;

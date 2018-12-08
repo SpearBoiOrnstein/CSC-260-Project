@@ -14,6 +14,8 @@ namespace DarkSoulsIIICalculator
     {
         Character character = new Character();
 
+        int attuneSlots;
+
         StartingClass[] startingClasses = {
             new StartingClass("Knight", 9, 12, 10, 11, 15, 13, 12, 9, 9, 7),
             new StartingClass("Mercenary", 8, 11, 12, 11, 10, 10, 16, 10, 8, 9),
@@ -24,10 +26,12 @@ namespace DarkSoulsIIICalculator
             new StartingClass("Sorcerer", 6, 9, 16, 9, 7, 7, 12, 16, 7, 12),
             new StartingClass("Pyromancer", 8, 11, 12, 10, 8, 12, 9, 14, 14, 7),
             new StartingClass("Cleric", 7, 10, 14, 9, 7, 12, 8, 7, 16, 13),
-            new StartingClass("Deprived", 1, 10, 10, 10, 10, 10, 10, 10, 10, 10) };
+            new StartingClass("Deprived", 1, 10, 10, 10, 10, 10, 10, 10, 10, 10)
+        };
 
         Weapon[] weapons = {
-            new Weapon("none", 0, 0, 0, 0)
+            new Weapon("none", 0, 0, 0, 0),
+            new Weapon("Farron Greatsword", 258, 12.5, 45, 90, minSTR : 18, minDEX : 20, rateSTR : 'D', rateDEX : 'C')
         };
 
         Head[] heads = {
@@ -51,6 +55,11 @@ namespace DarkSoulsIIICalculator
         Ring[] rings = {
             new Ring("none", 0),
             new Ring("Prisoner's Chain", 1, vigorBonus : 5, enduranceBonus : 5, vitalityBonus : 5)
+        };
+
+        Spell[] spells =
+        {
+            new Spell("Soul Arrow", 1, 10, 0)
         };
         
 
@@ -128,6 +137,11 @@ namespace DarkSoulsIIICalculator
                 Ring2cmb.Items.Add(rings[k].name);
                 Ring3cmb.Items.Add(rings[k].name);
                 Ring4cmb.Items.Add(rings[k].name);
+            }
+
+            for ( int k = 0; k < spells.Count(); k++ )
+            {
+                AddSpellcmb.Items.Add(spells[k].name);
             }
 
             StartingClasscmb.SelectedIndex = 0; //sets initial value to knight
@@ -326,6 +340,7 @@ namespace DarkSoulsIIICalculator
             //this section sets character stats
             double hp, fp, stamina;
             double equipLoad, equipLoadUsed, equipLoadPercent;
+            
 
             if (vigor <= 50)
                 hp = (-.559 * Math.Pow(vigor, 2)) + (56.547 * vigor) - 142.56;
@@ -349,9 +364,32 @@ namespace DarkSoulsIIICalculator
             equipLoadPercent = (equipLoadUsed / equipLoad) * 100;
             PercentELtxt.Text = String.Format("{0:0.0}", equipLoadPercent) + "%";
 
+            if (attunement == 99)
+                attuneSlots = 10 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+            else if (attunement >= 80 )
+                attuneSlots = 9 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+            else if (attunement >= 60 )
+                attuneSlots = 8 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+            else if (attunement >= 50)
+                attuneSlots = 7 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+            else if (attunement >= 40)
+                attuneSlots = 6 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+            else if (attunement >= 30)
+                attuneSlots = 5 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+            else if (attunement >= 24)
+                attuneSlots = 4 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+            else if (attunement >= 18)
+                attuneSlots = 3 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+            else if (attunement >= 14)
+                attuneSlots = 2 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+            else
+                attuneSlots = 1 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+
+            UnusedSlotstxt.Text = attuneSlots.ToString();
+
             //refresh weapon table
 
-                // min str
+                   // min str
                     R1RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R1cmb.SelectedIndex].minSTR);
                     R2RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R2cmb.SelectedIndex].minSTR);
                     R3RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R3cmb.SelectedIndex].minSTR);
@@ -813,6 +851,36 @@ namespace DarkSoulsIIICalculator
 
                 refresh();
             }
+        }
+
+        private void AddSpellbtn_Click(object sender, EventArgs e)
+        {
+            if (attuneSlots < spells[AddSpellcmb.SelectedIndex].attunement)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (spells[AddSpellcmb.SelectedIndex].attunement - attuneSlots).ToString() + " more slot(s).", "Insufficient Attunement:");
+            }
+            else
+            {
+                character.attuneSlotModifier += spells[AddSpellcmb.SelectedIndex].attunement;
+
+                string item = spells[AddSpellcmb.SelectedIndex].name + " slots: " + spells[AddSpellcmb.SelectedIndex].attunement.ToString() + "  minINT: " + spells[AddSpellcmb.SelectedIndex].minINT.ToString() + " minFTH: " + spells[AddSpellcmb.SelectedIndex].minFTH.ToString() + "\r\n";
+
+                Spellslb.Items.Add(item);
+            }
+
+            refresh();
+        }
+
+        private void Spellslb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearSpellsbtn_Click(object sender, EventArgs e)
+        {
+            Spellslb.Items.Clear();
+            character.attuneSlotModifier = 0;
+            refresh();
         }
     }
 }

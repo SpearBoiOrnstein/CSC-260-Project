@@ -236,6 +236,7 @@
             this.StrengthMinusbtn = new System.Windows.Forms.Button();
             this.LuckPlusbtn = new System.Windows.Forms.Button();
             this.LuckMinusbtn = new System.Windows.Forms.Button();
+            this.ClearSpellsbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StartingClasscmb
@@ -845,8 +846,10 @@
             this.Spellslb.FormattingEnabled = true;
             this.Spellslb.Location = new System.Drawing.Point(217, 348);
             this.Spellslb.Name = "Spellslb";
+            this.Spellslb.ScrollAlwaysVisible = true;
             this.Spellslb.Size = new System.Drawing.Size(477, 69);
             this.Spellslb.TabIndex = 94;
+            this.Spellslb.SelectedIndexChanged += new System.EventHandler(this.Spellslb_SelectedIndexChanged);
             // 
             // Spellslbl
             // 
@@ -878,6 +881,7 @@
             this.AddSpellbtn.TabIndex = 97;
             this.AddSpellbtn.Text = "add spell";
             this.AddSpellbtn.UseVisualStyleBackColor = true;
+            this.AddSpellbtn.Click += new System.EventHandler(this.AddSpellbtn_Click);
             // 
             // UnusedSlotslbl
             // 
@@ -896,6 +900,7 @@
             this.UnusedSlotstxt.ReadOnly = true;
             this.UnusedSlotstxt.Size = new System.Drawing.Size(30, 20);
             this.UnusedSlotstxt.TabIndex = 99;
+            this.UnusedSlotstxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RWeapon3txt
             // 
@@ -2276,11 +2281,22 @@
             this.LuckMinusbtn.UseVisualStyleBackColor = true;
             this.LuckMinusbtn.Click += new System.EventHandler(this.LuckMinusbtn_Click);
             // 
+            // ClearSpellsbtn
+            // 
+            this.ClearSpellsbtn.Location = new System.Drawing.Point(217, 423);
+            this.ClearSpellsbtn.Name = "ClearSpellsbtn";
+            this.ClearSpellsbtn.Size = new System.Drawing.Size(231, 23);
+            this.ClearSpellsbtn.TabIndex = 244;
+            this.ClearSpellsbtn.Text = "Clear Spells";
+            this.ClearSpellsbtn.UseVisualStyleBackColor = true;
+            this.ClearSpellsbtn.Click += new System.EventHandler(this.ClearSpellsbtn_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 696);
+            this.Controls.Add(this.ClearSpellsbtn);
             this.Controls.Add(this.LuckPlusbtn);
             this.Controls.Add(this.LuckMinusbtn);
             this.Controls.Add(this.FaithPlusbtn);
@@ -2706,6 +2722,7 @@
         private System.Windows.Forms.Button LuckPlusbtn;
         private System.Windows.Forms.Button LuckMinusbtn;
         public System.Windows.Forms.ComboBox StartingClasscmb;
+        private System.Windows.Forms.Button ClearSpellsbtn;
     }
 }
 
