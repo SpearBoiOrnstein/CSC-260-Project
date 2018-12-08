@@ -18,6 +18,8 @@ namespace DarkSoulsIIICalculator
   Application.SetCompatibleTextRenderingDefault(false);
   Application.Run(new Calculator());
 
+
+
     }
 
   }
