@@ -40,11 +40,11 @@ namespace DarkSoulsIIICalculator
         public char rateDEX { get; private set; }
         public char rateINT { get; private set; }
         public char rateFTH { get; private set; }
-        public int WGT { get; private set; }
+        public double WGT { get; private set; }
         public int STB { get; private set; }
         public int DUR { get; private set; }
 
-        public Weapon( string name, int baseAttack, int WGT, int STB, int DUR, int minSTR = 0, int minDEX = 0, int minINT = 0, int minFTH = 0, int scaleSTR = 0, int scaleDEX = 0, int scaleINT = 0, int scaleFTH = 0, char rateSTR = 'F', char rateDEX = 'F', char rateINT = 'F', char rateFTH = 'F')
+        public Weapon( string name, int baseAttack, double WGT, int STB, int DUR, int minSTR = 0, int minDEX = 0, int minINT = 0, int minFTH = 0, int scaleSTR = 0, int scaleDEX = 0, int scaleINT = 0, int scaleFTH = 0, char rateSTR = 'F', char rateDEX = 'F', char rateINT = 'F', char rateFTH = 'F')
         {
             this.name = name;
             this.baseAttack = baseAttack;

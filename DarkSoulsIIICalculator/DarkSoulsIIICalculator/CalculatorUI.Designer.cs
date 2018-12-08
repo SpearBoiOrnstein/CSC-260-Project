@@ -48,11 +48,11 @@
             this.FPlbl = new System.Windows.Forms.Label();
             this.Staminatxt = new System.Windows.Forms.TextBox();
             this.Staminalbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PercentELtxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ELUsedtxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.EquipLoadtxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Weaponslbl = new System.Windows.Forms.Label();
             this.R1cmb = new System.Windows.Forms.ComboBox();
@@ -120,7 +120,7 @@
             this.Defenselbl = new System.Windows.Forms.Label();
             this.Darktxt = new System.Windows.Forms.TextBox();
             this.Darklbl = new System.Windows.Forms.Label();
-            this.Lighntingtxt = new System.Windows.Forms.TextBox();
+            this.Lightningtxt = new System.Windows.Forms.TextBox();
             this.Lightninglbl = new System.Windows.Forms.Label();
             this.L3RequiredSTRtxt = new System.Windows.Forms.TextBox();
             this.LWeapon3lbl2 = new System.Windows.Forms.Label();
@@ -261,11 +261,12 @@
             // 
             // SoulLeveltxt
             // 
-            this.SoulLeveltxt.Location = new System.Drawing.Point(125, 71);
+            this.SoulLeveltxt.Location = new System.Drawing.Point(119, 71);
             this.SoulLeveltxt.Name = "SoulLeveltxt";
             this.SoulLeveltxt.ReadOnly = true;
-            this.SoulLeveltxt.Size = new System.Drawing.Size(30, 20);
+            this.SoulLeveltxt.Size = new System.Drawing.Size(36, 20);
             this.SoulLeveltxt.TabIndex = 2;
+            this.SoulLeveltxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Attributeslbl
             // 
@@ -381,11 +382,12 @@
             // 
             // HPtxt
             // 
-            this.HPtxt.Location = new System.Drawing.Point(125, 310);
+            this.HPtxt.Location = new System.Drawing.Point(119, 310);
             this.HPtxt.Name = "HPtxt";
             this.HPtxt.ReadOnly = true;
-            this.HPtxt.Size = new System.Drawing.Size(30, 20);
+            this.HPtxt.Size = new System.Drawing.Size(36, 20);
             this.HPtxt.TabIndex = 42;
+            this.HPtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // HPlbl
             // 
@@ -399,11 +401,12 @@
             // 
             // FPtxt
             // 
-            this.FPtxt.Location = new System.Drawing.Point(125, 329);
+            this.FPtxt.Location = new System.Drawing.Point(119, 329);
             this.FPtxt.Name = "FPtxt";
             this.FPtxt.ReadOnly = true;
-            this.FPtxt.Size = new System.Drawing.Size(30, 20);
+            this.FPtxt.Size = new System.Drawing.Size(36, 20);
             this.FPtxt.TabIndex = 44;
+            this.FPtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // FPlbl
             // 
@@ -417,11 +420,12 @@
             // 
             // Staminatxt
             // 
-            this.Staminatxt.Location = new System.Drawing.Point(125, 348);
+            this.Staminatxt.Location = new System.Drawing.Point(119, 348);
             this.Staminatxt.Name = "Staminatxt";
             this.Staminatxt.ReadOnly = true;
-            this.Staminatxt.Size = new System.Drawing.Size(30, 20);
+            this.Staminatxt.Size = new System.Drawing.Size(36, 20);
             this.Staminatxt.TabIndex = 46;
+            this.Staminatxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Staminalbl
             // 
@@ -433,13 +437,14 @@
             this.Staminalbl.TabIndex = 45;
             this.Staminalbl.Text = "Stamina:";
             // 
-            // textBox1
+            // PercentELtxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 409);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(30, 20);
-            this.textBox1.TabIndex = 61;
+            this.PercentELtxt.Location = new System.Drawing.Point(119, 409);
+            this.PercentELtxt.Name = "PercentELtxt";
+            this.PercentELtxt.ReadOnly = true;
+            this.PercentELtxt.Size = new System.Drawing.Size(36, 20);
+            this.PercentELtxt.TabIndex = 61;
+            this.PercentELtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
@@ -451,13 +456,14 @@
             this.label1.TabIndex = 60;
             this.label1.Text = "EL % Used:";
             // 
-            // textBox2
+            // ELUsedtxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(125, 390);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(30, 20);
-            this.textBox2.TabIndex = 59;
+            this.ELUsedtxt.Location = new System.Drawing.Point(119, 390);
+            this.ELUsedtxt.Name = "ELUsedtxt";
+            this.ELUsedtxt.ReadOnly = true;
+            this.ELUsedtxt.Size = new System.Drawing.Size(36, 20);
+            this.ELUsedtxt.TabIndex = 59;
+            this.ELUsedtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -469,13 +475,14 @@
             this.label2.TabIndex = 58;
             this.label2.Text = "EL Used:";
             // 
-            // textBox3
+            // EquipLoadtxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(125, 371);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(30, 20);
-            this.textBox3.TabIndex = 57;
+            this.EquipLoadtxt.Location = new System.Drawing.Point(119, 371);
+            this.EquipLoadtxt.Name = "EquipLoadtxt";
+            this.EquipLoadtxt.ReadOnly = true;
+            this.EquipLoadtxt.Size = new System.Drawing.Size(36, 20);
+            this.EquipLoadtxt.TabIndex = 57;
+            this.EquipLoadtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -508,6 +515,7 @@
             this.R1cmb.Size = new System.Drawing.Size(121, 21);
             this.R1cmb.TabIndex = 63;
             this.R1cmb.ValueMember = "Starting Class";
+            this.R1cmb.SelectedIndexChanged += new System.EventHandler(this.R1cmb_SelectedIndexChanged);
             // 
             // R1lbl
             // 
@@ -540,6 +548,7 @@
             this.L1cmb.Size = new System.Drawing.Size(121, 21);
             this.L1cmb.TabIndex = 65;
             this.L1cmb.ValueMember = " ";
+            this.L1cmb.SelectedIndexChanged += new System.EventHandler(this.L1cmb_SelectedIndexChanged);
             // 
             // L2lbl
             // 
@@ -560,6 +569,7 @@
             this.L2cmb.Name = "L2cmb";
             this.L2cmb.Size = new System.Drawing.Size(121, 21);
             this.L2cmb.TabIndex = 69;
+            this.L2cmb.SelectedIndexChanged += new System.EventHandler(this.L2cmb_SelectedIndexChanged);
             // 
             // R2lbl
             // 
@@ -580,6 +590,7 @@
             this.R2cmb.Name = "R2cmb";
             this.R2cmb.Size = new System.Drawing.Size(121, 21);
             this.R2cmb.TabIndex = 67;
+            this.R2cmb.SelectedIndexChanged += new System.EventHandler(this.R2cmb_SelectedIndexChanged);
             // 
             // L3lbl
             // 
@@ -600,6 +611,7 @@
             this.L3cmb.Name = "L3cmb";
             this.L3cmb.Size = new System.Drawing.Size(121, 21);
             this.L3cmb.TabIndex = 73;
+            this.L3cmb.SelectedIndexChanged += new System.EventHandler(this.L3cmb_SelectedIndexChanged);
             // 
             // R3lbl
             // 
@@ -620,6 +632,7 @@
             this.R3cmb.Name = "R3cmb";
             this.R3cmb.Size = new System.Drawing.Size(121, 21);
             this.R3cmb.TabIndex = 71;
+            this.R3cmb.SelectedIndexChanged += new System.EventHandler(this.R3cmb_SelectedIndexChanged);
             // 
             // StartingClasslbl
             // 
@@ -671,6 +684,7 @@
             this.Chestcmb.Name = "Chestcmb";
             this.Chestcmb.Size = new System.Drawing.Size(150, 21);
             this.Chestcmb.TabIndex = 81;
+            this.Chestcmb.SelectedIndexChanged += new System.EventHandler(this.Chestcmb_SelectedIndexChanged);
             // 
             // Armslbl
             // 
@@ -693,6 +707,7 @@
             this.Armscmb.Size = new System.Drawing.Size(150, 21);
             this.Armscmb.TabIndex = 79;
             this.Armscmb.ValueMember = " ";
+            this.Armscmb.SelectedIndexChanged += new System.EventHandler(this.Armscmb_SelectedIndexChanged);
             // 
             // Headlbl
             // 
@@ -715,6 +730,7 @@
             this.Headcmb.Size = new System.Drawing.Size(150, 21);
             this.Headcmb.TabIndex = 77;
             this.Headcmb.ValueMember = "Starting Class";
+            this.Headcmb.SelectedIndexChanged += new System.EventHandler(this.Headcmb_SelectedIndexChanged);
             // 
             // Armourlbl
             // 
@@ -888,6 +904,7 @@
             this.RWeapon3txt.ReadOnly = true;
             this.RWeapon3txt.Size = new System.Drawing.Size(30, 20);
             this.RWeapon3txt.TabIndex = 106;
+            this.RWeapon3txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // RWeapon3lbl
             // 
@@ -906,6 +923,7 @@
             this.RWeapon2txt.ReadOnly = true;
             this.RWeapon2txt.Size = new System.Drawing.Size(30, 20);
             this.RWeapon2txt.TabIndex = 104;
+            this.RWeapon2txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // RWeapon2lbl
             // 
@@ -924,6 +942,7 @@
             this.RWeapon1txt.ReadOnly = true;
             this.RWeapon1txt.Size = new System.Drawing.Size(30, 20);
             this.RWeapon1txt.TabIndex = 102;
+            this.RWeapon1txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // RWeapon1lbl
             // 
@@ -952,6 +971,7 @@
             this.LWeapon3txt.ReadOnly = true;
             this.LWeapon3txt.Size = new System.Drawing.Size(30, 20);
             this.LWeapon3txt.TabIndex = 112;
+            this.LWeapon3txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LWeapon3lbl
             // 
@@ -970,6 +990,7 @@
             this.LWeapon2txt.ReadOnly = true;
             this.LWeapon2txt.Size = new System.Drawing.Size(30, 20);
             this.LWeapon2txt.TabIndex = 110;
+            this.LWeapon2txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LWeapon2lbl
             // 
@@ -988,6 +1009,7 @@
             this.LWeapon1txt.ReadOnly = true;
             this.LWeapon1txt.Size = new System.Drawing.Size(30, 20);
             this.LWeapon1txt.TabIndex = 108;
+            this.LWeapon1txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LWeapon1lbl
             // 
@@ -1001,11 +1023,12 @@
             // 
             // Firetxt
             // 
-            this.Firetxt.Location = new System.Drawing.Point(694, 586);
+            this.Firetxt.Location = new System.Drawing.Point(683, 586);
             this.Firetxt.Name = "Firetxt";
             this.Firetxt.ReadOnly = true;
-            this.Firetxt.Size = new System.Drawing.Size(30, 20);
+            this.Firetxt.Size = new System.Drawing.Size(41, 20);
             this.Firetxt.TabIndex = 125;
+            this.Firetxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Firelbl
             // 
@@ -1019,11 +1042,12 @@
             // 
             // Magictxt
             // 
-            this.Magictxt.Location = new System.Drawing.Point(694, 567);
+            this.Magictxt.Location = new System.Drawing.Point(683, 567);
             this.Magictxt.Name = "Magictxt";
             this.Magictxt.ReadOnly = true;
-            this.Magictxt.Size = new System.Drawing.Size(30, 20);
+            this.Magictxt.Size = new System.Drawing.Size(41, 20);
             this.Magictxt.TabIndex = 123;
+            this.Magictxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Magiclbl
             // 
@@ -1037,11 +1061,12 @@
             // 
             // VSthrusttxt
             // 
-            this.VSthrusttxt.Location = new System.Drawing.Point(694, 548);
+            this.VSthrusttxt.Location = new System.Drawing.Point(683, 548);
             this.VSthrusttxt.Name = "VSthrusttxt";
             this.VSthrusttxt.ReadOnly = true;
-            this.VSthrusttxt.Size = new System.Drawing.Size(30, 20);
+            this.VSthrusttxt.Size = new System.Drawing.Size(41, 20);
             this.VSthrusttxt.TabIndex = 121;
+            this.VSthrusttxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // VSthrustlbl
             // 
@@ -1055,11 +1080,12 @@
             // 
             // VSslashtxt
             // 
-            this.VSslashtxt.Location = new System.Drawing.Point(694, 529);
+            this.VSslashtxt.Location = new System.Drawing.Point(683, 529);
             this.VSslashtxt.Name = "VSslashtxt";
             this.VSslashtxt.ReadOnly = true;
-            this.VSslashtxt.Size = new System.Drawing.Size(30, 20);
+            this.VSslashtxt.Size = new System.Drawing.Size(41, 20);
             this.VSslashtxt.TabIndex = 119;
+            this.VSslashtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // VSslashlbl
             // 
@@ -1073,11 +1099,12 @@
             // 
             // VSstriketxt
             // 
-            this.VSstriketxt.Location = new System.Drawing.Point(694, 510);
+            this.VSstriketxt.Location = new System.Drawing.Point(683, 510);
             this.VSstriketxt.Name = "VSstriketxt";
             this.VSstriketxt.ReadOnly = true;
-            this.VSstriketxt.Size = new System.Drawing.Size(30, 20);
+            this.VSstriketxt.Size = new System.Drawing.Size(41, 20);
             this.VSstriketxt.TabIndex = 117;
+            this.VSstriketxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // VSstrikelbl
             // 
@@ -1091,11 +1118,12 @@
             // 
             // Physicaltxt
             // 
-            this.Physicaltxt.Location = new System.Drawing.Point(694, 491);
+            this.Physicaltxt.Location = new System.Drawing.Point(683, 491);
             this.Physicaltxt.Name = "Physicaltxt";
             this.Physicaltxt.ReadOnly = true;
-            this.Physicaltxt.Size = new System.Drawing.Size(30, 20);
+            this.Physicaltxt.Size = new System.Drawing.Size(41, 20);
             this.Physicaltxt.TabIndex = 115;
+            this.Physicaltxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Physicallbl
             // 
@@ -1119,11 +1147,12 @@
             // 
             // Darktxt
             // 
-            this.Darktxt.Location = new System.Drawing.Point(694, 623);
+            this.Darktxt.Location = new System.Drawing.Point(683, 623);
             this.Darktxt.Name = "Darktxt";
             this.Darktxt.ReadOnly = true;
-            this.Darktxt.Size = new System.Drawing.Size(30, 20);
+            this.Darktxt.Size = new System.Drawing.Size(41, 20);
             this.Darktxt.TabIndex = 129;
+            this.Darktxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Darklbl
             // 
@@ -1135,13 +1164,14 @@
             this.Darklbl.TabIndex = 128;
             this.Darklbl.Text = "Dark:";
             // 
-            // Lighntingtxt
+            // Lightningtxt
             // 
-            this.Lighntingtxt.Location = new System.Drawing.Point(694, 604);
-            this.Lighntingtxt.Name = "Lighntingtxt";
-            this.Lighntingtxt.ReadOnly = true;
-            this.Lighntingtxt.Size = new System.Drawing.Size(30, 20);
-            this.Lighntingtxt.TabIndex = 127;
+            this.Lightningtxt.Location = new System.Drawing.Point(683, 604);
+            this.Lightningtxt.Name = "Lightningtxt";
+            this.Lightningtxt.ReadOnly = true;
+            this.Lightningtxt.Size = new System.Drawing.Size(41, 20);
+            this.Lightningtxt.TabIndex = 127;
+            this.Lightningtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Lightninglbl
             // 
@@ -1160,6 +1190,7 @@
             this.L3RequiredSTRtxt.ReadOnly = true;
             this.L3RequiredSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.L3RequiredSTRtxt.TabIndex = 141;
+            this.L3RequiredSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LWeapon3lbl2
             // 
@@ -1178,6 +1209,7 @@
             this.L2RequiredSTRtxt.ReadOnly = true;
             this.L2RequiredSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.L2RequiredSTRtxt.TabIndex = 139;
+            this.L2RequiredSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LWeapon2lbl2
             // 
@@ -1196,6 +1228,7 @@
             this.L1RequiredSTRtxt.ReadOnly = true;
             this.L1RequiredSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.L1RequiredSTRtxt.TabIndex = 137;
+            this.L1RequiredSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LWeapon1lbl2
             // 
@@ -1214,6 +1247,7 @@
             this.R3RequiredSTRtxt.ReadOnly = true;
             this.R3RequiredSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.R3RequiredSTRtxt.TabIndex = 135;
+            this.R3RequiredSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RWeapon3lbl2
             // 
@@ -1232,6 +1266,7 @@
             this.R2RequiredSTRtxt.ReadOnly = true;
             this.R2RequiredSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.R2RequiredSTRtxt.TabIndex = 133;
+            this.R2RequiredSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RWeapon2lbl2
             // 
@@ -1250,6 +1285,7 @@
             this.R1RequiredSTRtxt.ReadOnly = true;
             this.R1RequiredSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.R1RequiredSTRtxt.TabIndex = 131;
+            this.R1RequiredSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RWeapon1lbl2
             // 
@@ -1268,6 +1304,7 @@
             this.L3RequiredDEXtxt.ReadOnly = true;
             this.L3RequiredDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.L3RequiredDEXtxt.TabIndex = 147;
+            this.L3RequiredDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L2RequiredDEXtxt
             // 
@@ -1276,6 +1313,7 @@
             this.L2RequiredDEXtxt.ReadOnly = true;
             this.L2RequiredDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.L2RequiredDEXtxt.TabIndex = 146;
+            this.L2RequiredDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L1RequiredDEXtxt
             // 
@@ -1284,6 +1322,7 @@
             this.L1RequiredDEXtxt.ReadOnly = true;
             this.L1RequiredDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.L1RequiredDEXtxt.TabIndex = 145;
+            this.L1RequiredDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R3RequiredDEXtxt
             // 
@@ -1292,6 +1331,7 @@
             this.R3RequiredDEXtxt.ReadOnly = true;
             this.R3RequiredDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.R3RequiredDEXtxt.TabIndex = 144;
+            this.R3RequiredDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R2RequiredDEXtxt
             // 
@@ -1300,6 +1340,7 @@
             this.R2RequiredDEXtxt.ReadOnly = true;
             this.R2RequiredDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.R2RequiredDEXtxt.TabIndex = 143;
+            this.R2RequiredDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R1RequiredDEXtxt
             // 
@@ -1308,6 +1349,7 @@
             this.R1RequiredDEXtxt.ReadOnly = true;
             this.R1RequiredDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.R1RequiredDEXtxt.TabIndex = 142;
+            this.R1RequiredDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L3RequiredFTHtxt
             // 
@@ -1316,6 +1358,7 @@
             this.L3RequiredFTHtxt.ReadOnly = true;
             this.L3RequiredFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.L3RequiredFTHtxt.TabIndex = 159;
+            this.L3RequiredFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L2RequiredFTHtxt
             // 
@@ -1324,6 +1367,7 @@
             this.L2RequiredFTHtxt.ReadOnly = true;
             this.L2RequiredFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.L2RequiredFTHtxt.TabIndex = 158;
+            this.L2RequiredFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L1RequiredFTHtxt
             // 
@@ -1332,6 +1376,7 @@
             this.L1RequiredFTHtxt.ReadOnly = true;
             this.L1RequiredFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.L1RequiredFTHtxt.TabIndex = 157;
+            this.L1RequiredFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R3RequiredFTHtxt
             // 
@@ -1340,6 +1385,7 @@
             this.R3RequiredFTHtxt.ReadOnly = true;
             this.R3RequiredFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.R3RequiredFTHtxt.TabIndex = 156;
+            this.R3RequiredFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R2RequiredFTHtxt
             // 
@@ -1348,6 +1394,7 @@
             this.R2RequiredFTHtxt.ReadOnly = true;
             this.R2RequiredFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.R2RequiredFTHtxt.TabIndex = 155;
+            this.R2RequiredFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R1RequiredFTHtxt
             // 
@@ -1356,6 +1403,7 @@
             this.R1RequiredFTHtxt.ReadOnly = true;
             this.R1RequiredFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.R1RequiredFTHtxt.TabIndex = 154;
+            this.R1RequiredFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L3RequiredINTtxt
             // 
@@ -1364,6 +1412,7 @@
             this.L3RequiredINTtxt.ReadOnly = true;
             this.L3RequiredINTtxt.Size = new System.Drawing.Size(30, 20);
             this.L3RequiredINTtxt.TabIndex = 153;
+            this.L3RequiredINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L2RequiredINTtxt
             // 
@@ -1372,6 +1421,7 @@
             this.L2RequiredINTtxt.ReadOnly = true;
             this.L2RequiredINTtxt.Size = new System.Drawing.Size(30, 20);
             this.L2RequiredINTtxt.TabIndex = 152;
+            this.L2RequiredINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L1RequiredINTtxt
             // 
@@ -1380,6 +1430,7 @@
             this.L1RequiredINTtxt.ReadOnly = true;
             this.L1RequiredINTtxt.Size = new System.Drawing.Size(30, 20);
             this.L1RequiredINTtxt.TabIndex = 151;
+            this.L1RequiredINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R3RequiredINTtxt
             // 
@@ -1388,6 +1439,7 @@
             this.R3RequiredINTtxt.ReadOnly = true;
             this.R3RequiredINTtxt.Size = new System.Drawing.Size(30, 20);
             this.R3RequiredINTtxt.TabIndex = 150;
+            this.R3RequiredINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R2RequiredINTtxt
             // 
@@ -1396,6 +1448,7 @@
             this.R2RequiredINTtxt.ReadOnly = true;
             this.R2RequiredINTtxt.Size = new System.Drawing.Size(30, 20);
             this.R2RequiredINTtxt.TabIndex = 149;
+            this.R2RequiredINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R1RequiredINTtxt
             // 
@@ -1404,6 +1457,7 @@
             this.R1RequiredINTtxt.ReadOnly = true;
             this.R1RequiredINTtxt.Size = new System.Drawing.Size(30, 20);
             this.R1RequiredINTtxt.TabIndex = 148;
+            this.R1RequiredINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L3ScalingFTHtxt
             // 
@@ -1412,6 +1466,7 @@
             this.L3ScalingFTHtxt.ReadOnly = true;
             this.L3ScalingFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.L3ScalingFTHtxt.TabIndex = 183;
+            this.L3ScalingFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L2ScalingFTHtxt
             // 
@@ -1420,6 +1475,7 @@
             this.L2ScalingFTHtxt.ReadOnly = true;
             this.L2ScalingFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.L2ScalingFTHtxt.TabIndex = 182;
+            this.L2ScalingFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L1ScalingFTHtxt
             // 
@@ -1428,6 +1484,7 @@
             this.L1ScalingFTHtxt.ReadOnly = true;
             this.L1ScalingFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.L1ScalingFTHtxt.TabIndex = 181;
+            this.L1ScalingFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R3ScalingFTHtxt
             // 
@@ -1436,6 +1493,7 @@
             this.R3ScalingFTHtxt.ReadOnly = true;
             this.R3ScalingFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.R3ScalingFTHtxt.TabIndex = 180;
+            this.R3ScalingFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R2ScalingFTHtxt
             // 
@@ -1444,6 +1502,7 @@
             this.R2ScalingFTHtxt.ReadOnly = true;
             this.R2ScalingFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.R2ScalingFTHtxt.TabIndex = 179;
+            this.R2ScalingFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R1ScalingFTHtxt
             // 
@@ -1452,6 +1511,7 @@
             this.R1ScalingFTHtxt.ReadOnly = true;
             this.R1ScalingFTHtxt.Size = new System.Drawing.Size(30, 20);
             this.R1ScalingFTHtxt.TabIndex = 178;
+            this.R1ScalingFTHtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L3ScalingINTtxt
             // 
@@ -1460,6 +1520,7 @@
             this.L3ScalingINTtxt.ReadOnly = true;
             this.L3ScalingINTtxt.Size = new System.Drawing.Size(30, 20);
             this.L3ScalingINTtxt.TabIndex = 177;
+            this.L3ScalingINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L2ScalingINTtxt
             // 
@@ -1468,6 +1529,7 @@
             this.L2ScalingINTtxt.ReadOnly = true;
             this.L2ScalingINTtxt.Size = new System.Drawing.Size(30, 20);
             this.L2ScalingINTtxt.TabIndex = 176;
+            this.L2ScalingINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L1ScalingINTtxt
             // 
@@ -1476,6 +1538,7 @@
             this.L1ScalingINTtxt.ReadOnly = true;
             this.L1ScalingINTtxt.Size = new System.Drawing.Size(30, 20);
             this.L1ScalingINTtxt.TabIndex = 175;
+            this.L1ScalingINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R3ScalingINTtxt
             // 
@@ -1484,6 +1547,7 @@
             this.R3ScalingINTtxt.ReadOnly = true;
             this.R3ScalingINTtxt.Size = new System.Drawing.Size(30, 20);
             this.R3ScalingINTtxt.TabIndex = 174;
+            this.R3ScalingINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R2ScalingINTtxt
             // 
@@ -1492,6 +1556,7 @@
             this.R2ScalingINTtxt.ReadOnly = true;
             this.R2ScalingINTtxt.Size = new System.Drawing.Size(30, 20);
             this.R2ScalingINTtxt.TabIndex = 173;
+            this.R2ScalingINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R1ScalingINTtxt
             // 
@@ -1500,6 +1565,7 @@
             this.R1ScalingINTtxt.ReadOnly = true;
             this.R1ScalingINTtxt.Size = new System.Drawing.Size(30, 20);
             this.R1ScalingINTtxt.TabIndex = 172;
+            this.R1ScalingINTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L3ScalingDEXtxt
             // 
@@ -1508,6 +1574,7 @@
             this.L3ScalingDEXtxt.ReadOnly = true;
             this.L3ScalingDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.L3ScalingDEXtxt.TabIndex = 171;
+            this.L3ScalingDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L2ScalingDEXtxt
             // 
@@ -1516,6 +1583,7 @@
             this.L2ScalingDEXtxt.ReadOnly = true;
             this.L2ScalingDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.L2ScalingDEXtxt.TabIndex = 170;
+            this.L2ScalingDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L1ScalingDEXtxt
             // 
@@ -1524,6 +1592,7 @@
             this.L1ScalingDEXtxt.ReadOnly = true;
             this.L1ScalingDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.L1ScalingDEXtxt.TabIndex = 169;
+            this.L1ScalingDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R3ScalingDEXtxt
             // 
@@ -1532,6 +1601,7 @@
             this.R3ScalingDEXtxt.ReadOnly = true;
             this.R3ScalingDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.R3ScalingDEXtxt.TabIndex = 168;
+            this.R3ScalingDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R2ScalingDEXtxt
             // 
@@ -1540,6 +1610,7 @@
             this.R2ScalingDEXtxt.ReadOnly = true;
             this.R2ScalingDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.R2ScalingDEXtxt.TabIndex = 167;
+            this.R2ScalingDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R1ScalingDEXtxt
             // 
@@ -1548,6 +1619,7 @@
             this.R1ScalingDEXtxt.ReadOnly = true;
             this.R1ScalingDEXtxt.Size = new System.Drawing.Size(30, 20);
             this.R1ScalingDEXtxt.TabIndex = 166;
+            this.R1ScalingDEXtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L3ScalingSTRtxt
             // 
@@ -1556,6 +1628,7 @@
             this.L3ScalingSTRtxt.ReadOnly = true;
             this.L3ScalingSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.L3ScalingSTRtxt.TabIndex = 165;
+            this.L3ScalingSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L2ScalingSTRtxt
             // 
@@ -1564,6 +1637,7 @@
             this.L2ScalingSTRtxt.ReadOnly = true;
             this.L2ScalingSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.L2ScalingSTRtxt.TabIndex = 164;
+            this.L2ScalingSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L1ScalingSTRtxt
             // 
@@ -1572,6 +1646,7 @@
             this.L1ScalingSTRtxt.ReadOnly = true;
             this.L1ScalingSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.L1ScalingSTRtxt.TabIndex = 163;
+            this.L1ScalingSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R3ScalingSTRtxt
             // 
@@ -1580,6 +1655,7 @@
             this.R3ScalingSTRtxt.ReadOnly = true;
             this.R3ScalingSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.R3ScalingSTRtxt.TabIndex = 162;
+            this.R3ScalingSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R2ScalingSTRtxt
             // 
@@ -1588,6 +1664,7 @@
             this.R2ScalingSTRtxt.ReadOnly = true;
             this.R2ScalingSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.R2ScalingSTRtxt.TabIndex = 161;
+            this.R2ScalingSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R1ScalingSTRtxt
             // 
@@ -1596,6 +1673,7 @@
             this.R1ScalingSTRtxt.ReadOnly = true;
             this.R1ScalingSTRtxt.Size = new System.Drawing.Size(30, 20);
             this.R1ScalingSTRtxt.TabIndex = 160;
+            this.R1ScalingSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L3DURtxt
             // 
@@ -1604,6 +1682,7 @@
             this.L3DURtxt.ReadOnly = true;
             this.L3DURtxt.Size = new System.Drawing.Size(30, 20);
             this.L3DURtxt.TabIndex = 201;
+            this.L3DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L2DURtxt
             // 
@@ -1612,6 +1691,7 @@
             this.L2DURtxt.ReadOnly = true;
             this.L2DURtxt.Size = new System.Drawing.Size(30, 20);
             this.L2DURtxt.TabIndex = 200;
+            this.L2DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L1DURtxt
             // 
@@ -1620,6 +1700,7 @@
             this.L1DURtxt.ReadOnly = true;
             this.L1DURtxt.Size = new System.Drawing.Size(30, 20);
             this.L1DURtxt.TabIndex = 199;
+            this.L1DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R3DURtxt
             // 
@@ -1628,6 +1709,7 @@
             this.R3DURtxt.ReadOnly = true;
             this.R3DURtxt.Size = new System.Drawing.Size(30, 20);
             this.R3DURtxt.TabIndex = 198;
+            this.R3DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R2DURtxt
             // 
@@ -1636,6 +1718,7 @@
             this.R2DURtxt.ReadOnly = true;
             this.R2DURtxt.Size = new System.Drawing.Size(30, 20);
             this.R2DURtxt.TabIndex = 197;
+            this.R2DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R1DURtxt
             // 
@@ -1644,6 +1727,7 @@
             this.R1DURtxt.ReadOnly = true;
             this.R1DURtxt.Size = new System.Drawing.Size(30, 20);
             this.R1DURtxt.TabIndex = 196;
+            this.R1DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L3STBtxt
             // 
@@ -1652,6 +1736,7 @@
             this.L3STBtxt.ReadOnly = true;
             this.L3STBtxt.Size = new System.Drawing.Size(30, 20);
             this.L3STBtxt.TabIndex = 195;
+            this.L3STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L2STBtxt
             // 
@@ -1660,6 +1745,7 @@
             this.L2STBtxt.ReadOnly = true;
             this.L2STBtxt.Size = new System.Drawing.Size(30, 20);
             this.L2STBtxt.TabIndex = 194;
+            this.L2STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L1STBtxt
             // 
@@ -1668,6 +1754,7 @@
             this.L1STBtxt.ReadOnly = true;
             this.L1STBtxt.Size = new System.Drawing.Size(30, 20);
             this.L1STBtxt.TabIndex = 193;
+            this.L1STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R3STBtxt
             // 
@@ -1676,6 +1763,7 @@
             this.R3STBtxt.ReadOnly = true;
             this.R3STBtxt.Size = new System.Drawing.Size(30, 20);
             this.R3STBtxt.TabIndex = 192;
+            this.R3STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R2STBtxt
             // 
@@ -1684,6 +1772,7 @@
             this.R2STBtxt.ReadOnly = true;
             this.R2STBtxt.Size = new System.Drawing.Size(30, 20);
             this.R2STBtxt.TabIndex = 191;
+            this.R2STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R1STBtxt
             // 
@@ -1692,6 +1781,7 @@
             this.R1STBtxt.ReadOnly = true;
             this.R1STBtxt.Size = new System.Drawing.Size(30, 20);
             this.R1STBtxt.TabIndex = 190;
+            this.R1STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L3WGTtxt
             // 
@@ -1700,6 +1790,7 @@
             this.L3WGTtxt.ReadOnly = true;
             this.L3WGTtxt.Size = new System.Drawing.Size(30, 20);
             this.L3WGTtxt.TabIndex = 189;
+            this.L3WGTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L2WGTtxt
             // 
@@ -1708,6 +1799,7 @@
             this.L2WGTtxt.ReadOnly = true;
             this.L2WGTtxt.Size = new System.Drawing.Size(30, 20);
             this.L2WGTtxt.TabIndex = 188;
+            this.L2WGTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // L1WGTtxt
             // 
@@ -1716,6 +1808,7 @@
             this.L1WGTtxt.ReadOnly = true;
             this.L1WGTtxt.Size = new System.Drawing.Size(30, 20);
             this.L1WGTtxt.TabIndex = 187;
+            this.L1WGTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R3WGTtxt
             // 
@@ -1724,6 +1817,7 @@
             this.R3WGTtxt.ReadOnly = true;
             this.R3WGTtxt.Size = new System.Drawing.Size(30, 20);
             this.R3WGTtxt.TabIndex = 186;
+            this.R3WGTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R2WGTtxt
             // 
@@ -1732,6 +1826,7 @@
             this.R2WGTtxt.ReadOnly = true;
             this.R2WGTtxt.Size = new System.Drawing.Size(30, 20);
             this.R2WGTtxt.TabIndex = 185;
+            this.R2WGTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // R1WGTtxt
             // 
@@ -1740,6 +1835,7 @@
             this.R1WGTtxt.ReadOnly = true;
             this.R1WGTtxt.Size = new System.Drawing.Size(30, 20);
             this.R1WGTtxt.TabIndex = 184;
+            this.R1WGTtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // STRlbl
             // 
@@ -1893,66 +1989,94 @@
             // 
             // Faithtxt
             // 
-            this.Faithtxt.Location = new System.Drawing.Point(125, 250);
+            this.Faithtxt.Location = new System.Drawing.Point(119, 250);
+            this.Faithtxt.MaxLength = 2;
             this.Faithtxt.Name = "Faithtxt";
-            this.Faithtxt.Size = new System.Drawing.Size(30, 20);
+            this.Faithtxt.ReadOnly = true;
+            this.Faithtxt.Size = new System.Drawing.Size(36, 20);
             this.Faithtxt.TabIndex = 224;
+            this.Faithtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Intelligencetxt
             // 
-            this.Intelligencetxt.Location = new System.Drawing.Point(125, 231);
+            this.Intelligencetxt.Location = new System.Drawing.Point(119, 231);
+            this.Intelligencetxt.MaxLength = 2;
             this.Intelligencetxt.Name = "Intelligencetxt";
-            this.Intelligencetxt.Size = new System.Drawing.Size(30, 20);
+            this.Intelligencetxt.ReadOnly = true;
+            this.Intelligencetxt.Size = new System.Drawing.Size(36, 20);
             this.Intelligencetxt.TabIndex = 223;
+            this.Intelligencetxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Dexteritytxt
             // 
-            this.Dexteritytxt.Location = new System.Drawing.Point(125, 213);
+            this.Dexteritytxt.Location = new System.Drawing.Point(119, 213);
+            this.Dexteritytxt.MaxLength = 2;
             this.Dexteritytxt.Name = "Dexteritytxt";
-            this.Dexteritytxt.Size = new System.Drawing.Size(30, 20);
+            this.Dexteritytxt.ReadOnly = true;
+            this.Dexteritytxt.Size = new System.Drawing.Size(36, 20);
             this.Dexteritytxt.TabIndex = 222;
+            this.Dexteritytxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Strengthtxt
             // 
-            this.Strengthtxt.Location = new System.Drawing.Point(125, 194);
+            this.Strengthtxt.Location = new System.Drawing.Point(119, 194);
+            this.Strengthtxt.MaxLength = 2;
             this.Strengthtxt.Name = "Strengthtxt";
-            this.Strengthtxt.Size = new System.Drawing.Size(30, 20);
+            this.Strengthtxt.ReadOnly = true;
+            this.Strengthtxt.Size = new System.Drawing.Size(36, 20);
             this.Strengthtxt.TabIndex = 221;
+            this.Strengthtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Vitalitytxt
             // 
-            this.Vitalitytxt.Location = new System.Drawing.Point(125, 175);
+            this.Vitalitytxt.Location = new System.Drawing.Point(119, 175);
+            this.Vitalitytxt.MaxLength = 2;
             this.Vitalitytxt.Name = "Vitalitytxt";
-            this.Vitalitytxt.Size = new System.Drawing.Size(30, 20);
+            this.Vitalitytxt.ReadOnly = true;
+            this.Vitalitytxt.Size = new System.Drawing.Size(36, 20);
             this.Vitalitytxt.TabIndex = 220;
+            this.Vitalitytxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Endurancetxt
             // 
-            this.Endurancetxt.Location = new System.Drawing.Point(125, 156);
+            this.Endurancetxt.Location = new System.Drawing.Point(119, 156);
+            this.Endurancetxt.MaxLength = 2;
             this.Endurancetxt.Name = "Endurancetxt";
-            this.Endurancetxt.Size = new System.Drawing.Size(30, 20);
+            this.Endurancetxt.ReadOnly = true;
+            this.Endurancetxt.Size = new System.Drawing.Size(36, 20);
             this.Endurancetxt.TabIndex = 219;
+            this.Endurancetxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Attunementtxt
             // 
-            this.Attunementtxt.Location = new System.Drawing.Point(125, 137);
+            this.Attunementtxt.Location = new System.Drawing.Point(119, 137);
+            this.Attunementtxt.MaxLength = 2;
             this.Attunementtxt.Name = "Attunementtxt";
-            this.Attunementtxt.Size = new System.Drawing.Size(30, 20);
+            this.Attunementtxt.ReadOnly = true;
+            this.Attunementtxt.Size = new System.Drawing.Size(36, 20);
             this.Attunementtxt.TabIndex = 218;
+            this.Attunementtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Vigortxt
             // 
-            this.Vigortxt.Location = new System.Drawing.Point(125, 118);
+            this.Vigortxt.Location = new System.Drawing.Point(119, 118);
+            this.Vigortxt.MaxLength = 2;
             this.Vigortxt.Name = "Vigortxt";
-            this.Vigortxt.Size = new System.Drawing.Size(30, 20);
+            this.Vigortxt.ReadOnly = true;
+            this.Vigortxt.Size = new System.Drawing.Size(36, 20);
             this.Vigortxt.TabIndex = 217;
+            this.Vigortxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Vigortxt.TextChanged += new System.EventHandler(this.Vigortxt_TextChanged);
             // 
             // Lucktxt
             // 
-            this.Lucktxt.Location = new System.Drawing.Point(125, 269);
+            this.Lucktxt.Location = new System.Drawing.Point(119, 269);
+            this.Lucktxt.MaxLength = 2;
             this.Lucktxt.Name = "Lucktxt";
-            this.Lucktxt.Size = new System.Drawing.Size(30, 20);
+            this.Lucktxt.ReadOnly = true;
+            this.Lucktxt.Size = new System.Drawing.Size(36, 20);
             this.Lucktxt.TabIndex = 225;
+            this.Lucktxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // VigorMinusbtn
             // 
@@ -1963,6 +2087,7 @@
             this.VigorMinusbtn.TabIndex = 226;
             this.VigorMinusbtn.Text = "-";
             this.VigorMinusbtn.UseVisualStyleBackColor = true;
+            this.VigorMinusbtn.Click += new System.EventHandler(this.VigorMinusbtn_Click);
             // 
             // VigorPlusbtn
             // 
@@ -1973,6 +2098,7 @@
             this.VigorPlusbtn.TabIndex = 227;
             this.VigorPlusbtn.Text = "+";
             this.VigorPlusbtn.UseVisualStyleBackColor = true;
+            this.VigorPlusbtn.Click += new System.EventHandler(this.VigorPlusbtn_Click);
             // 
             // AttunementPlusbtn
             // 
@@ -1983,6 +2109,7 @@
             this.AttunementPlusbtn.TabIndex = 229;
             this.AttunementPlusbtn.Text = "+";
             this.AttunementPlusbtn.UseVisualStyleBackColor = true;
+            this.AttunementPlusbtn.Click += new System.EventHandler(this.AttunementPlusbtn_Click);
             // 
             // AttunementMinusbtn
             // 
@@ -1993,6 +2120,7 @@
             this.AttunementMinusbtn.TabIndex = 228;
             this.AttunementMinusbtn.Text = "-";
             this.AttunementMinusbtn.UseVisualStyleBackColor = true;
+            this.AttunementMinusbtn.Click += new System.EventHandler(this.AttunementMinusbtn_Click);
             // 
             // VitalityPlusbtn
             // 
@@ -2003,6 +2131,7 @@
             this.VitalityPlusbtn.TabIndex = 233;
             this.VitalityPlusbtn.Text = "+";
             this.VitalityPlusbtn.UseVisualStyleBackColor = true;
+            this.VitalityPlusbtn.Click += new System.EventHandler(this.VitalityPlusbtn_Click);
             // 
             // VitalityMinusbtn
             // 
@@ -2013,6 +2142,7 @@
             this.VitalityMinusbtn.TabIndex = 232;
             this.VitalityMinusbtn.Text = "-";
             this.VitalityMinusbtn.UseVisualStyleBackColor = true;
+            this.VitalityMinusbtn.Click += new System.EventHandler(this.VitalityMinusbtn_Click);
             // 
             // EndurancePlusbtn
             // 
@@ -2023,6 +2153,7 @@
             this.EndurancePlusbtn.TabIndex = 231;
             this.EndurancePlusbtn.Text = "+";
             this.EndurancePlusbtn.UseVisualStyleBackColor = true;
+            this.EndurancePlusbtn.Click += new System.EventHandler(this.EndurancePlusbtn_Click);
             // 
             // EnduranceMinusbtn
             // 
@@ -2033,6 +2164,7 @@
             this.EnduranceMinusbtn.TabIndex = 230;
             this.EnduranceMinusbtn.Text = "-";
             this.EnduranceMinusbtn.UseVisualStyleBackColor = true;
+            this.EnduranceMinusbtn.Click += new System.EventHandler(this.EnduranceMinusbtn_Click);
             // 
             // FaithPlusbtn
             // 
@@ -2043,6 +2175,7 @@
             this.FaithPlusbtn.TabIndex = 241;
             this.FaithPlusbtn.Text = "+";
             this.FaithPlusbtn.UseVisualStyleBackColor = true;
+            this.FaithPlusbtn.Click += new System.EventHandler(this.FaithPlusbtn_Click);
             // 
             // FaithMinusbtn
             // 
@@ -2053,6 +2186,7 @@
             this.FaithMinusbtn.TabIndex = 240;
             this.FaithMinusbtn.Text = "-";
             this.FaithMinusbtn.UseVisualStyleBackColor = true;
+            this.FaithMinusbtn.Click += new System.EventHandler(this.FaithMinusbtn_Click);
             // 
             // IntelligencePlusbtn
             // 
@@ -2063,6 +2197,7 @@
             this.IntelligencePlusbtn.TabIndex = 239;
             this.IntelligencePlusbtn.Text = "+";
             this.IntelligencePlusbtn.UseVisualStyleBackColor = true;
+            this.IntelligencePlusbtn.Click += new System.EventHandler(this.IntelligencePlusbtn_Click);
             // 
             // IntelligenceMinusbtn
             // 
@@ -2073,6 +2208,7 @@
             this.IntelligenceMinusbtn.TabIndex = 238;
             this.IntelligenceMinusbtn.Text = "-";
             this.IntelligenceMinusbtn.UseVisualStyleBackColor = true;
+            this.IntelligenceMinusbtn.Click += new System.EventHandler(this.IntelligenceMinusbtn_Click);
             // 
             // DexterityPlusbtn
             // 
@@ -2083,6 +2219,7 @@
             this.DexterityPlusbtn.TabIndex = 237;
             this.DexterityPlusbtn.Text = "+";
             this.DexterityPlusbtn.UseVisualStyleBackColor = true;
+            this.DexterityPlusbtn.Click += new System.EventHandler(this.DexterityPlusbtn_Click);
             // 
             // DexterityMinusbtn
             // 
@@ -2093,6 +2230,7 @@
             this.DexterityMinusbtn.TabIndex = 236;
             this.DexterityMinusbtn.Text = "-";
             this.DexterityMinusbtn.UseVisualStyleBackColor = true;
+            this.DexterityMinusbtn.Click += new System.EventHandler(this.DexterityMinusbtn_Click);
             // 
             // StrengthPlusbtn
             // 
@@ -2103,6 +2241,7 @@
             this.StrengthPlusbtn.TabIndex = 235;
             this.StrengthPlusbtn.Text = "+";
             this.StrengthPlusbtn.UseVisualStyleBackColor = true;
+            this.StrengthPlusbtn.Click += new System.EventHandler(this.StrengthPlusbtn_Click);
             // 
             // StrengthMinusbtn
             // 
@@ -2113,6 +2252,7 @@
             this.StrengthMinusbtn.TabIndex = 234;
             this.StrengthMinusbtn.Text = "-";
             this.StrengthMinusbtn.UseVisualStyleBackColor = true;
+            this.StrengthMinusbtn.Click += new System.EventHandler(this.StrengthMinusbtn_Click);
             // 
             // LuckPlusbtn
             // 
@@ -2123,6 +2263,7 @@
             this.LuckPlusbtn.TabIndex = 243;
             this.LuckPlusbtn.Text = "+";
             this.LuckPlusbtn.UseVisualStyleBackColor = true;
+            this.LuckPlusbtn.Click += new System.EventHandler(this.LuckPlusbtn_Click);
             // 
             // LuckMinusbtn
             // 
@@ -2133,6 +2274,7 @@
             this.LuckMinusbtn.TabIndex = 242;
             this.LuckMinusbtn.Text = "-";
             this.LuckMinusbtn.UseVisualStyleBackColor = true;
+            this.LuckMinusbtn.Click += new System.EventHandler(this.LuckMinusbtn_Click);
             // 
             // Calculator
             // 
@@ -2255,7 +2397,7 @@
             this.Controls.Add(this.RWeapon1lbl2);
             this.Controls.Add(this.Darktxt);
             this.Controls.Add(this.Darklbl);
-            this.Controls.Add(this.Lighntingtxt);
+            this.Controls.Add(this.Lightningtxt);
             this.Controls.Add(this.Lightninglbl);
             this.Controls.Add(this.Firetxt);
             this.Controls.Add(this.Firelbl);
@@ -2321,11 +2463,11 @@
             this.Controls.Add(this.R1lbl);
             this.Controls.Add(this.R1cmb);
             this.Controls.Add(this.Weaponslbl);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PercentELtxt);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ELUsedtxt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.EquipLoadtxt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Staminatxt);
             this.Controls.Add(this.Staminalbl);
@@ -2375,11 +2517,11 @@
         private System.Windows.Forms.Label FPlbl;
         private System.Windows.Forms.TextBox Staminatxt;
         private System.Windows.Forms.Label Staminalbl;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PercentELtxt;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox ELUsedtxt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox EquipLoadtxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label Weaponslbl;
         private System.Windows.Forms.ComboBox R1cmb;
@@ -2447,7 +2589,7 @@
         private System.Windows.Forms.Label Defenselbl;
         private System.Windows.Forms.TextBox Darktxt;
         private System.Windows.Forms.Label Darklbl;
-        private System.Windows.Forms.TextBox Lighntingtxt;
+        private System.Windows.Forms.TextBox Lightningtxt;
         private System.Windows.Forms.Label Lightninglbl;
         private System.Windows.Forms.TextBox L3RequiredSTRtxt;
         private System.Windows.Forms.Label LWeapon3lbl2;

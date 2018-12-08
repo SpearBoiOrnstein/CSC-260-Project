@@ -8,9 +8,10 @@ namespace DarkSoulsIIICalculator
 {
     class Head : Armour
     {
-        public Head(string name, int physical, int strike, int slash, int thrust, int magic, int fire, int lightning, int dark)
+        public Head(string name, double WGT, double physical, double strike, double slash, double thrust, double magic, double fire, double lightning, double dark)
         {
             this.name = name;
+            this.WGT = WGT;
             this.physical = physical;
             this.strike = strike;
             this.slash = slash;

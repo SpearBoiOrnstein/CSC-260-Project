@@ -9,23 +9,25 @@ namespace DarkSoulsIIICalculator
     abstract class Armour
     {
         private string _name;
-        private int _physical;
-        private int _strike;
-        private int _slash;
-        private int _thrust;
-        private int _magic;
-        private int _fire;
-        private int _lightning;
-        private int _dark;
+        private double _WGT;
+        private double _physical;
+        private double _strike;
+        private double _slash;
+        private double _thrust;
+        private double _magic;
+        private double _fire;
+        private double _lightning;
+        private double _dark;
 
         public string name { get; protected set; }
-        public int physical { get; protected set; }
-        public int strike { get; protected set; }
-        public int slash { get; protected set; }
-        public int thrust { get; protected set; }
-        public int magic { get; protected set; }
-        public int fire { get; protected set; }
-        public int lightning { get; protected set; }
-        public int dark { get; protected set; }
+        public double WGT { get; protected set; }
+        public double physical { get; protected set; }
+        public double strike { get; protected set; }
+        public double slash { get; protected set; }
+        public double thrust { get; protected set; }
+        public double magic { get; protected set; }
+        public double fire { get; protected set; }
+        public double lightning { get; protected set; }
+        public double dark { get; protected set; }
     }
 }

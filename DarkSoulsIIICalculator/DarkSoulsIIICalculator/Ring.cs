@@ -30,7 +30,7 @@ namespace DarkSoulsIIICalculator
         private int _darkBonus;
 
         public string name { get; private set; }
-        public int WGT { get; private set; }
+        public double WGT { get; private set; }
 
         public int vigorBonus { get; private set; }
         public int attunementBonus { get; private set; }
@@ -50,7 +50,7 @@ namespace DarkSoulsIIICalculator
         public int lightningBonus { get; private set; }
         public int darkBonus{ get; private set; }
 
-        public Ring( string name, int WGT, int vigorBonus = 0, int attunementBonus = 0, int vitalityBonus = 0, int enduranceBonus = 0, int strengthBonus = 0, int dexterityBonus = 0, int intelligenceBonus = 0, int faithBonus = 0, int luckBonus = 0,
+        public Ring( string name, double WGT, int vigorBonus = 0, int attunementBonus = 0, int vitalityBonus = 0, int enduranceBonus = 0, int strengthBonus = 0, int dexterityBonus = 0, int intelligenceBonus = 0, int faithBonus = 0, int luckBonus = 0,
            int physicalBonus = 0, int strikeBonus = 0, int slashBonus = 0, int thrustBonus = 0, int magicBonus = 0, int fireBonus = 0, int lightningBonus = 0, int darkBonus = 0 )
         {
             this.name = name;
