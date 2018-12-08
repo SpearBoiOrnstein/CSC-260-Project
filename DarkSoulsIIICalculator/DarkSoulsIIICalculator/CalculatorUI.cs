@@ -16,6 +16,13 @@ namespace DarkSoulsIIICalculator
 
         int attuneSlots;
 
+        //double[][] curveIndex = new double[][]
+  // {
+    //new double[] {0, 0, 0.8344518907, 1.917067028, 3.118507614, 4.404263484, 5.756590123, 7.164449132, 8.620231934, 10.11834044, 11.65446426, 13.22517121, 14.8276568, 16.45958186, 18.11896248, 19.80409249, 21.51348727, 23.24584203, 25, 27.71472262, 30.40370474, 33.06592105, 35.70024948, 38.30545618, 40.88017724, 43.42289595, 45.93191442, 48.40531749, 50.84092608, 53.23623592, 55.58833502, 57.89379002, 60.14848454, 62.34738086, 64.4841523, 66.55058206, 68.53550242, 70.42271143, 72.186164, 73.77520674, 75, 75.5, 76, 76.5, 77, 77.5, 78, 78.5, 79, 79.5, 80, 80.5, 81, 81.5, 82, 82.5, 83, 83.5, 84, 84.5, 85, 85.06158775, 85.17419647, 85.32001934, 85.49270201, 85.68857199, 85.90515139, 86.14062112, 86.39357173, 86.66286929, 86.94757571, 87.2468981, 87.56015475, 87.88675135, 88.22616371, 88.57792504, 88.94161609, 89.31685768, 89.7033046, 90.10064091, 90.50857595, 90.92684119, 91.35518752, 91.79338304, 92.24121114, 92.69846893, 93.16496581, 93.64052229, 94.12496895, 94.61814556, 95.11990022, 95.63008872, 96.14857387, 96.67522499, 97.20991735, 97.7525318, 98.30295432, 98.86107568, 99.42679111, 100}
+   //};
+
+
+
         StartingClass[] startingClasses = {
             new StartingClass("Knight", 9, 12, 10, 11, 15, 13, 12, 9, 9, 7),
             new StartingClass("Mercenary", 8, 11, 12, 11, 10, 10, 16, 10, 8, 9),
@@ -387,10 +394,13 @@ namespace DarkSoulsIIICalculator
 
             UnusedSlotstxt.Text = attuneSlots.ToString();
 
+            //Attack stats
+            RWeapon1txt.Text = weapons[R1cmb.SelectedIndex].weaponAR(strength,dexterity,intelligence,faith).ToString();
+
             //refresh weapon table
 
-                   // min str
-                    R1RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R1cmb.SelectedIndex].minSTR);
+            // min str
+            R1RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R1cmb.SelectedIndex].minSTR);
                     R2RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R2cmb.SelectedIndex].minSTR);
                     R3RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R3cmb.SelectedIndex].minSTR);
                     L1RequiredSTRtxt.Text = String.Format("{0:0}", weapons[L1cmb.SelectedIndex].minSTR);
