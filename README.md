@@ -16,6 +16,9 @@ https://docs.google.com/spreadsheets/d/1-sm_mSATMS0XFBG-dH3HhQcfM3dxh6hbLNR8Qe_1
 and this is the two weapon spreadsheets edited by me so that they would create my objects (too bad I didn't get to use them all):
 https://docs.google.com/spreadsheets/d/1xpJ-6f-5SIif3HYiCMNBj-TVFhGri-NHjQcyqBT65N8/edit?usp=sharing
 
+This is a post describing how armour works in Dark Souls III (note that although I call it defense in the calculator it is actually called absorbtion, I just felt as though defense made more sense for this project):
+https://www.reddit.com/r/darksouls3/comments/4f8yy8/how_defense_and_absorption_really_work/
+
 This is where I got all of the armour data (again not all of it is correct):
 https://docs.google.com/spreadsheets/d/1fJlQHuubCGK9B4H1d80FEFPCfbVcFm4e_InsB_M9uHI/edit?pref=2&pli=1#gid=784590881
 
