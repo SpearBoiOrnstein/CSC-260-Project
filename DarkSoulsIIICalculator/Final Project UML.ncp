@@ -1,0 +1,812 @@
+<Project>
+  <Name>Final Project</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>DarkSoulsIIICalculator.exe</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Armour</Name>
+        <Access>Internal</Access>
+        <Location left="426" top="1858" />
+        <Size width="162" height="434" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String _name</Member>
+        <Member type="Field">private Double _WGT</Member>
+        <Member type="Field">private Double _physical</Member>
+        <Member type="Field">private Double _strike</Member>
+        <Member type="Field">private Double _slash</Member>
+        <Member type="Field">private Double _thrust</Member>
+        <Member type="Field">private Double _magic</Member>
+        <Member type="Field">private Double _fire</Member>
+        <Member type="Field">private Double _lightning</Member>
+        <Member type="Field">private Double _dark</Member>
+        <Member type="Property">public String name { get; protected set; }</Member>
+        <Member type="Property">public Double WGT { get; protected set; }</Member>
+        <Member type="Property">public Double physical { get; protected set; }</Member>
+        <Member type="Property">public Double strike { get; protected set; }</Member>
+        <Member type="Property">public Double slash { get; protected set; }</Member>
+        <Member type="Property">public Double thrust { get; protected set; }</Member>
+        <Member type="Property">public Double magic { get; protected set; }</Member>
+        <Member type="Property">public Double fire { get; protected set; }</Member>
+        <Member type="Property">public Double lightning { get; protected set; }</Member>
+        <Member type="Property">public Double dark { get; protected set; }</Member>
+        <Member type="Constructor">protected Armour()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Arms</Name>
+        <Access>Internal</Access>
+        <Location left="129" top="1491" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public Arms(String name, Double WGT, Double physical, Double strike, Double slash, Double thrust, Double magic, Double fire, Double lightning, Double dark)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Character</Name>
+        <Access>Internal</Access>
+        <Location left="17" top="857" />
+        <Size width="162" height="468" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 _soulLevelModifier</Member>
+        <Member type="Field">private Int32 _vigorModifier</Member>
+        <Member type="Field">private Int32 _attunementModifier</Member>
+        <Member type="Field">private Int32 _attuneSlotModifier</Member>
+        <Member type="Field">private Int32 _enduranceModifier</Member>
+        <Member type="Field">private Int32 _vitalityModifier</Member>
+        <Member type="Field">private Int32 _strengthModifier</Member>
+        <Member type="Field">private Int32 _dexterityModifier</Member>
+        <Member type="Field">private Int32 _intelligenceModifier</Member>
+        <Member type="Field">private Int32 _faithModifier</Member>
+        <Member type="Field">private Int32 _luckModifier</Member>
+        <Member type="Property">public Int32 soulLevelModifier { get; set; }</Member>
+        <Member type="Property">public Int32 vigorModifier { get; set; }</Member>
+        <Member type="Property">public Int32 attunementModifier { get; set; }</Member>
+        <Member type="Property">public Int32 attuneSlotModifier { get; set; }</Member>
+        <Member type="Property">public Int32 vitalityModifier { get; set; }</Member>
+        <Member type="Property">public Int32 enduranceModifier { get; set; }</Member>
+        <Member type="Property">public Int32 strengthModifier { get; set; }</Member>
+        <Member type="Property">public Int32 dexterityModifier { get; set; }</Member>
+        <Member type="Property">public Int32 intelligenceModifier { get; set; }</Member>
+        <Member type="Property">public Int32 faithModifier { get; set; }</Member>
+        <Member type="Property">public Int32 luckModifier { get; set; }</Member>
+        <Member type="Constructor">public Character()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Chest</Name>
+        <Access>Internal</Access>
+        <Location left="695" top="1491" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public Chest(String name, Double WGT, Double physical, Double strike, Double slash, Double thrust, Double magic, Double fire, Double lightning, Double dark)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Head</Name>
+        <Access>Internal</Access>
+        <Location left="511" top="1491" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public Head(String name, Double WGT, Double physical, Double strike, Double slash, Double thrust, Double magic, Double fire, Double lightning, Double dark)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Leggings</Name>
+        <Access>Internal</Access>
+        <Location left="318" top="1491" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public Leggings(String name, Double WGT, Double physical, Double strike, Double slash, Double thrust, Double magic, Double fire, Double lightning, Double dark)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Ring</Name>
+        <Access>Internal</Access>
+        <Location left="718" top="23" />
+        <Size width="162" height="1301" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String _name</Member>
+        <Member type="Field">private Double _WGT</Member>
+        <Member type="Field">private Int32 _vigorMod</Member>
+        <Member type="Field">private Int32 _attunementMod</Member>
+        <Member type="Field">private Int32 _enduranceMod</Member>
+        <Member type="Field">private Int32 _vitalityMod</Member>
+        <Member type="Field">private Int32 _strengthMod</Member>
+        <Member type="Field">private Int32 _dexterityMod</Member>
+        <Member type="Field">private Int32 _intelligenceMod</Member>
+        <Member type="Field">private Int32 _faithMod</Member>
+        <Member type="Field">private Int32 _luckMod</Member>
+        <Member type="Field">private Int32 _physicalMod</Member>
+        <Member type="Field">private Int32 _strikeMod</Member>
+        <Member type="Field">private Int32 _slashMod</Member>
+        <Member type="Field">private Int32 _thrustMod</Member>
+        <Member type="Field">private Int32 _magicMod</Member>
+        <Member type="Field">private Int32 _fireMod</Member>
+        <Member type="Field">private Int32 _lightningMod</Member>
+        <Member type="Field">private Int32 _darkMod</Member>
+        <Member type="Field">private Int32 _hpMod</Member>
+        <Member type="Field">private Int32 _fpMod</Member>
+        <Member type="Field">private Int32 _staminaMod</Member>
+        <Member type="Field">private Int32 _equiploadMod</Member>
+        <Member type="Property">public String name { get; protected set; }</Member>
+        <Member type="Property">public Double WGT { get; protected set; }</Member>
+        <Member type="Property">public Int32 vigorMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 attunementMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 vitalityMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 enduranceMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 strengthMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 dexterityMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 intelligenceMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 faithMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 luckMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 physicalMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 strikeMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 slashMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 thrustMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 magicMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 fireMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 lightningMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 darkMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 hpMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 fpMod { get; protected set; }</Member>
+        <Member type="Property">public Int32 staminaMod { get; protected set; }</Member>
+        <Member type="Property">public Double equiploadMod { get; protected set; }</Member>
+        <Member type="Constructor">protected Ring()</Member>
+        <Member type="Method">public virtual Int32 vigorBonus()</Member>
+        <Member type="Method">public virtual Int32 attunementBonus()</Member>
+        <Member type="Method">public virtual Int32 enduranceBonus()</Member>
+        <Member type="Method">public virtual Int32 vitalityBonus()</Member>
+        <Member type="Method">public virtual Int32 strengthBonus()</Member>
+        <Member type="Method">public virtual Int32 dexterityBonus()</Member>
+        <Member type="Method">public virtual Int32 intelligenceBonus()</Member>
+        <Member type="Method">public virtual Int32 faithBonus()</Member>
+        <Member type="Method">public virtual Int32 luckBonus()</Member>
+        <Member type="Method">public virtual Int32 physicalBonus()</Member>
+        <Member type="Method">public virtual Int32 strikeBonus()</Member>
+        <Member type="Method">public virtual Int32 slashBonus()</Member>
+        <Member type="Method">public virtual Int32 thrustBonus()</Member>
+        <Member type="Method">public virtual Int32 magicBonus()</Member>
+        <Member type="Method">public virtual Int32 fireBonus()</Member>
+        <Member type="Method">public virtual Int32 lightningBonus()</Member>
+        <Member type="Method">public virtual Int32 darkBonus()</Member>
+        <Member type="Method">public virtual Int32 hpBonus()</Member>
+        <Member type="Method">public virtual Int32 hpBonus(Int32 hp)</Member>
+        <Member type="Method">public virtual Int32 fpBonus()</Member>
+        <Member type="Method">public virtual Int32 fpBonus(Int32 fp)</Member>
+        <Member type="Method">public virtual Int32 staminaBonus()</Member>
+        <Member type="Method">public virtual Int32 staminaBonus(Int32 st)</Member>
+        <Member type="Method">public virtual Double equiploadBonus()</Member>
+        <Member type="Method">public virtual Double equiploadBonus(Double eq)</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RingBaseStats</Name>
+        <Access>Internal</Access>
+        <Location left="943" top="512" />
+        <Size width="162" height="519" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public RingBaseStats(String name, Double WGT, Int32 vigorMod = 0, Int32 attunementMod = 0, Int32 vitalityMod = 0, Int32 enduranceMod = 0, Int32 strengthMod = 0, Int32 dexterityMod = 0, Int32 intelligenceMod = 0, Int32 faithMod = 0, Int32 luckMod = 0, Int32 physicalMod = 0, Int32 strikeMod = 0, Int32 slashMod = 0, Int32 thrustMod = 0, Int32 magicMod = 0, Int32 fireMod = 0, Int32 lightningMod = 0, Int32 darkMod = 0, Int32 hpMod = 0, Int32 fpMod = 0, Int32 staminaMod = 0, Double equiploadMod = 0)</Member>
+        <Member type="Method">public override Int32 vigorBonus()</Member>
+        <Member type="Method">public override Int32 attunementBonus()</Member>
+        <Member type="Method">public override Int32 enduranceBonus()</Member>
+        <Member type="Method">public override Int32 vitalityBonus()</Member>
+        <Member type="Method">public override Int32 strengthBonus()</Member>
+        <Member type="Method">public override Int32 dexterityBonus()</Member>
+        <Member type="Method">public override Int32 intelligenceBonus()</Member>
+        <Member type="Method">public override Int32 faithBonus()</Member>
+        <Member type="Method">public override Int32 luckBonus()</Member>
+        <Member type="Method">public override Int32 physicalBonus()</Member>
+        <Member type="Method">public override Int32 strikeBonus()</Member>
+        <Member type="Method">public override Int32 slashBonus()</Member>
+        <Member type="Method">public override Int32 thrustBonus()</Member>
+        <Member type="Method">public override Int32 magicBonus()</Member>
+        <Member type="Method">public override Int32 fireBonus()</Member>
+        <Member type="Method">public override Int32 lightningBonus()</Member>
+        <Member type="Method">public override Int32 darkBonus()</Member>
+        <Member type="Method">public override Int32 hpBonus()</Member>
+        <Member type="Method">public override Int32 hpBonus(Int32 hp)</Member>
+        <Member type="Method">public override Int32 fpBonus()</Member>
+        <Member type="Method">public override Int32 fpBonus(Int32 fp)</Member>
+        <Member type="Method">public override Int32 staminaBonus()</Member>
+        <Member type="Method">public override Int32 staminaBonus(Int32 st)</Member>
+        <Member type="Method">public override Double equiploadBonus()</Member>
+        <Member type="Method">public override Double equiploadBonus(Double eq)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RingByPercentage</Name>
+        <Access>Internal</Access>
+        <Location left="943" top="23" />
+        <Size width="162" height="451" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public RingByPercentage(String name, Double WGT, Int32 vigorMod = 0, Int32 attunementMod = 0, Int32 vitalityMod = 0, Int32 enduranceMod = 0, Int32 strengthMod = 0, Int32 dexterityMod = 0, Int32 intelligenceMod = 0, Int32 faithMod = 0, Int32 luckMod = 0, Int32 physicalMod = 0, Int32 strikeMod = 0, Int32 slashMod = 0, Int32 thrustMod = 0, Int32 magicMod = 0, Int32 fireMod = 0, Int32 lightningMod = 0, Int32 darkMod = 0, Int32 hpMod = 0, Int32 fpMod = 0, Int32 staminaMod = 0, Double equiploadMod = 0)</Member>
+        <Member type="Method">public override Int32 vigorBonus()</Member>
+        <Member type="Method">public override Int32 attunementBonus()</Member>
+        <Member type="Method">public override Int32 enduranceBonus()</Member>
+        <Member type="Method">public override Int32 vitalityBonus()</Member>
+        <Member type="Method">public override Int32 strengthBonus()</Member>
+        <Member type="Method">public override Int32 dexterityBonus()</Member>
+        <Member type="Method">public override Int32 intelligenceBonus()</Member>
+        <Member type="Method">public override Int32 faithBonus()</Member>
+        <Member type="Method">public override Int32 luckBonus()</Member>
+        <Member type="Method">public override Int32 physicalBonus()</Member>
+        <Member type="Method">public override Int32 strikeBonus()</Member>
+        <Member type="Method">public override Int32 slashBonus()</Member>
+        <Member type="Method">public override Int32 thrustBonus()</Member>
+        <Member type="Method">public override Int32 magicBonus()</Member>
+        <Member type="Method">public override Int32 fireBonus()</Member>
+        <Member type="Method">public override Int32 lightningBonus()</Member>
+        <Member type="Method">public override Int32 darkBonus()</Member>
+        <Member type="Method">public override Int32 hpBonus(Int32 hp)</Member>
+        <Member type="Method">public override Int32 fpBonus(Int32 fp)</Member>
+        <Member type="Method">public override Int32 staminaBonus(Int32 st)</Member>
+        <Member type="Method">public override Double equiploadBonus(Double eq)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Spell</Name>
+        <Access>Internal</Access>
+        <Location left="215" top="12" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String _name</Member>
+        <Member type="Field">private Int32 _attunement</Member>
+        <Member type="Field">private Int32 _minINT</Member>
+        <Member type="Field">private Int32 _minFTH</Member>
+        <Member type="Property">public String name { get; private set; }</Member>
+        <Member type="Property">public Int32 attunement { get; private set; }</Member>
+        <Member type="Property">public Int32 minINT { get; private set; }</Member>
+        <Member type="Property">public Int32 minFTH { get; private set; }</Member>
+        <Member type="Constructor">public Spell(String name, Int32 attunement, Int32 minINT, Int32 minFTH)</Member>
+        <Member type="Method">public String getSpellString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StartingClass</Name>
+        <Access>Internal</Access>
+        <Location left="443" top="23" />
+        <Size width="162" height="485" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String _name</Member>
+        <Member type="Field">private Int32 _soulLevelBase</Member>
+        <Member type="Field">private Int32 _vigorBase</Member>
+        <Member type="Field">private Int32 _attunementBase</Member>
+        <Member type="Field">private Int32 _enduranceBase</Member>
+        <Member type="Field">private Int32 _vitalityBase</Member>
+        <Member type="Field">private Int32 _strengthBase</Member>
+        <Member type="Field">private Int32 _dexterityBase</Member>
+        <Member type="Field">private Int32 _intelligenceBase</Member>
+        <Member type="Field">private Int32 _faithBase</Member>
+        <Member type="Field">private Int32 _luckBase</Member>
+        <Member type="Property">public String name { get; private set; }</Member>
+        <Member type="Property">public Int32 soulLevelBase { get; private set; }</Member>
+        <Member type="Property">public Int32 vigorBase { get; private set; }</Member>
+        <Member type="Property">public Int32 attunementBase { get; private set; }</Member>
+        <Member type="Property">public Int32 vitalityBase { get; private set; }</Member>
+        <Member type="Property">public Int32 enduranceBase { get; private set; }</Member>
+        <Member type="Property">public Int32 strengthBase { get; private set; }</Member>
+        <Member type="Property">public Int32 dexterityBase { get; private set; }</Member>
+        <Member type="Property">public Int32 intelligenceBase { get; private set; }</Member>
+        <Member type="Property">public Int32 faithBase { get; private set; }</Member>
+        <Member type="Property">public Int32 luckBase { get; private set; }</Member>
+        <Member type="Constructor">public StartingClass(String name, Int32 soulLevelBase, Int32 vigorBase, Int32 attunementBase, Int32 enduranceBase, Int32 vitalityBase, Int32 strengthBase, Int32 dexterityBase, Int32 intelligenceBase, Int32 faithBase, Int32 luckBase)</Member>
+        <Member type="Constructor">public StartingClass()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Calculator</Name>
+        <Access>Public</Access>
+        <Location left="443" top="601" />
+        <Size width="162" height="4752" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private Character character</Member>
+        <Member type="Field">private Int32 attuneSlots</Member>
+        <Member type="Field">private StartingClass[] startingClasses</Member>
+        <Member type="Field">private Weapon[] weapons</Member>
+        <Member type="Field">private Head[] heads</Member>
+        <Member type="Field">private Chest[] chests</Member>
+        <Member type="Field">private Arms[] arms</Member>
+        <Member type="Field">private Leggings[] leggings</Member>
+        <Member type="Field">private Ring[] rings</Member>
+        <Member type="Field">private Spell[] spells</Member>
+        <Member type="Field">private IContainer components</Member>
+        <Member type="Field">private Label SoulLevellbl</Member>
+        <Member type="Field">private TextBox SoulLeveltxt</Member>
+        <Member type="Field">private Label Attributeslbl</Member>
+        <Member type="Field">private Label Vigorlbl</Member>
+        <Member type="Field">private Label Attunementlbl</Member>
+        <Member type="Field">private Label Vitalitylbl</Member>
+        <Member type="Field">private Label Endurancelbl</Member>
+        <Member type="Field">private Label Dexteritylbl</Member>
+        <Member type="Field">private Label Strengthlbl</Member>
+        <Member type="Field">private Label Faithlbl</Member>
+        <Member type="Field">private Label Intelligencelbl</Member>
+        <Member type="Field">private Label Lucklbl</Member>
+        <Member type="Field">private Label Statslbl</Member>
+        <Member type="Field">private TextBox HPtxt</Member>
+        <Member type="Field">private Label HPlbl</Member>
+        <Member type="Field">private TextBox FPtxt</Member>
+        <Member type="Field">private Label FPlbl</Member>
+        <Member type="Field">private TextBox Staminatxt</Member>
+        <Member type="Field">private Label Staminalbl</Member>
+        <Member type="Field">private TextBox PercentELtxt</Member>
+        <Member type="Field">private Label label1</Member>
+        <Member type="Field">private TextBox ELUsedtxt</Member>
+        <Member type="Field">private Label label2</Member>
+        <Member type="Field">private TextBox EquipLoadtxt</Member>
+        <Member type="Field">private Label label3</Member>
+        <Member type="Field">private Label Weaponslbl</Member>
+        <Member type="Field">private ComboBox R1cmb</Member>
+        <Member type="Field">private Label R1lbl</Member>
+        <Member type="Field">private Label L1lbl</Member>
+        <Member type="Field">private ComboBox L1cmb</Member>
+        <Member type="Field">private Label L2lbl</Member>
+        <Member type="Field">private ComboBox L2cmb</Member>
+        <Member type="Field">private Label R2lbl</Member>
+        <Member type="Field">private ComboBox R2cmb</Member>
+        <Member type="Field">private Label L3lbl</Member>
+        <Member type="Field">private ComboBox L3cmb</Member>
+        <Member type="Field">private Label R3lbl</Member>
+        <Member type="Field">private ComboBox R3cmb</Member>
+        <Member type="Field">private Label StartingClasslbl</Member>
+        <Member type="Field">private Label Leggingslbl</Member>
+        <Member type="Field">private ComboBox Leggingscmb</Member>
+        <Member type="Field">private Label Chestlbl</Member>
+        <Member type="Field">private ComboBox Chestcmb</Member>
+        <Member type="Field">private Label Armslbl</Member>
+        <Member type="Field">private ComboBox Armscmb</Member>
+        <Member type="Field">private Label Headlbl</Member>
+        <Member type="Field">private ComboBox Headcmb</Member>
+        <Member type="Field">private Label Armourlbl</Member>
+        <Member type="Field">private Label Ring4lbl</Member>
+        <Member type="Field">private ComboBox Ring4cmb</Member>
+        <Member type="Field">private Label Ring2lbl</Member>
+        <Member type="Field">private ComboBox Ring2cmb</Member>
+        <Member type="Field">private Label Ring3lbl</Member>
+        <Member type="Field">private ComboBox Ring3cmb</Member>
+        <Member type="Field">private Label Ring1lbl</Member>
+        <Member type="Field">private ComboBox Ring1cmb</Member>
+        <Member type="Field">private Label Ringslbl</Member>
+        <Member type="Field">private ListBox Spellslb</Member>
+        <Member type="Field">private Label Spellslbl</Member>
+        <Member type="Field">private ComboBox AddSpellcmb</Member>
+        <Member type="Field">private Button AddSpellbtn</Member>
+        <Member type="Field">private Label UnusedSlotslbl</Member>
+        <Member type="Field">private TextBox UnusedSlotstxt</Member>
+        <Member type="Field">private TextBox RWeapon3txt</Member>
+        <Member type="Field">private Label RWeapon3lbl</Member>
+        <Member type="Field">private TextBox RWeapon2txt</Member>
+        <Member type="Field">private Label RWeapon2lbl</Member>
+        <Member type="Field">private TextBox RWeapon1txt</Member>
+        <Member type="Field">private Label RWeapon1lbl</Member>
+        <Member type="Field">private Label AttackPowerlbl</Member>
+        <Member type="Field">private TextBox LWeapon3txt</Member>
+        <Member type="Field">private Label LWeapon3lbl</Member>
+        <Member type="Field">private TextBox LWeapon2txt</Member>
+        <Member type="Field">private Label LWeapon2lbl</Member>
+        <Member type="Field">private TextBox LWeapon1txt</Member>
+        <Member type="Field">private Label LWeapon1lbl</Member>
+        <Member type="Field">private TextBox Firetxt</Member>
+        <Member type="Field">private Label Firelbl</Member>
+        <Member type="Field">private TextBox Magictxt</Member>
+        <Member type="Field">private Label Magiclbl</Member>
+        <Member type="Field">private TextBox VSthrusttxt</Member>
+        <Member type="Field">private Label VSthrustlbl</Member>
+        <Member type="Field">private TextBox VSslashtxt</Member>
+        <Member type="Field">private Label VSslashlbl</Member>
+        <Member type="Field">private TextBox VSstriketxt</Member>
+        <Member type="Field">private Label VSstrikelbl</Member>
+        <Member type="Field">private TextBox Physicaltxt</Member>
+        <Member type="Field">private Label Physicallbl</Member>
+        <Member type="Field">private Label Defenselbl</Member>
+        <Member type="Field">private TextBox Darktxt</Member>
+        <Member type="Field">private Label Darklbl</Member>
+        <Member type="Field">private TextBox Lightningtxt</Member>
+        <Member type="Field">private Label Lightninglbl</Member>
+        <Member type="Field">private TextBox L3RequiredSTRtxt</Member>
+        <Member type="Field">private Label LWeapon3lbl2</Member>
+        <Member type="Field">private TextBox L2RequiredSTRtxt</Member>
+        <Member type="Field">private Label LWeapon2lbl2</Member>
+        <Member type="Field">private TextBox L1RequiredSTRtxt</Member>
+        <Member type="Field">private Label LWeapon1lbl2</Member>
+        <Member type="Field">private TextBox R3RequiredSTRtxt</Member>
+        <Member type="Field">private Label RWeapon3lbl2</Member>
+        <Member type="Field">private TextBox R2RequiredSTRtxt</Member>
+        <Member type="Field">private Label RWeapon2lbl2</Member>
+        <Member type="Field">private TextBox R1RequiredSTRtxt</Member>
+        <Member type="Field">private Label RWeapon1lbl2</Member>
+        <Member type="Field">private TextBox L3RequiredDEXtxt</Member>
+        <Member type="Field">private TextBox L2RequiredDEXtxt</Member>
+        <Member type="Field">private TextBox L1RequiredDEXtxt</Member>
+        <Member type="Field">private TextBox R3RequiredDEXtxt</Member>
+        <Member type="Field">private TextBox R2RequiredDEXtxt</Member>
+        <Member type="Field">private TextBox R1RequiredDEXtxt</Member>
+        <Member type="Field">private TextBox L3RequiredFTHtxt</Member>
+        <Member type="Field">private TextBox L2RequiredFTHtxt</Member>
+        <Member type="Field">private TextBox L1RequiredFTHtxt</Member>
+        <Member type="Field">private TextBox R3RequiredFTHtxt</Member>
+        <Member type="Field">private TextBox R2RequiredFTHtxt</Member>
+        <Member type="Field">private TextBox R1RequiredFTHtxt</Member>
+        <Member type="Field">private TextBox L3RequiredINTtxt</Member>
+        <Member type="Field">private TextBox L2RequiredINTtxt</Member>
+        <Member type="Field">private TextBox L1RequiredINTtxt</Member>
+        <Member type="Field">private TextBox R3RequiredINTtxt</Member>
+        <Member type="Field">private TextBox R2RequiredINTtxt</Member>
+        <Member type="Field">private TextBox R1RequiredINTtxt</Member>
+        <Member type="Field">private TextBox L3ScalingFTHtxt</Member>
+        <Member type="Field">private TextBox L2ScalingFTHtxt</Member>
+        <Member type="Field">private TextBox L1ScalingFTHtxt</Member>
+        <Member type="Field">private TextBox R3ScalingFTHtxt</Member>
+        <Member type="Field">private TextBox R2ScalingFTHtxt</Member>
+        <Member type="Field">private TextBox R1ScalingFTHtxt</Member>
+        <Member type="Field">private TextBox L3ScalingINTtxt</Member>
+        <Member type="Field">private TextBox L2ScalingINTtxt</Member>
+        <Member type="Field">private TextBox L1ScalingINTtxt</Member>
+        <Member type="Field">private TextBox R3ScalingINTtxt</Member>
+        <Member type="Field">private TextBox R2ScalingINTtxt</Member>
+        <Member type="Field">private TextBox R1ScalingINTtxt</Member>
+        <Member type="Field">private TextBox L3ScalingDEXtxt</Member>
+        <Member type="Field">private TextBox L2ScalingDEXtxt</Member>
+        <Member type="Field">private TextBox L1ScalingDEXtxt</Member>
+        <Member type="Field">private TextBox R3ScalingDEXtxt</Member>
+        <Member type="Field">private TextBox R2ScalingDEXtxt</Member>
+        <Member type="Field">private TextBox R1ScalingDEXtxt</Member>
+        <Member type="Field">private TextBox L3ScalingSTRtxt</Member>
+        <Member type="Field">private TextBox L2ScalingSTRtxt</Member>
+        <Member type="Field">private TextBox L1ScalingSTRtxt</Member>
+        <Member type="Field">private TextBox R3ScalingSTRtxt</Member>
+        <Member type="Field">private TextBox R2ScalingSTRtxt</Member>
+        <Member type="Field">private TextBox R1ScalingSTRtxt</Member>
+        <Member type="Field">private TextBox L3DURtxt</Member>
+        <Member type="Field">private TextBox L2DURtxt</Member>
+        <Member type="Field">private TextBox L1DURtxt</Member>
+        <Member type="Field">private TextBox R3DURtxt</Member>
+        <Member type="Field">private TextBox R2DURtxt</Member>
+        <Member type="Field">private TextBox R1DURtxt</Member>
+        <Member type="Field">private TextBox L3STBtxt</Member>
+        <Member type="Field">private TextBox L2STBtxt</Member>
+        <Member type="Field">private TextBox L1STBtxt</Member>
+        <Member type="Field">private TextBox R3STBtxt</Member>
+        <Member type="Field">private TextBox R2STBtxt</Member>
+        <Member type="Field">private TextBox R1STBtxt</Member>
+        <Member type="Field">private TextBox L3WGTtxt</Member>
+        <Member type="Field">private TextBox L2WGTtxt</Member>
+        <Member type="Field">private TextBox L1WGTtxt</Member>
+        <Member type="Field">private TextBox R3WGTtxt</Member>
+        <Member type="Field">private TextBox R2WGTtxt</Member>
+        <Member type="Field">private TextBox R1WGTtxt</Member>
+        <Member type="Field">private Label STRlbl</Member>
+        <Member type="Field">private Label DEXlbl</Member>
+        <Member type="Field">private Label FTHlbl</Member>
+        <Member type="Field">private Label INTlbl</Member>
+        <Member type="Field">private Label FTHlbl2</Member>
+        <Member type="Field">private Label INTlbl2</Member>
+        <Member type="Field">private Label DEXlbl2</Member>
+        <Member type="Field">private Label STRlbl2</Member>
+        <Member type="Field">private Label DURlbl</Member>
+        <Member type="Field">private Label STBlbl</Member>
+        <Member type="Field">private Label WGTlbl</Member>
+        <Member type="Field">private Label RequiredStatslbl</Member>
+        <Member type="Field">private Label ScalingRatinglbl</Member>
+        <Member type="Field">private Label Otherlbl</Member>
+        <Member type="Field">private Label WeaponsStatslbl</Member>
+        <Member type="Field">private TextBox Faithtxt</Member>
+        <Member type="Field">private TextBox Intelligencetxt</Member>
+        <Member type="Field">private TextBox Dexteritytxt</Member>
+        <Member type="Field">private TextBox Strengthtxt</Member>
+        <Member type="Field">private TextBox Vitalitytxt</Member>
+        <Member type="Field">private TextBox Endurancetxt</Member>
+        <Member type="Field">private TextBox Attunementtxt</Member>
+        <Member type="Field">private TextBox Vigortxt</Member>
+        <Member type="Field">private TextBox Lucktxt</Member>
+        <Member type="Field">private Button VigorMinusbtn</Member>
+        <Member type="Field">private Button VigorPlusbtn</Member>
+        <Member type="Field">private Button AttunementPlusbtn</Member>
+        <Member type="Field">private Button AttunementMinusbtn</Member>
+        <Member type="Field">private Button VitalityPlusbtn</Member>
+        <Member type="Field">private Button VitalityMinusbtn</Member>
+        <Member type="Field">private Button EndurancePlusbtn</Member>
+        <Member type="Field">private Button EnduranceMinusbtn</Member>
+        <Member type="Field">private Button FaithPlusbtn</Member>
+        <Member type="Field">private Button FaithMinusbtn</Member>
+        <Member type="Field">private Button IntelligencePlusbtn</Member>
+        <Member type="Field">private Button IntelligenceMinusbtn</Member>
+        <Member type="Field">private Button DexterityPlusbtn</Member>
+        <Member type="Field">private Button DexterityMinusbtn</Member>
+        <Member type="Field">private Button StrengthPlusbtn</Member>
+        <Member type="Field">private Button StrengthMinusbtn</Member>
+        <Member type="Field">private Button LuckPlusbtn</Member>
+        <Member type="Field">private Button LuckMinusbtn</Member>
+        <Member type="Field">public ComboBox StartingClasscmb</Member>
+        <Member type="Field">private Button ClearSpellsbtn</Member>
+        <Member type="Field">private Button clearWeaponsbtn</Member>
+        <Member type="Field">private Button ClearArmourbtn</Member>
+        <Member type="Field">private Button ClearRingsbtn</Member>
+        <Member type="Field">private Button ResetCalculatorbtn</Member>
+        <Member type="Constructor">public Calculator()</Member>
+        <Member type="Method">private Void label1_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Vigorlbl_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void button1_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void comboBox3_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Vigorval_ValueChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Calculator_Load(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void StartingClasscmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">public Void refresh()</Member>
+        <Member type="Method">private Void Ring1cmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Ring2cmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Ring3cmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Ring4cmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void R1cmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void R2cmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void R3cmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void L1cmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void L2cmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void L3cmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Headcmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Chestcmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Armscmb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Vigortxt_TextChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void VigorMinusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void VigorPlusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void AttunementMinusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void AttunementPlusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void EnduranceMinusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void EndurancePlusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void VitalityMinusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void VitalityPlusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void StrengthMinusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void StrengthPlusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void DexterityMinusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void DexterityPlusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void IntelligenceMinusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void IntelligencePlusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void FaithMinusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void FaithPlusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void LuckMinusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void LuckPlusbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void AddSpellbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void Spellslb_SelectedIndexChanged(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void ClearSpellsbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void clearWeaponsbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void ClearArmourbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void ClearRingsbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void ResetLevelbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">private Void ResetCalculatorbtn_Click(Object sender, EventArgs e)</Member>
+        <Member type="Method">protected virtual Void Dispose(Boolean disposing)</Member>
+        <Member type="Method">private Void InitializeComponent()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Program</Name>
+        <Access>Internal</Access>
+        <Location left="1144" top="23" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">private static Void Main()</Member>
+        <Modifier>Static</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Weapon</Name>
+        <Access>Public</Access>
+        <Location left="17" top="12" />
+        <Size width="162" height="757" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String _name</Member>
+        <Member type="Field">private Int32 _baseAttack</Member>
+        <Member type="Field">private Int32 _minSTR</Member>
+        <Member type="Field">private Int32 _minDEX</Member>
+        <Member type="Field">private Int32 _minINT</Member>
+        <Member type="Field">private Int32 _minFTH</Member>
+        <Member type="Field">private Int32 _scaleSTR</Member>
+        <Member type="Field">private Int32 _scaleDEX</Member>
+        <Member type="Field">private Int32 _scaleINT</Member>
+        <Member type="Field">private Int32 _scaleFTH</Member>
+        <Member type="Field">private Char _rateSTR</Member>
+        <Member type="Field">private Char _rateDEX</Member>
+        <Member type="Field">private Char _rateINT</Member>
+        <Member type="Field">private Char _rateFTH</Member>
+        <Member type="Field">private Int32 _WGT</Member>
+        <Member type="Field">private Int32 _STB</Member>
+        <Member type="Field">private Int32 _DUR</Member>
+        <Member type="Field">private Int32 _saturation</Member>
+        <Member type="Field">private static Double[][] curveIndex</Member>
+        <Member type="Property">public String name { get; private set; }</Member>
+        <Member type="Property">public Int32 baseAttack { get; private set; }</Member>
+        <Member type="Property">public Int32 minSTR { get; private set; }</Member>
+        <Member type="Property">public Int32 minDEX { get; private set; }</Member>
+        <Member type="Property">public Int32 minINT { get; private set; }</Member>
+        <Member type="Property">public Int32 minFTH { get; private set; }</Member>
+        <Member type="Property">public Double scaleSTR { get; private set; }</Member>
+        <Member type="Property">public Double scaleDEX { get; private set; }</Member>
+        <Member type="Property">public Double scaleINT { get; private set; }</Member>
+        <Member type="Property">public Double scaleFTH { get; private set; }</Member>
+        <Member type="Property">public Char rateSTR { get; private set; }</Member>
+        <Member type="Property">public Char rateDEX { get; private set; }</Member>
+        <Member type="Property">public Char rateINT { get; private set; }</Member>
+        <Member type="Property">public Char rateFTH { get; private set; }</Member>
+        <Member type="Property">public Double WGT { get; private set; }</Member>
+        <Member type="Property">public Int32 STB { get; private set; }</Member>
+        <Member type="Property">public Int32 DUR { get; private set; }</Member>
+        <Member type="Property">public Int32 saturation { get; private set; }</Member>
+        <Member type="Constructor">public Weapon(String name, Int32 baseAttack, Double WGT, Int32 STB, Int32 DUR, Int32 minSTR = 0, Int32 minDEX = 0, Int32 minINT = 0, Int32 minFTH = 0, Double scaleSTR = 0, Double scaleDEX = 0, Double scaleINT = 0, Double scaleFTH = 0, Char rateSTR = -, Char rateDEX = -, Char rateINT = -, Char rateFTH = -, Int32 saturation = 0)</Member>
+        <Member type="Constructor">static Weapon()</Member>
+        <Member type="Method">public Double weaponAR(Int32 STR, Int32 DEX, Int32 INT, Int32 FTH)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Generalization" first="1" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>212</X>
+          <Y>1740</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>507</X>
+          <Y>1829</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>507</X>
+          <Y>1833</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>507</X>
+          <Y>1831</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="7" second="6">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>905</X>
+          <Y>1025</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="8" second="6">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>918</X>
+          <Y>205</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>905</X>
+          <Y>341</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="11" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>240</X>
+          <Y>888</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="10">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>493</X>
+          <Y>566</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>493</X>
+          <Y>533</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="13">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>524</X>
+          <Y>688</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>577</X>
+          <Y>1454</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>523</X>
+          <Y>672</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>700</X>
+          <Y>1466</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>524</X>
+          <Y>689</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>523</X>
+          <Y>677</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>383</X>
+          <Y>1466</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="6">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>651</X>
+          <Y>631</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>641</X>
+          <Y>360</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="9">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>418</X>
+          <Y>612</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>242</X>
+          <Y>286</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
