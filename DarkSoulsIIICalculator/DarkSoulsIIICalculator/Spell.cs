@@ -28,5 +28,12 @@ namespace DarkSoulsIIICalculator
             this.minINT = minINT;
             this.minFTH = minFTH;
         }
+
+        public string getSpellString()
+        {
+            string item = this.name + " slots: " + this.attunement.ToString() + "  minINT: " + this.minINT.ToString() + " minFTH: " + this.minFTH.ToString() + "\r\n";
+
+            return item;
+        }
     }
 }

@@ -16,13 +16,6 @@ namespace DarkSoulsIIICalculator
 
         int attuneSlots;
 
-        //double[][] curveIndex = new double[][]
-  // {
-    //new double[] {0, 0, 0.8344518907, 1.917067028, 3.118507614, 4.404263484, 5.756590123, 7.164449132, 8.620231934, 10.11834044, 11.65446426, 13.22517121, 14.8276568, 16.45958186, 18.11896248, 19.80409249, 21.51348727, 23.24584203, 25, 27.71472262, 30.40370474, 33.06592105, 35.70024948, 38.30545618, 40.88017724, 43.42289595, 45.93191442, 48.40531749, 50.84092608, 53.23623592, 55.58833502, 57.89379002, 60.14848454, 62.34738086, 64.4841523, 66.55058206, 68.53550242, 70.42271143, 72.186164, 73.77520674, 75, 75.5, 76, 76.5, 77, 77.5, 78, 78.5, 79, 79.5, 80, 80.5, 81, 81.5, 82, 82.5, 83, 83.5, 84, 84.5, 85, 85.06158775, 85.17419647, 85.32001934, 85.49270201, 85.68857199, 85.90515139, 86.14062112, 86.39357173, 86.66286929, 86.94757571, 87.2468981, 87.56015475, 87.88675135, 88.22616371, 88.57792504, 88.94161609, 89.31685768, 89.7033046, 90.10064091, 90.50857595, 90.92684119, 91.35518752, 91.79338304, 92.24121114, 92.69846893, 93.16496581, 93.64052229, 94.12496895, 94.61814556, 95.11990022, 95.63008872, 96.14857387, 96.67522499, 97.20991735, 97.7525318, 98.30295432, 98.86107568, 99.42679111, 100}
-   //};
-
-
-
         StartingClass[] startingClasses = {
             new StartingClass("Knight", 9, 12, 10, 11, 15, 13, 12, 9, 9, 7),
             new StartingClass("Mercenary", 8, 11, 12, 11, 10, 10, 16, 10, 8, 9),
@@ -38,8 +31,8 @@ namespace DarkSoulsIIICalculator
 
         Weapon[] weapons = {
             new Weapon("none", 0, 0, 0, 0),
-            new Weapon("Farron Greatsword", 258, 12.5, 45, 90, minSTR : 18, minDEX : 20, rateSTR : 'D', rateDEX : 'C', saturation : 0, scaleDEX : 102.2, scaleSTR : 57.4),
-            new Weapon("Test Falchion", 112, 0,0,0, minSTR : 15, minDEX : 17, scaleSTR : 30, scaleDEX : 54, saturation : 0 ),
+            //new Weapon("Farron Greatsword", 258, 12.5, 45, 90, minSTR : 18, minDEX : 20, rateSTR : 'D', rateDEX : 'C', saturation : 0, scaleDEX : 102.2, scaleSTR : 57.4),
+            //new Weapon("Test Falchion", 112, 0,0,0, minSTR : 15, minDEX : 17, scaleSTR : 30, scaleDEX : 54, saturation : 0 ),
             new Weapon("Anri's Straight Sword", 204, 3, 0, 0, 10, 10, 0, 0, 21, 19.6, 0, 11.2, 'D' , 'D' , '-', 'E', 0),
             new Weapon("Arbalest", 156, 6, 0, 0, 18, 8, 0, 0, 0, 0, 0, 0, '-' , '-' , '-', '-', 0),
             new Weapon("Archdecon Great Staff", 156, 2.5, 0, 0, 8, 0, 12, 12, 29.4, 0, 0, 156.8, 'D' , '-' , '-', 'S', 0),
@@ -545,9 +538,64 @@ namespace DarkSoulsIIICalculator
             new Leggings("Xanthous trousers", 3.9, 4.6, 5.1, 3.4, 4.6, 7, 3.4, 7.4, 6.7)
         };
 
+
         Ring[] rings = {
-            new Ring("none", 0),
-            new Ring("Prisoner's Chain", 1, vigorBonus : 5, enduranceBonus : 5, vitalityBonus : 5)
+            new RingBaseStats("none", 0),
+            new RingByPercentage("Life Ring", .3, vigorMod : 7),
+            new RingByPercentage("Ring of Favor", 1.5, hpMod : 3, staminaMod : 9, equiploadMod : 5),
+            new RingBaseStats("Prisoner's Chain", .8, vigorMod : 5, enduranceMod : 5, vitalityMod : 5, physicalMod : -4, strikeMod : -4, slashMod : -4, thrustMod : -4, magicMod : -4, fireMod : -4, lightningMod : -4, darkMod : -4),
+            new RingByPercentage("Havel's Ring", 1.5, equiploadMod : 15),
+            new RingBaseStats("Ring of Steel Protection", .8, physicalMod : 15, strikeMod : 15, slashMod : 15, thrustMod : 15),
+            new RingBaseStats("Magic Stoneplate Ring", .6, magicMod : 13),
+            new RingBaseStats("Fire Stoneplate Ring", .6, fireMod : 13),
+            new RingBaseStats("Thunder Stoneplate Ring", .6, lightningMod : 13),
+            new RingBaseStats("Dark Stoneplate Ring", .6, darkMod : 13),
+            new RingBaseStats("Speckled Stoneplate Ring", .9, magicMod : 5, fireMod : 5, lightningMod : 5, darkMod : 5),
+            new RingByPercentage("Dusk Crown Ring", .6, hpMod : -20),
+            new RingBaseStats("Knight's Ring", 0.8, strengthMod : 5),
+            new RingBaseStats("Hunter's Ring", 0.8, dexterityMod : 5),
+            new RingBaseStats("Scholar Ring", .6, intelligenceMod : 5),
+            new RingBaseStats("Priestess Ring", 0.6, faithMod : 5),
+            new RingBaseStats("Saint's Ring", 0.5, attunementMod : 1),
+            new RingBaseStats("Deep Ring", 0.5, attunementMod : 1),
+            new RingBaseStats("Darkmoon Ring", 0.8, attunementMod : 2),
+            new RingBaseStats("Magic Cluth Ring", 0.8, magicMod : -10),
+            new RingBaseStats("Lightning Cluth Ring", 0.8, lightningMod : -10),
+            new RingBaseStats("Fire Cluth Ring", 0.8, fireMod : -10),
+            new RingBaseStats("Dark Cluth Ring", 0.8, darkMod : -10),
+            new RingBaseStats("Carthus Milkring", 0.8, dexterityMod : 3),
+            new RingBaseStats("Carthus Bloodring", 0.8, physicalMod : -15, strikeMod : -15, slashMod : -15, thrustMod : -15, magicMod : -15, fireMod : -15, lightningMod : -15, darkMod : -15),
+            new RingBaseStats("Young Dragon Ring", 0.7),
+            new RingBaseStats("Bellowing Dragoncrest Ring", 1),
+            new RingBaseStats("Great Swamp Ring", 0.7),
+            new RingBaseStats("Witch's Ring", 1),
+            new RingBaseStats("Morne's Ring", .7),
+            new RingBaseStats("Ring of the Sun's First Born", 1),
+            new RingBaseStats("Lingering Dragoncrest Ring", .5),
+            new RingBaseStats("Sage Ring", .7),
+            new RingBaseStats("Leo Ring", 0.5),
+            new RingBaseStats("Wolf Ring", 0.5),
+            new RingBaseStats("Hawk Ring", 0.7),
+            new RingBaseStats("Hornet Ring", 1.1),
+            new RingBaseStats("Knight Slayer's Ring", 0.9),
+            new RingBaseStats("Ring of the Evil Eye", 1),
+            new RingBaseStats("Farron Ring", 0.8),
+            new RingBaseStats("Dragonscale Ring", 1.1),
+            new RingBaseStats("Horsehoof Ring", 0.6),
+            new RingBaseStats("Wood Grain Ring", 0.5),
+            new RingBaseStats("Flynn's Ring", 0.9),
+            new RingBaseStats("Covetous Gold Serpent Ring", 1.2),
+            new RingBaseStats("Covetous Silver Serpent Ring", 1.2),
+            new RingBaseStats("Bloodbite Ring", 0.6),
+            new RingBaseStats("Poisonbite Ring", 0.6),
+            new RingBaseStats("Cursebite Ring", 0.6),
+            new RingBaseStats("Fleshbite Ring", 0.9),
+            new RingBaseStats("Sun Princess Ring", .6),
+            new RingBaseStats("Estus Ring", .8),
+            new RingBaseStats("Ashen Estus Ring", 0.8),
+            new RingBaseStats("Chloranthy Ring", 0.7)
+
+                //   new Ring("Prisoner's Chain", 1, vigorBonus() : 5, enduranceBonus() : 5, vitalityBonus() : 5)
         };
 
         Spell[] spells =
@@ -854,31 +902,31 @@ namespace DarkSoulsIIICalculator
             level = stclass.soulLevelBase + character.soulLevelModifier;
             SoulLeveltxt.Text = level.ToString();
 
-            vigor = stclass.vigorBase + character.vigorModifier + ring1.vigorBonus + ring2.vigorBonus + ring3.vigorBonus + ring4.vigorBonus;
+            vigor = stclass.vigorBase + character.vigorModifier + ring1.vigorBonus() + ring2.vigorBonus() + ring3.vigorBonus() + ring4.vigorBonus();
             Vigortxt.Text = vigor.ToString();
 
-            attunement = stclass.attunementBase + character.attunementModifier + ring1.attunementBonus + ring2.attunementBonus + ring3.attunementBonus + ring4.attunementBonus;
+            attunement = stclass.attunementBase + character.attunementModifier + ring1.attunementBonus() + ring2.attunementBonus() + ring3.attunementBonus() + ring4.attunementBonus();
             Attunementtxt.Text = attunement.ToString();
 
-            endurance = stclass.enduranceBase + character.enduranceModifier + ring1.enduranceBonus + ring2.enduranceBonus + ring3.enduranceBonus + ring4.enduranceBonus;
+            endurance = stclass.enduranceBase + character.enduranceModifier + ring1.enduranceBonus() + ring2.enduranceBonus() + ring3.enduranceBonus() + ring4.enduranceBonus();
             Endurancetxt.Text = endurance.ToString();
 
-            vitality = stclass.vitalityBase + character.vitalityModifier + ring1.vitalityBonus + ring2.vitalityBonus + ring3.vitalityBonus + ring4.vitalityBonus;
+            vitality = stclass.vitalityBase + character.vitalityModifier + ring1.vitalityBonus() + ring2.vitalityBonus() + ring3.vitalityBonus() + ring4.vitalityBonus();
             Vitalitytxt.Text = vitality.ToString();
 
-            strength = stclass.strengthBase + character.strengthModifier + ring1.strengthBonus + ring2.strengthBonus + ring3.strengthBonus + ring4.strengthBonus;
+            strength = stclass.strengthBase + character.strengthModifier + ring1.strengthBonus() + ring2.strengthBonus() + ring3.strengthBonus() + ring4.strengthBonus();
             Strengthtxt.Text = strength.ToString();
 
-            dexterity = stclass.dexterityBase + character.dexterityModifier + ring1.dexterityBonus + ring2.dexterityBonus + ring3.dexterityBonus + ring4.dexterityBonus;
+            dexterity = stclass.dexterityBase + character.dexterityModifier + ring1.dexterityBonus() + ring2.dexterityBonus() + ring3.dexterityBonus() + ring4.dexterityBonus();
             Dexteritytxt.Text = dexterity.ToString();
 
-            intelligence = stclass.intelligenceBase + character.intelligenceModifier + ring1.intelligenceBonus + ring2.intelligenceBonus + ring3.intelligenceBonus + ring4.intelligenceBonus;
+            intelligence = stclass.intelligenceBase + character.intelligenceModifier + ring1.intelligenceBonus() + ring2.intelligenceBonus() + ring3.intelligenceBonus() + ring4.intelligenceBonus();
             Intelligencetxt.Text = intelligence.ToString();
 
-            faith = stclass.faithBase + character.faithModifier + ring1.faithBonus + ring2.faithBonus + ring3.faithBonus + ring4.faithBonus;
+            faith = stclass.faithBase + character.faithModifier + ring1.faithBonus() + ring2.faithBonus() + ring3.faithBonus() + ring4.faithBonus();
             Faithtxt.Text = faith.ToString();
 
-            luck = stclass.luckBase + character.luckModifier + ring1.luckBonus + ring2.luckBonus + ring3.luckBonus + ring4.luckBonus;
+            luck = stclass.luckBase + character.luckModifier + ring1.luckBonus() + ring2.luckBonus() + ring3.luckBonus() + ring4.luckBonus();
             Lucktxt.Text = luck.ToString();
 
 
@@ -887,49 +935,49 @@ namespace DarkSoulsIIICalculator
 
             double physical, strike, slash, thrust, magic, fire, lightning, dark;
 
-            physical = heads[Headcmb.SelectedIndex].physical + ring1.physicalBonus + ring2.physicalBonus + ring3.physicalBonus + ring4.physicalBonus;
+            physical = heads[Headcmb.SelectedIndex].physical + ring1.physicalBonus() + ring2.physicalBonus() + ring3.physicalBonus() + ring4.physicalBonus();
             physical += (100 - physical) * (chests[Chestcmb.SelectedIndex].physical / 100);
             physical += (100 - physical) * (arms[Armscmb.SelectedIndex].physical / 100);
             physical += (100 - physical) * (leggings[Leggingscmb.SelectedIndex].physical / 100);
             Physicaltxt.Text = physical.ToString();
 
-            strike = heads[Headcmb.SelectedIndex].strike + ring1.strikeBonus + ring2.strikeBonus + ring3.strikeBonus + ring4.strikeBonus;
+            strike = heads[Headcmb.SelectedIndex].strike + ring1.strikeBonus() + ring2.strikeBonus() + ring3.strikeBonus() + ring4.strikeBonus();
             strike += (100 - strike) * (chests[Chestcmb.SelectedIndex].strike / 100);
             strike += (100 - strike) * (arms[Armscmb.SelectedIndex].strike / 100);
             strike += (100 - strike) * (leggings[Leggingscmb.SelectedIndex].strike / 100);
             VSstriketxt.Text = strike.ToString();
 
-            slash = heads[Headcmb.SelectedIndex].slash + ring1.slashBonus + ring2.slashBonus + ring3.slashBonus + ring4.slashBonus;
+            slash = heads[Headcmb.SelectedIndex].slash + ring1.slashBonus() + ring2.slashBonus() + ring3.slashBonus() + ring4.slashBonus();
             slash += (100 - slash) * (chests[Chestcmb.SelectedIndex].slash / 100);
             slash += (100 - slash) * (arms[Armscmb.SelectedIndex].slash / 100);
             slash += (100 - slash) * (leggings[Leggingscmb.SelectedIndex].slash / 100);
             VSslashtxt.Text = slash.ToString();
 
-            thrust = heads[Headcmb.SelectedIndex].thrust + ring1.thrustBonus + ring2.thrustBonus + ring3.thrustBonus + ring4.thrustBonus;
+            thrust = heads[Headcmb.SelectedIndex].thrust + ring1.thrustBonus() + ring2.thrustBonus() + ring3.thrustBonus() + ring4.thrustBonus();
             thrust += (100 - thrust) * (chests[Chestcmb.SelectedIndex].thrust / 100);
             thrust += (100 - thrust) * (arms[Armscmb.SelectedIndex].thrust / 100);
             thrust += (100 - thrust) * (leggings[Leggingscmb.SelectedIndex].thrust / 100);
             VSthrusttxt.Text = thrust.ToString();
 
-            magic = heads[Headcmb.SelectedIndex].magic + ring1.magicBonus + ring2.magicBonus + ring3.magicBonus + ring4.magicBonus;
+            magic = heads[Headcmb.SelectedIndex].magic + ring1.magicBonus() + ring2.magicBonus() + ring3.magicBonus() + ring4.magicBonus();
             magic += (100 - magic) * (chests[Chestcmb.SelectedIndex].magic / 100);
             magic += (100 - magic) * (arms[Armscmb.SelectedIndex].magic / 100);
             magic += (100 - magic) * (leggings[Leggingscmb.SelectedIndex].magic / 100);
             Magictxt.Text = magic.ToString();
 
-            fire = heads[Headcmb.SelectedIndex].fire + ring1.fireBonus + ring2.fireBonus + ring3.fireBonus + ring4.fireBonus;
+            fire = heads[Headcmb.SelectedIndex].fire + ring1.fireBonus() + ring2.fireBonus() + ring3.fireBonus() + ring4.fireBonus();
             fire += (100 - fire) * (chests[Chestcmb.SelectedIndex].fire / 100);
             fire += (100 - fire) * (arms[Armscmb.SelectedIndex].fire / 100);
             fire += (100 - fire) * (leggings[Leggingscmb.SelectedIndex].fire / 100);
             Firetxt.Text = fire.ToString();
 
-            lightning = heads[Headcmb.SelectedIndex].lightning + ring1.lightningBonus + ring2.lightningBonus + ring3.lightningBonus + ring4.lightningBonus;
+            lightning = heads[Headcmb.SelectedIndex].lightning + ring1.lightningBonus() + ring2.lightningBonus() + ring3.lightningBonus() + ring4.lightningBonus();
             lightning += (100 - lightning) * (chests[Chestcmb.SelectedIndex].lightning / 100);
             lightning += (100 - lightning) * (arms[Armscmb.SelectedIndex].lightning / 100);
             lightning += (100 - lightning) * (leggings[Leggingscmb.SelectedIndex].lightning / 100);
             Lightningtxt.Text = lightning.ToString();
 
-            dark = heads[Headcmb.SelectedIndex].dark + ring1.darkBonus + ring2.darkBonus + ring3.darkBonus + ring4.darkBonus;
+            dark = heads[Headcmb.SelectedIndex].dark + ring1.darkBonus() + ring2.darkBonus() + ring3.darkBonus() + ring4.darkBonus();
             dark += (100 - dark) * (chests[Chestcmb.SelectedIndex].dark / 100);
             dark += (100 - dark) * (arms[Armscmb.SelectedIndex].dark / 100);
             dark += (100 - dark) * (leggings[Leggingscmb.SelectedIndex].dark / 100);
@@ -946,43 +994,69 @@ namespace DarkSoulsIIICalculator
             else
                 hp = (-0.01 * Math.Pow(vigor, 2)) + (3.5805 * vigor) + 1144.9;
 
+            hp = hp + rings[Ring1cmb.SelectedIndex].hpBonus(Convert.ToInt32(hp));
+            hp = hp + rings[Ring2cmb.SelectedIndex].hpBonus(Convert.ToInt32(hp));
+            hp = hp + rings[Ring3cmb.SelectedIndex].hpBonus(Convert.ToInt32(hp));
+            hp = hp + rings[Ring4cmb.SelectedIndex].hpBonus(Convert.ToInt32(hp));
+
             HPtxt.Text = String.Format("{0:0}", hp);
 
             fp = (.1147 * Math.Pow(attunement, 2)) + (2.3654 * attunement) + 57.773;
+
+            fp = fp + rings[Ring1cmb.SelectedIndex].fpBonus(Convert.ToInt32(fp));
+            fp = fp + rings[Ring2cmb.SelectedIndex].fpBonus(Convert.ToInt32(fp));
+            fp = fp + rings[Ring3cmb.SelectedIndex].fpBonus(Convert.ToInt32(fp));
+            fp = fp + rings[Ring4cmb.SelectedIndex].fpBonus(Convert.ToInt32(fp));
+
             FPtxt.Text = String.Format("{0:0}", fp);
 
+
             stamina = (.019 * Math.Pow(endurance, 2)) + (1.2616 * endurance) + 78.992;
+
+            stamina = stamina + rings[Ring1cmb.SelectedIndex].staminaBonus(Convert.ToInt32(stamina));
+            stamina = stamina + rings[Ring2cmb.SelectedIndex].staminaBonus(Convert.ToInt32(stamina));
+            stamina = stamina + rings[Ring3cmb.SelectedIndex].staminaBonus(Convert.ToInt32(stamina));
+            stamina = stamina + rings[Ring4cmb.SelectedIndex].staminaBonus(Convert.ToInt32(stamina));
+
             Staminatxt.Text = String.Format("{0:0}", stamina);
 
+
             equipLoad = 40 + vitality;
+
+            equipLoad = equipLoad + rings[Ring1cmb.SelectedIndex].equiploadBonus(equipLoad);
+            equipLoad = equipLoad + rings[Ring2cmb.SelectedIndex].equiploadBonus(equipLoad);
+            equipLoad = equipLoad + rings[Ring3cmb.SelectedIndex].equiploadBonus(equipLoad);
+            equipLoad = equipLoad + rings[Ring4cmb.SelectedIndex].equiploadBonus(equipLoad);
+
             EquipLoadtxt.Text = String.Format("{0:0.0}", equipLoad);
 
             equipLoadUsed = weapons[R1cmb.SelectedIndex].WGT + weapons[R2cmb.SelectedIndex].WGT + weapons[R3cmb.SelectedIndex].WGT + weapons[L1cmb.SelectedIndex].WGT + weapons[L2cmb.SelectedIndex].WGT + weapons[L3cmb.SelectedIndex].WGT + rings[Ring1cmb.SelectedIndex].WGT + rings[Ring2cmb.SelectedIndex].WGT + rings[Ring3cmb.SelectedIndex].WGT + rings[Ring4cmb.SelectedIndex].WGT + heads[Headcmb.SelectedIndex].WGT + chests[Chestcmb.SelectedIndex].WGT + arms[Armscmb.SelectedIndex].WGT + leggings[Leggingscmb.SelectedIndex].WGT;
             ELUsedtxt.Text = String.Format("{0:0.0}", equipLoadUsed);
 
+
             equipLoadPercent = (equipLoadUsed / equipLoad) * 100;
             PercentELtxt.Text = String.Format("{0:0.0}", equipLoadPercent) + "%";
 
             if (attunement == 99)
-                attuneSlots = 10 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+                attuneSlots = 10 + rings[Ring1cmb.SelectedIndex].attunementBonus() + rings[Ring2cmb.SelectedIndex].attunementBonus() + rings[Ring3cmb.SelectedIndex].attunementBonus() + rings[Ring4cmb.SelectedIndex].attunementBonus() - character.attuneSlotModifier;
             else if (attunement >= 80 )
-                attuneSlots = 9 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+                attuneSlots = 9 + rings[Ring1cmb.SelectedIndex].attunementBonus() + rings[Ring2cmb.SelectedIndex].attunementBonus() + rings[Ring3cmb.SelectedIndex].attunementBonus() + rings[Ring4cmb.SelectedIndex].attunementBonus() - character.attuneSlotModifier;
             else if (attunement >= 60 )
-                attuneSlots = 8 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+                attuneSlots = 8 + rings[Ring1cmb.SelectedIndex].attunementBonus() + rings[Ring2cmb.SelectedIndex].attunementBonus() + rings[Ring3cmb.SelectedIndex].attunementBonus() + rings[Ring4cmb.SelectedIndex].attunementBonus() - character.attuneSlotModifier;
             else if (attunement >= 50)
-                attuneSlots = 7 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+                attuneSlots = 7 + rings[Ring1cmb.SelectedIndex].attunementBonus() + rings[Ring2cmb.SelectedIndex].attunementBonus() + rings[Ring3cmb.SelectedIndex].attunementBonus() + rings[Ring4cmb.SelectedIndex].attunementBonus() - character.attuneSlotModifier;
             else if (attunement >= 40)
-                attuneSlots = 6 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+                attuneSlots = 6 + rings[Ring1cmb.SelectedIndex].attunementBonus() + rings[Ring2cmb.SelectedIndex].attunementBonus() + rings[Ring3cmb.SelectedIndex].attunementBonus() + rings[Ring4cmb.SelectedIndex].attunementBonus() - character.attuneSlotModifier;
             else if (attunement >= 30)
-                attuneSlots = 5 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+                attuneSlots = 5 + rings[Ring1cmb.SelectedIndex].attunementBonus() + rings[Ring2cmb.SelectedIndex].attunementBonus() + rings[Ring3cmb.SelectedIndex].attunementBonus() + rings[Ring4cmb.SelectedIndex].attunementBonus() - character.attuneSlotModifier;
             else if (attunement >= 24)
-                attuneSlots = 4 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+                attuneSlots = 4 + rings[Ring1cmb.SelectedIndex].attunementBonus() + rings[Ring2cmb.SelectedIndex].attunementBonus() + rings[Ring3cmb.SelectedIndex].attunementBonus() + rings[Ring4cmb.SelectedIndex].attunementBonus() - character.attuneSlotModifier;
             else if (attunement >= 18)
-                attuneSlots = 3 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+                attuneSlots = 3 + rings[Ring1cmb.SelectedIndex].attunementBonus() + rings[Ring2cmb.SelectedIndex].attunementBonus() + rings[Ring3cmb.SelectedIndex].attunementBonus() + rings[Ring4cmb.SelectedIndex].attunementBonus() - character.attuneSlotModifier;
             else if (attunement >= 14)
-                attuneSlots = 2 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+                attuneSlots = 2 + rings[Ring1cmb.SelectedIndex].attunementBonus() + rings[Ring2cmb.SelectedIndex].attunementBonus() + rings[Ring3cmb.SelectedIndex].attunementBonus() + rings[Ring4cmb.SelectedIndex].attunementBonus() - character.attuneSlotModifier;
             else
-                attuneSlots = 1 + rings[Ring1cmb.SelectedIndex].attunementBonus + rings[Ring2cmb.SelectedIndex].attunementBonus + rings[Ring3cmb.SelectedIndex].attunementBonus + rings[Ring4cmb.SelectedIndex].attunementBonus - character.attuneSlotModifier;
+                attuneSlots = 1 + rings[Ring1cmb.SelectedIndex].attunementBonus() + rings[Ring2cmb.SelectedIndex].attunementBonus() + rings[Ring3cmb.SelectedIndex].attunementBonus() + rings[Ring4cmb.SelectedIndex].attunementBonus() - character.attuneSlotModifier;
 
             UnusedSlotstxt.Text = attuneSlots.ToString();
 
@@ -997,7 +1071,7 @@ namespace DarkSoulsIIICalculator
             //refresh weapon table
 
             // min str
-            R1RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R1cmb.SelectedIndex].minSTR);
+                    R1RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R1cmb.SelectedIndex].minSTR);
                     R2RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R2cmb.SelectedIndex].minSTR);
                     R3RequiredSTRtxt.Text = String.Format("{0:0}", weapons[R3cmb.SelectedIndex].minSTR);
                     L1RequiredSTRtxt.Text = String.Format("{0:0}", weapons[L1cmb.SelectedIndex].minSTR);
@@ -1655,9 +1729,7 @@ namespace DarkSoulsIIICalculator
             {
                 character.attuneSlotModifier += spells[AddSpellcmb.SelectedIndex].attunement;
 
-                string item = spells[AddSpellcmb.SelectedIndex].name + " slots: " + spells[AddSpellcmb.SelectedIndex].attunement.ToString() + "  minINT: " + spells[AddSpellcmb.SelectedIndex].minINT.ToString() + " minFTH: " + spells[AddSpellcmb.SelectedIndex].minFTH.ToString() + "\r\n";
-
-                Spellslb.Items.Add(item);
+                Spellslb.Items.Add(spells[AddSpellcmb.SelectedIndex].getSpellString());
             }
 
             refresh();

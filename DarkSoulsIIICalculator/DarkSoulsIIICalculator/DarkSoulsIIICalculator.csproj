@@ -53,6 +53,8 @@
     <Compile Include="Head.cs" />
     <Compile Include="Leggings.cs" />
     <Compile Include="Ring.cs" />
+    <Compile Include="RingBaseStats.cs" />
+    <Compile Include="RingByPercentage.cs" />
     <Compile Include="Spell.cs" />
     <Compile Include="StartingClass.cs" />
     <Compile Include="CalculatorUI.cs">
