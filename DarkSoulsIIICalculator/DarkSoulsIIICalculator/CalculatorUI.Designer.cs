@@ -241,7 +241,6 @@
             this.ClearArmourbtn = new System.Windows.Forms.Button();
             this.ClearRingsbtn = new System.Windows.Forms.Button();
             this.ResetCalculatorbtn = new System.Windows.Forms.Button();
-            this.ResetLevelbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StartingClasscmb
@@ -2352,22 +2351,11 @@
             this.ResetCalculatorbtn.UseVisualStyleBackColor = true;
             this.ResetCalculatorbtn.Click += new System.EventHandler(this.ResetCalculatorbtn_Click);
             // 
-            // ResetLevelbtn
-            // 
-            this.ResetLevelbtn.Location = new System.Drawing.Point(117, 94);
-            this.ResetLevelbtn.Name = "ResetLevelbtn";
-            this.ResetLevelbtn.Size = new System.Drawing.Size(82, 23);
-            this.ResetLevelbtn.TabIndex = 249;
-            this.ResetLevelbtn.Text = "Clear Levels";
-            this.ResetLevelbtn.UseVisualStyleBackColor = true;
-            this.ResetLevelbtn.Click += new System.EventHandler(this.ResetLevelbtn_Click);
-            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 696);
-            this.Controls.Add(this.ResetLevelbtn);
             this.Controls.Add(this.ResetCalculatorbtn);
             this.Controls.Add(this.ClearRingsbtn);
             this.Controls.Add(this.ClearArmourbtn);
@@ -2803,7 +2791,6 @@
         private System.Windows.Forms.Button ClearArmourbtn;
         private System.Windows.Forms.Button ClearRingsbtn;
         private System.Windows.Forms.Button ResetCalculatorbtn;
-        private System.Windows.Forms.Button ResetLevelbtn;
     }
 }
 

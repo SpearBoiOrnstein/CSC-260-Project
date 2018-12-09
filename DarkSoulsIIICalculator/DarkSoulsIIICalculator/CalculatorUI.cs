@@ -256,7 +256,113 @@ namespace DarkSoulsIIICalculator
 
         Spell[] spells =
         {
-            new Spell("Soul Arrow", 1, 10, 0)
+            //new Spell("Soul Arrow", 1, 10, 0),
+            new Spell("Heal Aid", 1, 0, 8),
+            new Spell("Heal", 1, 0, 12),
+            new Spell("Med Heal", 1, 0, 15),
+            new Spell("Great Heal", 1, 0, 25),
+            new Spell("Soothing Sunlight", 1, 0, 45),
+            new Spell("Replenishment", 1, 0, 15),
+            new Spell("Bountiful Light", 1, 0, 25),
+            new Spell("Bountiful Sunlight", 2, 0, 35),
+            new Spell("Caressing Tears", 1, 0, 12),
+            new Spell("Tears of Denial", 2, 0, 15),
+            new Spell("Homeward", 1, 0, 18),
+            new Spell("Seek Guidance", 1, 0, 12),
+            new Spell("Sacred Oath", 2, 0, 28),
+            new Spell("Force", 1, 0, 12),
+            new Spell("Emit Force", 1, 0, 18),
+            new Spell("Wrath of the Gods", 2, 0, 30),
+            new Spell("Lightning Spear", 1, 0, 20),
+            new Spell("Great Lightning Spear", 1, 0, 30),
+            new Spell("Sunlight Spear", 1, 0, 40),
+            new Spell("Lightning Stake", 1, 0, 35),
+            new Spell("Lightning Storm", 2, 0, 45),
+            new Spell("Divine Pillars of Light", 1, 0, 30),
+            new Spell("Blessed Weapon", 1, 0, 15),
+            new Spell("Lightning Blade", 1, 0, 30),
+            new Spell("Darkmoon Blade", 1, 0, 30),
+            new Spell("Magic Barrier", 1, 0, 15),
+            new Spell("Great Magic Barrier", 2, 0, 25),
+            new Spell("Dark Blade", 1, 0, 25),
+            new Spell("Vow of Silence", 2, 0, 30),
+            new Spell("Dead Again", 1, 15, 23),
+            new Spell("Atonement", 1, 0, 18),
+            new Spell("Deep Protection", 1, 0, 20),
+            new Spell("Gnaw", 1, 0, 18),
+            new Spell("Dorhys' Gnawing", 1, 0, 25),
+            new Spell("Lifehunt Scythe", 1, 0, 22),
+            new Spell("Way of White Corona", 1, 0, 18),
+            new Spell("Projected Heal", 1, 0, 28),
+            new Spell("Lightning Arrow", 1, 0, 35),
+            new Spell("Soul Arrow", 1, 10, 0),
+            new Spell("Great Soul Arrow", 1, 15, 0),
+            new Spell("Heavy Soul Arrow", 1, 13, 0),
+            new Spell("Great Heavy Soul Arrow", 1, 18, 0),
+            new Spell("Farron Dart", 1, 8, 0),
+            new Spell("Great Farron Dart", 1, 23, 0),
+            new Spell("Farron Hail", 1, 28, 0),
+            new Spell("Homing Soulmass", 1, 20, 0),
+            new Spell("Homing Crystal Soulmass", 1, 30, 0),
+            new Spell("Crystal Hail", 1, 18, 0),
+            new Spell("Soul Spear", 1, 32, 0),
+            new Spell("Crystal Soul Spear", 1, 48, 0),
+            new Spell("White Dragon Breath", 1, 50, 0),
+            new Spell("Soul Stream", 2, 45, 0),
+            new Spell("Soul Greatsword", 1, 22, 0),
+            new Spell("Farron Flashsword", 1, 23, 0),
+            new Spell("Magic Weapon", 1, 10, 0),
+            new Spell("Great Magic Weapon", 1, 15, 0),
+            new Spell("Crystal Magic Weapon", 1, 30, 0),
+            new Spell("Magic Shield", 1, 10, 0),
+            new Spell("Great Magic Shield", 1, 18, 0),
+            new Spell("Spook", 1, 10, 0),
+            new Spell("Aural Decoy", 1, 18, 0),
+            new Spell("Pestilent Mist", 1, 30, 0),
+            new Spell("Cast Light", 1, 15, 0),
+            new Spell("Repair", 1, 15, 0),
+            new Spell("Hidden Weapon", 1, 12, 0),
+            new Spell("Hidden Body", 1, 15, 0),
+            new Spell("Chameleon", 1, 12, 0),
+            new Spell("Twisted Wall of Light", 1, 27, 0),
+            new Spell("Deep Soul", 1, 12, 0),
+            new Spell("Great Deep Soul", 1, 20, 0),
+            new Spell("Affinity", 1, 32, 0),
+            new Spell("Dark Edge", 1, 30, 0),
+            new Spell("Frozen Weapon", 1, 15, 0),
+            new Spell("Snap Freeze", 1, 18, 0),
+            new Spell("Great Soul Dregs", 1, 40, 0),
+            new Spell("Old Moonlight", 1, 25, 0),
+            new Spell("Fireball", 1, 6, 6),
+            new Spell("Fire Orb", 1, 8, 8),
+            new Spell("Bursting Fireball", 1, 18, 12),
+            new Spell("Great Chaos Fire Orb", 2, 0, 0),
+            new Spell("Chaos Bed Vestiges", 2, 20, 10),
+            new Spell("Fire Surge", 1, 6, 0),
+            new Spell("Fire Whip", 1, 13, 8),
+            new Spell("Firestorm", 1, 18, 0),
+            new Spell("Chaos Storm", 2, 0, 0),
+            new Spell("Great Combustion", 1, 10, 10),
+            new Spell("Sacred Flame", 1, 8, 8),
+            new Spell("Profaned Flame", 1, 25, 0),
+            new Spell("Poison Mist", 1, 0, 10),
+            new Spell("Toxic Mist", 1, 0, 15),
+            new Spell("Acid Surge", 1, 0, 13),
+            new Spell("Flash Sweat", 1, 6, 6),
+            new Spell("Profuse Sweat", 1, 6, 6),
+            new Spell("Iron Flesh", 1, 8, 0),
+            new Spell("Power Within", 1, 10, 10),
+            new Spell("Carthus Beacon", 2, 12, 12),
+            new Spell("Carthus Flame Arc", 1, 10, 10),
+            new Spell("Warmth", 2, 0, 25),
+            new Spell("Rapport", 1, 15, 0),
+            new Spell("Boulder Heave", 1, 8, 12),
+            new Spell("Black Flame", 1, 15, 15),
+            new Spell("Black Fire Orb", 1, 20, 20),
+            new Spell("Black Serpent", 1, 15, 15),
+            new Spell("Floating Chaos", 1, 16, 16),
+            new Spell("Seething Chaos", 1, 18, 18),
+            new Spell("Flame Fan", 1, 15, 15)
         };
         
 
@@ -1229,6 +1335,9 @@ namespace DarkSoulsIIICalculator
 
         private void AddSpellbtn_Click(object sender, EventArgs e)
         {
+            int intelligence = Convert.ToInt32(Intelligencetxt.Text);
+            int faith = Convert.ToInt32(Faithtxt.Text);
+
             if (AddSpellcmb.SelectedIndex < 0)
             {
                 return;
@@ -1237,6 +1346,14 @@ namespace DarkSoulsIIICalculator
             if (attuneSlots < spells[AddSpellcmb.SelectedIndex].attunement)
             {
                 System.Windows.Forms.MessageBox.Show("need " + (spells[AddSpellcmb.SelectedIndex].attunement - attuneSlots).ToString() + " more slot(s).", "Insufficient Attunement:");
+            }
+            else if (intelligence < spells[AddSpellcmb.SelectedIndex].minINT)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (spells[AddSpellcmb.SelectedIndex].minINT - intelligence).ToString() + " more intelligence.", "Insufficient Intelligence:");
+            }
+            else if (faith < spells[AddSpellcmb.SelectedIndex].minFTH)
+            {
+                System.Windows.Forms.MessageBox.Show("need " + (spells[AddSpellcmb.SelectedIndex].minFTH - faith).ToString() + " more faith.", "Insufficient Faith:");
             }
             else
             {
@@ -1307,6 +1424,8 @@ namespace DarkSoulsIIICalculator
             character.intelligenceModifier = 0;
             character.faithModifier = 0;
             character.luckModifier = 0;
+
+            Spellslb.Items.Clear();
 
             refresh();
         }
