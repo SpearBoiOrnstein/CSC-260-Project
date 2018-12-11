@@ -31,12 +31,33 @@ namespace DarkSoulsIIICalculator
 
         Weapon[] weapons = {
             new Weapon("none", 0, 0, 0, 0),
+            new Weapon("Arbalest", 273, 6, 0, 0, 18, 8, 0, 0, 0, 0, 0, 0, '-' , '-' , '-', '-', 0),
+            new Weapon("Greataxe", 376, 16, 0, 0, 32, 8, 0, 0, 64.4, 19.6, 0, 0, 'C' , 'E' , '-', '-', 0),
+            new Weapon("Caestus", 182, 0.5, 0, 0, 5, 8, 0, 0, 56, 56, 0, 0, 'C' , 'C' , '-', '-', 0),
+            new Weapon("Black Knight Sword", 302, 10, 0, 0, 20, 18, 0, 0, 57.4, 49, 0, 0, 'C' , 'D' , '-', '-', 0),
+            new Weapon("Farron Greatsword", 258, 12.5, 0, 0, 18, 20, 0, 0, 57.4, 102.2, 0, 0, 'C' , 'A' , '-', '-', 0),
+            new Weapon("Sellsword Twinblades", 198, 5.5, 0, 0, 10, 16, 0, 0, 21, 81.2, 0, 0, 'D' , 'B' , '-', '-', 0),
+            new Weapon("Scimitar", 180, 2.5, 0, 0, 7, 13, 0, 0, 7, 112, 0, 0, 'E' , 'A' , '-', '-', 0),
+            new Weapon("Mace", 230, 5, 0, 0, 12, 7, 0, 0, 77, 21, 0, 0, '-' , '-' , '-', '-', 0),
+            new Weapon("Claymore", 276, 9, 0, 0, 16, 13, 0, 0, 56, 49, 0, 0, 'C' , 'D' , '-', '-', 0),
+            new Weapon("Dark Sword", 230, 4.5, 0, 0, 16, 15, 0, 0, 36.4, 49, 50.4, 50.4, 'C' , 'D' , '-', '-', 0),
+            new Weapon("Gundyr's Halberd", 264, 13, 0, 0, 30, 15, 0, 0, 93.8, 14, 0, 0, 'B' , 'E' , '-', '-', 0),
+            new Weapon("Smough's Great Hammer", 358, 24, 0, 0, 45, 0, 0, 0, 86.8, 0, 0, 0, 'B' , '-' , '-', '-', 0),
+            new Weapon("Estoc", 210, 3.5, 0, 0, 10, 12, 0, 0, 35, 70, 0, 0, 'D' , 'C' , '-', '-', 0),
+            new Weapon("Glaive", 282, 11, 0, 0, 17, 11, 0, 0, 57.4, 21, 0, 0, 'C' , 'D' , '-', '-', 0),
+            new Weapon("Great Scythe", 210, 7, 0, 0, 14, 14, 0, 0, 28, 84, 0, 0, 'D' , 'B' , '-', '-', 0),
+            new Weapon("Onikiri and Ubadachi", 208, 8.5, 0, 0, 13, 25, 0, 0, 56, 71.4, 0, 0, 'C' , 'C' , '-', '-', 0),
+            new Weapon("Exile Greatsword", 296, 17, 0, 0, 24, 16, 0, 0, 56, 63, 0, 0, 'C' , 'C' , '-', '-', 0),
+            new Weapon("Lothric Knight Sword", 206, 4, 0, 0, 11, 18, 0, 0, 57.4, 70, 0, 0, 'C' , 'C' , '-', '-', 0),
+            new Weapon("Bloodlust", 184, 5, 0, 0, 11, 24, 0, 0, 8.4, 110.6, 0, 0, 'E' , 'A' , '-', '-', 0)
+            /*,
             //new Weapon("Farron Greatsword", 258, 12.5, 45, 90, minSTR : 18, minDEX : 20, rateSTR : 'D', rateDEX : 'C', saturation : 0, scaleDEX : 102.2, scaleSTR : 57.4),
+            //new Weapon("Farron Greatsword", 266, 12.5, 0, 0, 18, 20, 0, 0, 57.4, 102.2, 0, 0, 'C' , 'A' , '-', '-', 0),
             //new Weapon("Test Falchion", 112, 0,0,0, minSTR : 15, minDEX : 17, scaleSTR : 30, scaleDEX : 54, saturation : 0 ),
             new Weapon("Anri's Straight Sword", 204, 3, 0, 0, 10, 10, 0, 0, 21, 19.6, 0, 11.2, 'D' , 'D' , '-', 'E', 0),
-            new Weapon("Arbalest", 156, 6, 0, 0, 18, 8, 0, 0, 0, 0, 0, 0, '-' , '-' , '-', '-', 0),
+            new Weapon("Arbalest", 273, 6, 0, 0, 18, 8, 0, 0, 0, 0, 0, 0, '-' , '-' , '-', '-', 0),
             new Weapon("Archdecon Great Staff", 156, 2.5, 0, 0, 8, 0, 12, 12, 29.4, 0, 0, 156.8, 'D' , '-' , '-', 'S', 0),
-            new Weapon("Arstor's Spear", 249, 6.5, 0, 0, 11, 19, 0, 0, 29.4, 82.6, 0, 0, 'D' , 'B' , '-', '-', 0),
+            new Weapon("Arstor's Spear", 216, 6.5, 0, 0, 11, 19, 0, 0, 29.4, 82.6, 0, 0, 'D' , 'B' , '-', '-', 0),
             new Weapon("Astora Greatsword", 264, 8, 0, 0, 16, 18, 0, 0, 63, 71.4, 0, 0, 'C' , 'C' , '-', '-', 0),
             new Weapon("Astora Straight Sword", 258, 3, 0, 0, 10, 10, 0, 12, 36.4, 28, 0, 0, 'D' , 'D' , '-', '-', 0),
             new Weapon("Avelyn", 128, 7.5, 0, 0, 16, 14, 0, 0, 0, 0, 0, 0, '-' , '-' , '-', '-', 0),
@@ -49,15 +70,15 @@ namespace DarkSoulsIIICalculator
             new Weapon("Black Knight Glaive", 278, 9, 0, 0, 28, 18, 0, 0, 50.4, 56, 0, 0, 'D' , 'C' , '-', '-', 0),
             new Weapon("Black Knight Greataxe", 376, 19.5, 0, 0, 36, 18, 0, 0, 71.4, 42, 0, 0, 'C' , 'D' , '-', '-', 0),
             new Weapon("Black Knight Greatsword", 322, 16, 0, 0, 30, 18, 0, 0, 85.4, 35, 0, 0, 'B' , 'D' , '-', '-', 0),
-            new Weapon("Black Knight Sword", 272, 10, 0, 0, 20, 18, 0, 0, 57.4, 49, 0, 0, 'C' , 'D' , '-', '-', 0),
+            new Weapon("Black Knight Sword", 302, 10, 0, 0, 20, 18, 0, 0, 57.4, 49, 0, 0, 'C' , 'D' , '-', '-', 0),
             new Weapon("Blacksmith Hammer", 210, 5, 0, 0, 13, 13, 0, 0, 82.6, 0, 0, 0, 'B' , '-' , '-', '-', 0),
-            new Weapon("Bloodlust", 218, 5, 0, 0, 11, 24, 0, 0, 8.4, 110.6, 0, 0, 'E' , 'A' , '-', '-', 0),
+            new Weapon("Bloodlust", 184, 5, 0, 0, 11, 24, 0, 0, 8.4, 110.6, 0, 0, 'E' , 'A' , '-', '-', 0),
             new Weapon("Brigand Axe", 248, 3, 0, 0, 14, 8, 0, 0, 63, 36.4, 0, 0, 'C' , 'D' , '-', '-', 0),
             new Weapon("Brigand Twindaggers", 110, 2.5, 0, 0, 10, 18, 0, 0, 49, 49, 0, 0, 'D' , 'D' , '-', '-', 9),
             new Weapon("Broadsword", 234, 3, 0, 0, 10, 10, 0, 0, 71.4, 42, 0, 0, 'C' , 'D' , '-', '-', 0),
             new Weapon("Broken Straight Sword", 140, 1, 0, 0, 8, 8, 0, 0, 53.2, 44.8, 0, 0, 'C' , 'D' , '-', '-', 0),
             new Weapon("Butcher Knife", 190, 7, 0, 0, 24, 0, 0, 0, 145.6, 0, 0, 0, 'S' , '-' , '-', '-', 0),
-            new Weapon("Caestus", 160, 0.5, 0, 0, 5, 8, 0, 0, 56, 56, 0, 0, 'C' , 'C' , '-', '-', 0),
+            new Weapon("Caestus", 182, 0.5, 0, 0, 5, 8, 0, 0, 56, 56, 0, 0, 'C' , 'C' , '-', '-', 0),
             new Weapon("Caitha's Chime", 130, 0.5, 0, 0, 3, 0, 12, 12, 28, 0, 112, 124.6, 'D' , '-' , 'A', 'A', 0),
             new Weapon("Canvas Talisman", 117, 0.5, 0, 0, 4, 0, 0, 14, 29.4, 0, 0, 134.4, 'D' , '-' , '-', 'A', 0),
             new Weapon("Carthus Curved Greatsword", 282, 10.5, 0, 0, 18, 22, 0, 0, 57.4, 77, 0, 0, 'D' , 'B' , '-', '-', 0),
@@ -77,7 +98,7 @@ namespace DarkSoulsIIICalculator
             new Weapon("Crescent Moon Sword", 284, 2.5, 0, 0, 10, 16, 0, 0, 0, 77, 43.4, 0, 'E' , 'A' , '-', '-', 0),
             new Weapon("Crystal Chime", 128, 0.5, 0, 0, 3, 0, 18, 18, 28, 0, 0, 0, 'D' , '-' , 'C', 'C', 0),
             new Weapon("Crystal Sage's Rapier", 250, 2.5, 0, 0, 13, 18, 0, 0, 28, 0, 0, 0, 'D' , 'D' , 'A', '-', 0),
-            new Weapon("Dagger", 110, 1.5, 0, 0, 5, 9, 0, 0, 14, 98, 0, 0, 'E' , 'B' , '-', '-', 9),
+            new Weapon("Dagger", 120, 1.5, 0, 0, 5, 9, 0, 0, 14, 98, 0, 0, 'E' , 'B' , '-', '-', 9),
             new Weapon("Dancer's Enchanted Swords", 432, 8.5, 0, 0, 12, 20, 9, 9, 36.4, 49, 50.4, 50.4, 'D' , 'D' , 'D', 'D', 0),
             new Weapon("Dark Hand", 227, 0, 0, 0, 0, 0, 0, 0, 36.4, 49, 50.4, 50.4, 'E' , 'E' , 'C', 'C', 0),
             new Weapon("Dark Sword", 230, 4.5, 0, 0, 16, 15, 0, 0, 36.4, 49, 50.4, 50.4, 'C' , 'D' , '-', '-', 0),
@@ -91,16 +112,14 @@ namespace DarkSoulsIIICalculator
             new Weapon("Dragonslayer Greatbow", 220, 10, 0, 0, 20, 20, 0, 0, 49, 70, 0, 0, 'D' , 'C' , '-', '-', 0),
             new Weapon("Dragonslayer Spear", 320, 9.5, 0, 0, 20, 20, 0, 0, 43.4, 84, 0, 36.4, 'D' , 'B' , '-', 'D', 0),
             new Weapon("Dragonslayer Swordspear", 296, 14.5, 0, 0, 16, 22, 0, 18, 43.4, 68.6, 0, 57.4, 'D' , 'C' , '-', 'C', 0),
-            new Weapon("Dragonslayer's Axe", 360, 4, 0, 0, 18, 14, 0, 0, 36.4, 11.2, 0, 0, 'D' , 'D' , '-', '-', 0),
-            new Weapon("Drakeblood Greatsword", 426, 6, 0, 0, 18, 16, 0, 0, 42, 42, 0, 0, 'D' , 'D' , '-', '-', 0),
             new Weapon("Drang Hammers", 220, 9, 0, 0, 18, 16, 0, 0, 77, 14, 0, 0, 'C' , 'E' , '-', '-', 0),
             new Weapon("Drang Twinspears", 200, 8, 0, 0, 14, 20, 0, 0, 42, 70, 0, 0, 'D' , 'C' , '-', '-', 0),
             new Weapon("Eleonora", 284, 6.5, 0, 0, 20, 8, 0, 0, 43.4, 21, 0, 0, 'D' , 'D' , '-', '-', 0),
             new Weapon("Estoc", 210, 3.5, 0, 0, 10, 12, 0, 0, 35, 70, 0, 0, 'D' , 'C' , '-', '-', 0),
             new Weapon("Executioner's Greatsword", 262, 9, 0, 0, 19, 13, 0, 0, 85.4, 28, 0, 0, '-' , '-' , '-', '-', 0),
-            new Weapon("Exile Greatsword", 292, 17, 0, 0, 24, 16, 0, 0, 56, 63, 0, 0, 'C' , 'C' , '-', '-', 0),
+            new Weapon("Exile Greatsword", 296, 17, 0, 0, 24, 16, 0, 0, 56, 63, 0, 0, 'C' , 'C' , '-', '-', 0),
             new Weapon("Falchion", 234, 4, 0, 0, 9, 13, 0, 0, 35, 63, 0, 0, 'D' , 'C' , '-', '-', 0),
-            new Weapon("Farron Greatsword", 228, 12.5, 0, 0, 18, 20, 0, 0, 57.4, 102.2, 0, 0, 'C' , 'A' , '-', '-', 0),
+            new Weapon("Farron Greatsword", 258, 12.5, 0, 0, 18, 20, 0, 0, 57.4, 102.2, 0, 0, 'C' , 'A' , '-', '-', 0),
             new Weapon("Firelink Greatsword", 364, 9, 0, 0, 20, 10, 10, 10, 57.4, 102.2, 0, 0, 'D' , 'D' , '-', '-', 0),
             new Weapon("Flamberge", 321, 8.5, 0, 0, 15, 14, 0, 0, 35, 29.4, 0, 0, 'D' , 'D' , '-', '-', 0),
             new Weapon("Four-Pronged Plow", 210, 8.5, 0, 0, 13, 11, 0, 0, 47.6, 65.8, 0, 0, 'D' , 'C' , '-', '-', 0),
@@ -114,7 +133,7 @@ namespace DarkSoulsIIICalculator
             new Weapon("Great Corvian Scythe", 230, 9, 0, 0, 16, 18, 0, 0, 56, 92.4, 0, 0, 'C' , 'B' , '-', '-', 0),
             new Weapon("Great Mace", 346, 18, 0, 0, 32, 0, 0, 0, 56, 0, 0, 0, 'C' , '-' , '-', '-', 0),
             new Weapon("Great Machete", 334, 14, 0, 0, 24, 12, 0, 0, 61.6, 22.4, 0, 0, 'C' , 'D' , '-', '-', 0),
-            new Weapon("Great Scythe", 243, 7, 0, 0, 14, 14, 0, 0, 28, 84, 0, 0, 'D' , 'B' , '-', '-', 0),
+            new Weapon("Great Scythe", 210, 7, 0, 0, 14, 14, 0, 0, 28, 84, 0, 0, 'D' , 'B' , '-', '-', 0),
             new Weapon("Great Wooden Hammer", 206, 6, 0, 0, 18, 0, 0, 0, 85.4, 0, 0, 0, '-' , '-' , '-', '-', 0),
             new Weapon("Greataxe", 376, 16, 0, 0, 32, 8, 0, 0, 64.4, 19.6, 0, 0, 'C' , 'E' , '-', '-', 0),
             new Weapon("Greatlance", 258, 10.5, 0, 0, 21, 16, 0, 0, 57.4, 42, 0, 0, '-' , '-' , '-', '-', 0),
@@ -154,19 +173,19 @@ namespace DarkSoulsIIICalculator
             new Weapon("Morion Blade", 261, 4, 0, 0, 12, 17, 0, 0, 64.4, 35, 0, 0, 'C' , 'D' , '-', '-', 0),
             new Weapon("Morne's Great Hammer", 348, 24, 0, 0, 50, 0, 0, 30, 65.8, 0, 0, 30.8, 'B' , '-' , '-', '-', 0),
             new Weapon("Morning Star", 277, 5, 0, 0, 11, 9, 0, 0, 56, 15.4, 0, 0, '-' , '-' , '-', '-', 0),
-            new Weapon("Murakumo", 270, 11, 0, 0, 20, 18, 0, 0, 58.8, 74.2, 0, 0, 'D' , 'B' , '-', '-', 0),
+            new Weapon("Murakumo", 264, 11, 0, 0, 20, 18, 0, 0, 58.8, 74.2, 0, 0, 'D' , 'B' , '-', '-', 0),
             new Weapon("Notched Whip", 223, 2, 0, 0, 6, 19, 0, 0, 0, 63, 0, 0, '-' , 'C' , '-', '-', 0),
             new Weapon("Old King's Great Hammer", 454, 18.5, 0, 0, 30, 0, 10, 10, 58.8, 0, 50.4, 50.4, 'C' , '-' , 'D', 'D', 0),
             new Weapon("Old Wolf Curved Sword", 280, 13, 0, 0, 19, 25, 0, 0, 29.4, 100.8, 0, 0, 'D' , 'B' , '-', '-', 0),
-            new Weapon("Onikiri and Ubadachi", 243, 8.5, 0, 0, 13, 25, 0, 0, 56, 71.4, 0, 0, 'C' , 'C' , '-', '-', 0),
+            new Weapon("Onikiri and Ubadachi", 208, 8.5, 0, 0, 13, 25, 0, 0, 56, 71.4, 0, 0, 'C' , 'C' , '-', '-', 0),
             new Weapon("Onislayer Greatbow", 194, 7.5, 0, 0, 18, 24, 0, 0, 21, 85.4, 0, 0, 'D' , 'B' , '-', '-', 0),
             new Weapon("Painting Guardian's Curved Sword", 211, 1.5, 0, 0, 7, 19, 0, 0, 7, 113.4, 0, 0, 'E' , 'A' , '-', '-', 0),
-            new Weapon("Parrying Dagger", 100, 1, 0, 0, 5, 14, 0, 0, 12.6, 95.2, 0, 0, 'E' , 'B' , '-', '-', 9),
+            new Weapon("Parrying Dagger", 120, 1, 0, 0, 5, 14, 0, 0, 12.6, 95.2, 0, 0, 'E' , 'B' , '-', '-', 9),
             new Weapon("Partizan", 216, 6.5, 0, 0, 14, 12, 0, 0, 49, 64.4, 0, 0, 'D' , 'C' , '-', '-', 0),
             new Weapon("Pickaxe", 280, 8, 0, 0, 18, 9, 0, 0, 82.6, 0, 0, 0, 'B' , '-' , '-', '-', 0),
             new Weapon("Pike", 210, 7.5, 0, 0, 18, 14, 0, 0, 40.6, 72.8, 0, 0, '-' , '-' , '-', '-', 0),
             new Weapon("Pontiff Knight Curved Sword", 214, 3.5, 0, 0, 12, 18, 10, 0, 43.4, 68.6, 0, 0, 'C' , 'D' , '-', '-', 0),
-            new Weapon("Pontiff Knight Great Scythe", 174, 7.5, 0, 0, 14, 19, 0, 0, 15.4, 159.6, 0, 0, '-' , 'S' , '-', '-', 0),
+            new Weapon("Pontiff Knight Great Scythe", 174, 7.5, 0, 0, 14, 19, 0, 0, 15.4, 15.6, 0, 0, '-' , 'S' , '-', '-', 0),
             new Weapon("Priest's Chime", 117, 0.5, 0, 0, 3, 0, 0, 10, 28, 0, 0, 138.6, 'D' , '-' , '-', 'A', 0),
             new Weapon("Profaned Greatsword", 294, 13.5, 0, 0, 22, 10, 0, 0, 78.4, 63, 0, 0, 'C' , 'C' , '-', '-', 0),
             new Weapon("Rapier", 190, 2, 0, 0, 7, 12, 0, 0, 28, 84, 0, 0, '-' , 'B' , '-', '-', 0),
@@ -222,7 +241,8 @@ namespace DarkSoulsIIICalculator
             new Weapon("Yorshka's Chime", 123, 0.5, 0, 0, 3, 0, 0, 30, 29.4, 0, 0, 163.8, 'D' , '-' , '-', 'S', 0),
             new Weapon("Yorshka's Spear", 172, 6.5, 0, 0, 18, 14, 0, 0, 56, 78.4, 0, 0, '-' , '-' , '-', '-', 0),
             new Weapon("Zweihander", 290, 10, 0, 0, 19, 11, 0, 0, 70, 49, 0, 0, 'C' , 'D' , '-', '-', 0)
-        };
+        */
+            };
 
         Head[] heads = {
             new Head("none", 0, 0, 0, 0, 0, 0, 0, 0, 0),
@@ -246,7 +266,7 @@ namespace DarkSoulsIIICalculator
             new Head("Dancer's Crown", 2.8, 3.3, 1.8, 4.4, 4, 2.7, 2.2, 2.5, 2.8),
             new Head("Dark Mask", 4, 4.3, 3.1, 3.9, 3.7, 3.1, 2.5, 1.3, 3.1),
             new Head("Dragonslayer Helm", 5.8, 4.6, 3.8, 4.6, 4.6, 3.5, 4.1, 4.1, 2.6),
-            new Head("Drakeblood Armor Set", 6.3, 4.8, 4.7, 5.1, 4.6, 4.8, 4.4, 4, 4),
+            new Head("Drakeblood Helm", 6.3, 4.8, 4.7, 5.1, 4.6, 4.8, 4.4, 4, 4),
             new Head("Eastern Helm", 3.9, 4.1, 2.5, 4.8, 3.7, 1.6, 3.4, 1.2, 1.6),
             new Head("Elite Knight Helm", 5.3, 4.5, 4.5, 4.5, 4.5, 3.7, 4.1, 3.1, 3.5),
             new Head("Evangelist Hat", 3.2, 3.7, 4.5, 3.1, 3.1, 4.3, 4.8, 4.8, 3.1),
@@ -332,7 +352,7 @@ namespace DarkSoulsIIICalculator
             new Chest("Deserter Armor", 8.6, 11.7, 9.3, 11.7, 11.1, 6.6, 7.5, 4.2, 10.4),
             new Chest("Dragonscale Armor", 12.7, 13.7, 12.2, 13.1, 12.2, 9.9, 13.4, 6.1, 9.9),
             new Chest("Dragonslayer Armor", 14.4, 14, 12.2, 14.1, 14.1, 12.4, 13.5, 13.5, 10),
-            new Chest("Drakeblood Armor Set", 14.4, 13.3, 13, 14, 12.7, 13, 12.1, 11.1, 11.1),
+            new Chest("Drakeblood Armor", 13.9, 14.2, 14.1, 16.9, 13.6, 13.2, 12.6, 11.6, 11.6),
             new Chest("Drang Armor", 5.1, 9.3, 8.6, 7.7, 5.5, 9.7, 7.5, 10.9, 9.7),
             new Chest("Eastern Armor", 11, 12.6, 8.6, 14.2, 11.5, 6.7, 11.5, 5.3, 6.7),
             new Chest("Elite Knight Armor", 8.9, 12.1, 9.2, 12.1, 11.1, 9.2, 10.6, 6.8, 8.5),
@@ -408,7 +428,7 @@ namespace DarkSoulsIIICalculator
             new Arms("Dark Gauntlets", 3.2, 3.5, 2.6, 3.2, 3.1, 2.6, 2.2, 1.4, 2.6),
             new Arms("Deserter Trousers", 3.1, 4.2, 4.7, 4.2, 4.2, 5, 5, 5.9, 7),
             new Arms("Dragonslayer Gauntlets", 4.2, 3.5, 2.9, 3.5, 3.5, 3.2, 3.6, 3.6, 2.4),
-            new Arms("Drakeblood Armor Set", 4.8, 3.2, 3.1, 3.3, 3, 3, 2.9, 2.6, 2.6),
+            new Arms("Drakeblood Gauntlets", 4.6, 3.5, 3.4, 4.3, 3.3, 3.1, 2.9, 2.7, 2.7),
             new Arms("Drang Gauntlets", 1.7, 2.1, 1.9, 1.7, 1.1, 2, 1.4, 2.3, 2),
             new Arms("Eastern Gauntlets", 2.9, 2.8, 2.2, 3.3, 2.5, 1.8, 3.1, 1.5, 1.8),
             new Arms("Elite Knight Gauntlets", 3.4, 3.4, 2.8, 3.4, 3.4, 2.6, 3, 2, 2.4),
@@ -487,7 +507,7 @@ namespace DarkSoulsIIICalculator
             new Leggings("Deserter Trousers", 3.1, 4.2, 4.7, 4.2, 4.2, 5, 5, 5.9, 7),
             new Leggings("Dragonscale WaistCloth", 6.3, 6.9, 5.8, 7.1, 5.8, 4.1, 6.8, 1.8, 4.1),
             new Leggings("Dragonslayer Leggings", 8.4, 7.4, 6.2, 7.4, 7.4, 6, 6.8, 6.8, 4.5),
-            new Leggings("Drakeblood Armor Set", 8.6, 7.3, 7.2, 7.7, 7, 7.1, 6.6, 6, 6),
+            new Leggings("Drakeblood Leggings", 8.3, 7.9, 7.8, 9.5, 7.5, 7.2, 6.9, 6.3, 6.3),
             new Leggings("Drang Shoes", 4.2, 4.7, 5.2, 5.2, 5.2, 6.3, 5, 7, 6.3),
             new Leggings("Eastern Leggings", 5, 5.1, 4.7, 7.3, 4.6, 5.4, 7.2, 6.6, 5.4),
             new Leggings("Elite Knight Leggings", 6.9, 7.8, 6.5, 7.6, 7.4, 6.5, 7.1, 5.3, 6.1),
@@ -545,7 +565,7 @@ namespace DarkSoulsIIICalculator
             new RingByPercentage("Ring of Favor", 1.5, hpMod : 3, staminaMod : 9, equiploadMod : 5),
             new RingBaseStats("Prisoner's Chain", .8, vigorMod : 5, enduranceMod : 5, vitalityMod : 5, physicalMod : -4, strikeMod : -4, slashMod : -4, thrustMod : -4, magicMod : -4, fireMod : -4, lightningMod : -4, darkMod : -4),
             new RingByPercentage("Havel's Ring", 1.5, equiploadMod : 15),
-            new RingBaseStats("Ring of Steel Protection", .8, physicalMod : 15, strikeMod : 15, slashMod : 15, thrustMod : 15),
+            new RingBaseStats("Ring of Steel Protection", .8, physicalMod : 10, strikeMod : 10, slashMod : 10, thrustMod : 10),
             new RingBaseStats("Magic Stoneplate Ring", .6, magicMod : 13),
             new RingBaseStats("Fire Stoneplate Ring", .6, fireMod : 13),
             new RingBaseStats("Thunder Stoneplate Ring", .6, lightningMod : 13),
@@ -1018,6 +1038,9 @@ namespace DarkSoulsIIICalculator
             stamina = stamina + rings[Ring3cmb.SelectedIndex].staminaBonus(Convert.ToInt32(stamina));
             stamina = stamina + rings[Ring4cmb.SelectedIndex].staminaBonus(Convert.ToInt32(stamina));
 
+            if (stamina > 160)
+                stamina = 160;
+
             Staminatxt.Text = String.Format("{0:0}", stamina);
 
 
@@ -1133,20 +1156,7 @@ namespace DarkSoulsIIICalculator
                     L1WGTtxt.Text = String.Format("{0:0.0}", weapons[L1cmb.SelectedIndex].WGT);
                     L2WGTtxt.Text = String.Format("{0:0.0}", weapons[L2cmb.SelectedIndex].WGT);
                     L3WGTtxt.Text = String.Format("{0:0.0}", weapons[L3cmb.SelectedIndex].WGT);
-                 // stb
-                    R1STBtxt.Text = String.Format("{0:0}", weapons[R1cmb.SelectedIndex].STB);
-                    R2STBtxt.Text = String.Format("{0:0}", weapons[R2cmb.SelectedIndex].STB);
-                    R3STBtxt.Text = String.Format("{0:0}", weapons[R3cmb.SelectedIndex].STB);
-                    L1STBtxt.Text = String.Format("{0:0}", weapons[L1cmb.SelectedIndex].STB);
-                    L2STBtxt.Text = String.Format("{0:0}", weapons[L2cmb.SelectedIndex].STB);
-                    L3STBtxt.Text = String.Format("{0:0}", weapons[L3cmb.SelectedIndex].STB);
-                 // dur
-                    R1DURtxt.Text = String.Format("{0:0}", weapons[R1cmb.SelectedIndex].DUR);
-                    R2DURtxt.Text = String.Format("{0:0}", weapons[R2cmb.SelectedIndex].DUR);
-                    R3DURtxt.Text = String.Format("{0:0}", weapons[R3cmb.SelectedIndex].DUR);
-                    L1DURtxt.Text = String.Format("{0:0}", weapons[L1cmb.SelectedIndex].DUR);
-                    L2DURtxt.Text = String.Format("{0:0}", weapons[L2cmb.SelectedIndex].DUR);
-                    L3DURtxt.Text = String.Format("{0:0}", weapons[L3cmb.SelectedIndex].DUR);
+                 
         }
 
 

@@ -151,13 +151,9 @@ namespace DarkSoulsIIICalculator
         public override int staminaBonus( int st )
         {
             double calc;
-
             calc = staminaMod / 100.0;
-
             calc = st * calc;
-
             int tmp = Convert.ToInt32(calc);
-
             return tmp;
         }
 

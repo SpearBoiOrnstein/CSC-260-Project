@@ -176,18 +176,6 @@
             this.R3ScalingSTRtxt = new System.Windows.Forms.TextBox();
             this.R2ScalingSTRtxt = new System.Windows.Forms.TextBox();
             this.R1ScalingSTRtxt = new System.Windows.Forms.TextBox();
-            this.L3DURtxt = new System.Windows.Forms.TextBox();
-            this.L2DURtxt = new System.Windows.Forms.TextBox();
-            this.L1DURtxt = new System.Windows.Forms.TextBox();
-            this.R3DURtxt = new System.Windows.Forms.TextBox();
-            this.R2DURtxt = new System.Windows.Forms.TextBox();
-            this.R1DURtxt = new System.Windows.Forms.TextBox();
-            this.L3STBtxt = new System.Windows.Forms.TextBox();
-            this.L2STBtxt = new System.Windows.Forms.TextBox();
-            this.L1STBtxt = new System.Windows.Forms.TextBox();
-            this.R3STBtxt = new System.Windows.Forms.TextBox();
-            this.R2STBtxt = new System.Windows.Forms.TextBox();
-            this.R1STBtxt = new System.Windows.Forms.TextBox();
             this.L3WGTtxt = new System.Windows.Forms.TextBox();
             this.L2WGTtxt = new System.Windows.Forms.TextBox();
             this.L1WGTtxt = new System.Windows.Forms.TextBox();
@@ -202,12 +190,9 @@
             this.INTlbl2 = new System.Windows.Forms.Label();
             this.DEXlbl2 = new System.Windows.Forms.Label();
             this.STRlbl2 = new System.Windows.Forms.Label();
-            this.DURlbl = new System.Windows.Forms.Label();
-            this.STBlbl = new System.Windows.Forms.Label();
             this.WGTlbl = new System.Windows.Forms.Label();
             this.RequiredStatslbl = new System.Windows.Forms.Label();
             this.ScalingRatinglbl = new System.Windows.Forms.Label();
-            this.Otherlbl = new System.Windows.Forms.Label();
             this.WeaponsStatslbl = new System.Windows.Forms.Label();
             this.Faithtxt = new System.Windows.Forms.TextBox();
             this.Intelligencetxt = new System.Windows.Forms.TextBox();
@@ -909,7 +894,7 @@
             // 
             // RWeapon3txt
             // 
-            this.RWeapon3txt.Location = new System.Drawing.Point(555, 529);
+            this.RWeapon3txt.Location = new System.Drawing.Point(502, 543);
             this.RWeapon3txt.MaxLength = 5;
             this.RWeapon3txt.Name = "RWeapon3txt";
             this.RWeapon3txt.ReadOnly = true;
@@ -921,7 +906,7 @@
             // 
             this.RWeapon3lbl.AutoSize = true;
             this.RWeapon3lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.RWeapon3lbl.Location = new System.Drawing.Point(461, 529);
+            this.RWeapon3lbl.Location = new System.Drawing.Point(408, 543);
             this.RWeapon3lbl.Name = "RWeapon3lbl";
             this.RWeapon3lbl.Size = new System.Drawing.Size(78, 15);
             this.RWeapon3lbl.TabIndex = 105;
@@ -929,7 +914,7 @@
             // 
             // RWeapon2txt
             // 
-            this.RWeapon2txt.Location = new System.Drawing.Point(555, 510);
+            this.RWeapon2txt.Location = new System.Drawing.Point(502, 524);
             this.RWeapon2txt.MaxLength = 5;
             this.RWeapon2txt.Name = "RWeapon2txt";
             this.RWeapon2txt.ReadOnly = true;
@@ -941,7 +926,7 @@
             // 
             this.RWeapon2lbl.AutoSize = true;
             this.RWeapon2lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.RWeapon2lbl.Location = new System.Drawing.Point(461, 510);
+            this.RWeapon2lbl.Location = new System.Drawing.Point(408, 524);
             this.RWeapon2lbl.Name = "RWeapon2lbl";
             this.RWeapon2lbl.Size = new System.Drawing.Size(78, 15);
             this.RWeapon2lbl.TabIndex = 103;
@@ -949,7 +934,7 @@
             // 
             // RWeapon1txt
             // 
-            this.RWeapon1txt.Location = new System.Drawing.Point(555, 491);
+            this.RWeapon1txt.Location = new System.Drawing.Point(502, 505);
             this.RWeapon1txt.MaxLength = 5;
             this.RWeapon1txt.Name = "RWeapon1txt";
             this.RWeapon1txt.ReadOnly = true;
@@ -961,7 +946,7 @@
             // 
             this.RWeapon1lbl.AutoSize = true;
             this.RWeapon1lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.RWeapon1lbl.Location = new System.Drawing.Point(461, 491);
+            this.RWeapon1lbl.Location = new System.Drawing.Point(408, 505);
             this.RWeapon1lbl.Name = "RWeapon1lbl";
             this.RWeapon1lbl.Size = new System.Drawing.Size(78, 15);
             this.RWeapon1lbl.TabIndex = 101;
@@ -971,7 +956,7 @@
             // 
             this.AttackPowerlbl.AutoSize = true;
             this.AttackPowerlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.AttackPowerlbl.Location = new System.Drawing.Point(460, 473);
+            this.AttackPowerlbl.Location = new System.Drawing.Point(407, 487);
             this.AttackPowerlbl.Name = "AttackPowerlbl";
             this.AttackPowerlbl.Size = new System.Drawing.Size(94, 17);
             this.AttackPowerlbl.TabIndex = 100;
@@ -979,7 +964,7 @@
             // 
             // LWeapon3txt
             // 
-            this.LWeapon3txt.Location = new System.Drawing.Point(555, 586);
+            this.LWeapon3txt.Location = new System.Drawing.Point(502, 600);
             this.LWeapon3txt.MaxLength = 5;
             this.LWeapon3txt.Name = "LWeapon3txt";
             this.LWeapon3txt.ReadOnly = true;
@@ -991,7 +976,7 @@
             // 
             this.LWeapon3lbl.AutoSize = true;
             this.LWeapon3lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.LWeapon3lbl.Location = new System.Drawing.Point(461, 586);
+            this.LWeapon3lbl.Location = new System.Drawing.Point(408, 600);
             this.LWeapon3lbl.Name = "LWeapon3lbl";
             this.LWeapon3lbl.Size = new System.Drawing.Size(76, 15);
             this.LWeapon3lbl.TabIndex = 111;
@@ -999,7 +984,7 @@
             // 
             // LWeapon2txt
             // 
-            this.LWeapon2txt.Location = new System.Drawing.Point(555, 567);
+            this.LWeapon2txt.Location = new System.Drawing.Point(502, 581);
             this.LWeapon2txt.MaxLength = 5;
             this.LWeapon2txt.Name = "LWeapon2txt";
             this.LWeapon2txt.ReadOnly = true;
@@ -1011,7 +996,7 @@
             // 
             this.LWeapon2lbl.AutoSize = true;
             this.LWeapon2lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.LWeapon2lbl.Location = new System.Drawing.Point(461, 567);
+            this.LWeapon2lbl.Location = new System.Drawing.Point(408, 581);
             this.LWeapon2lbl.Name = "LWeapon2lbl";
             this.LWeapon2lbl.Size = new System.Drawing.Size(76, 15);
             this.LWeapon2lbl.TabIndex = 109;
@@ -1019,7 +1004,7 @@
             // 
             // LWeapon1txt
             // 
-            this.LWeapon1txt.Location = new System.Drawing.Point(555, 548);
+            this.LWeapon1txt.Location = new System.Drawing.Point(502, 562);
             this.LWeapon1txt.MaxLength = 5;
             this.LWeapon1txt.Name = "LWeapon1txt";
             this.LWeapon1txt.ReadOnly = true;
@@ -1031,7 +1016,7 @@
             // 
             this.LWeapon1lbl.AutoSize = true;
             this.LWeapon1lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.LWeapon1lbl.Location = new System.Drawing.Point(461, 548);
+            this.LWeapon1lbl.Location = new System.Drawing.Point(408, 562);
             this.LWeapon1lbl.Name = "LWeapon1lbl";
             this.LWeapon1lbl.Size = new System.Drawing.Size(76, 15);
             this.LWeapon1lbl.TabIndex = 107;
@@ -1039,7 +1024,7 @@
             // 
             // Firetxt
             // 
-            this.Firetxt.Location = new System.Drawing.Point(683, 586);
+            this.Firetxt.Location = new System.Drawing.Point(651, 599);
             this.Firetxt.Name = "Firetxt";
             this.Firetxt.ReadOnly = true;
             this.Firetxt.Size = new System.Drawing.Size(41, 20);
@@ -1050,7 +1035,7 @@
             // 
             this.Firelbl.AutoSize = true;
             this.Firelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Firelbl.Location = new System.Drawing.Point(602, 586);
+            this.Firelbl.Location = new System.Drawing.Point(570, 599);
             this.Firelbl.Name = "Firelbl";
             this.Firelbl.Size = new System.Drawing.Size(31, 15);
             this.Firelbl.TabIndex = 124;
@@ -1058,7 +1043,7 @@
             // 
             // Magictxt
             // 
-            this.Magictxt.Location = new System.Drawing.Point(683, 567);
+            this.Magictxt.Location = new System.Drawing.Point(651, 580);
             this.Magictxt.Name = "Magictxt";
             this.Magictxt.ReadOnly = true;
             this.Magictxt.Size = new System.Drawing.Size(41, 20);
@@ -1069,7 +1054,7 @@
             // 
             this.Magiclbl.AutoSize = true;
             this.Magiclbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Magiclbl.Location = new System.Drawing.Point(602, 567);
+            this.Magiclbl.Location = new System.Drawing.Point(570, 580);
             this.Magiclbl.Name = "Magiclbl";
             this.Magiclbl.Size = new System.Drawing.Size(44, 15);
             this.Magiclbl.TabIndex = 122;
@@ -1077,7 +1062,7 @@
             // 
             // VSthrusttxt
             // 
-            this.VSthrusttxt.Location = new System.Drawing.Point(683, 548);
+            this.VSthrusttxt.Location = new System.Drawing.Point(651, 561);
             this.VSthrusttxt.Name = "VSthrusttxt";
             this.VSthrusttxt.ReadOnly = true;
             this.VSthrusttxt.Size = new System.Drawing.Size(41, 20);
@@ -1088,7 +1073,7 @@
             // 
             this.VSthrustlbl.AutoSize = true;
             this.VSthrustlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.VSthrustlbl.Location = new System.Drawing.Point(606, 548);
+            this.VSthrustlbl.Location = new System.Drawing.Point(574, 561);
             this.VSthrustlbl.Name = "VSthrustlbl";
             this.VSthrustlbl.Size = new System.Drawing.Size(58, 15);
             this.VSthrustlbl.TabIndex = 120;
@@ -1096,7 +1081,7 @@
             // 
             // VSslashtxt
             // 
-            this.VSslashtxt.Location = new System.Drawing.Point(683, 529);
+            this.VSslashtxt.Location = new System.Drawing.Point(651, 542);
             this.VSslashtxt.Name = "VSslashtxt";
             this.VSslashtxt.ReadOnly = true;
             this.VSslashtxt.Size = new System.Drawing.Size(41, 20);
@@ -1107,7 +1092,7 @@
             // 
             this.VSslashlbl.AutoSize = true;
             this.VSslashlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.VSslashlbl.Location = new System.Drawing.Point(606, 529);
+            this.VSslashlbl.Location = new System.Drawing.Point(574, 542);
             this.VSslashlbl.Name = "VSslashlbl";
             this.VSslashlbl.Size = new System.Drawing.Size(57, 15);
             this.VSslashlbl.TabIndex = 118;
@@ -1115,7 +1100,7 @@
             // 
             // VSstriketxt
             // 
-            this.VSstriketxt.Location = new System.Drawing.Point(683, 510);
+            this.VSstriketxt.Location = new System.Drawing.Point(651, 523);
             this.VSstriketxt.Name = "VSstriketxt";
             this.VSstriketxt.ReadOnly = true;
             this.VSstriketxt.Size = new System.Drawing.Size(41, 20);
@@ -1126,7 +1111,7 @@
             // 
             this.VSstrikelbl.AutoSize = true;
             this.VSstrikelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.VSstrikelbl.Location = new System.Drawing.Point(606, 510);
+            this.VSstrikelbl.Location = new System.Drawing.Point(574, 523);
             this.VSstrikelbl.Name = "VSstrikelbl";
             this.VSstrikelbl.Size = new System.Drawing.Size(57, 15);
             this.VSstrikelbl.TabIndex = 116;
@@ -1134,7 +1119,7 @@
             // 
             // Physicaltxt
             // 
-            this.Physicaltxt.Location = new System.Drawing.Point(683, 491);
+            this.Physicaltxt.Location = new System.Drawing.Point(651, 504);
             this.Physicaltxt.Name = "Physicaltxt";
             this.Physicaltxt.ReadOnly = true;
             this.Physicaltxt.Size = new System.Drawing.Size(41, 20);
@@ -1145,7 +1130,7 @@
             // 
             this.Physicallbl.AutoSize = true;
             this.Physicallbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Physicallbl.Location = new System.Drawing.Point(602, 491);
+            this.Physicallbl.Location = new System.Drawing.Point(570, 504);
             this.Physicallbl.Name = "Physicallbl";
             this.Physicallbl.Size = new System.Drawing.Size(55, 15);
             this.Physicallbl.TabIndex = 114;
@@ -1155,7 +1140,7 @@
             // 
             this.Defenselbl.AutoSize = true;
             this.Defenselbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Defenselbl.Location = new System.Drawing.Point(599, 473);
+            this.Defenselbl.Location = new System.Drawing.Point(567, 486);
             this.Defenselbl.Name = "Defenselbl";
             this.Defenselbl.Size = new System.Drawing.Size(65, 17);
             this.Defenselbl.TabIndex = 113;
@@ -1163,7 +1148,7 @@
             // 
             // Darktxt
             // 
-            this.Darktxt.Location = new System.Drawing.Point(683, 623);
+            this.Darktxt.Location = new System.Drawing.Point(651, 636);
             this.Darktxt.Name = "Darktxt";
             this.Darktxt.ReadOnly = true;
             this.Darktxt.Size = new System.Drawing.Size(41, 20);
@@ -1174,7 +1159,7 @@
             // 
             this.Darklbl.AutoSize = true;
             this.Darklbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Darklbl.Location = new System.Drawing.Point(602, 623);
+            this.Darklbl.Location = new System.Drawing.Point(570, 636);
             this.Darklbl.Name = "Darklbl";
             this.Darklbl.Size = new System.Drawing.Size(36, 15);
             this.Darklbl.TabIndex = 128;
@@ -1182,7 +1167,7 @@
             // 
             // Lightningtxt
             // 
-            this.Lightningtxt.Location = new System.Drawing.Point(683, 604);
+            this.Lightningtxt.Location = new System.Drawing.Point(651, 617);
             this.Lightningtxt.Name = "Lightningtxt";
             this.Lightningtxt.ReadOnly = true;
             this.Lightningtxt.Size = new System.Drawing.Size(41, 20);
@@ -1193,7 +1178,7 @@
             // 
             this.Lightninglbl.AutoSize = true;
             this.Lightninglbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Lightninglbl.Location = new System.Drawing.Point(602, 604);
+            this.Lightninglbl.Location = new System.Drawing.Point(570, 617);
             this.Lightninglbl.Name = "Lightninglbl";
             this.Lightninglbl.Size = new System.Drawing.Size(61, 15);
             this.Lightninglbl.TabIndex = 126;
@@ -1691,114 +1676,6 @@
             this.R1ScalingSTRtxt.TabIndex = 160;
             this.R1ScalingSTRtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // L3DURtxt
-            // 
-            this.L3DURtxt.Location = new System.Drawing.Point(399, 604);
-            this.L3DURtxt.Name = "L3DURtxt";
-            this.L3DURtxt.ReadOnly = true;
-            this.L3DURtxt.Size = new System.Drawing.Size(30, 20);
-            this.L3DURtxt.TabIndex = 201;
-            this.L3DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // L2DURtxt
-            // 
-            this.L2DURtxt.Location = new System.Drawing.Point(399, 584);
-            this.L2DURtxt.Name = "L2DURtxt";
-            this.L2DURtxt.ReadOnly = true;
-            this.L2DURtxt.Size = new System.Drawing.Size(30, 20);
-            this.L2DURtxt.TabIndex = 200;
-            this.L2DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // L1DURtxt
-            // 
-            this.L1DURtxt.Location = new System.Drawing.Point(399, 564);
-            this.L1DURtxt.Name = "L1DURtxt";
-            this.L1DURtxt.ReadOnly = true;
-            this.L1DURtxt.Size = new System.Drawing.Size(30, 20);
-            this.L1DURtxt.TabIndex = 199;
-            this.L1DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // R3DURtxt
-            // 
-            this.R3DURtxt.Location = new System.Drawing.Point(399, 544);
-            this.R3DURtxt.Name = "R3DURtxt";
-            this.R3DURtxt.ReadOnly = true;
-            this.R3DURtxt.Size = new System.Drawing.Size(30, 20);
-            this.R3DURtxt.TabIndex = 198;
-            this.R3DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // R2DURtxt
-            // 
-            this.R2DURtxt.Location = new System.Drawing.Point(399, 524);
-            this.R2DURtxt.Name = "R2DURtxt";
-            this.R2DURtxt.ReadOnly = true;
-            this.R2DURtxt.Size = new System.Drawing.Size(30, 20);
-            this.R2DURtxt.TabIndex = 197;
-            this.R2DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // R1DURtxt
-            // 
-            this.R1DURtxt.Location = new System.Drawing.Point(399, 504);
-            this.R1DURtxt.Name = "R1DURtxt";
-            this.R1DURtxt.ReadOnly = true;
-            this.R1DURtxt.Size = new System.Drawing.Size(30, 20);
-            this.R1DURtxt.TabIndex = 196;
-            this.R1DURtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // L3STBtxt
-            // 
-            this.L3STBtxt.Location = new System.Drawing.Point(370, 604);
-            this.L3STBtxt.Name = "L3STBtxt";
-            this.L3STBtxt.ReadOnly = true;
-            this.L3STBtxt.Size = new System.Drawing.Size(30, 20);
-            this.L3STBtxt.TabIndex = 195;
-            this.L3STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // L2STBtxt
-            // 
-            this.L2STBtxt.Location = new System.Drawing.Point(370, 584);
-            this.L2STBtxt.Name = "L2STBtxt";
-            this.L2STBtxt.ReadOnly = true;
-            this.L2STBtxt.Size = new System.Drawing.Size(30, 20);
-            this.L2STBtxt.TabIndex = 194;
-            this.L2STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // L1STBtxt
-            // 
-            this.L1STBtxt.Location = new System.Drawing.Point(370, 564);
-            this.L1STBtxt.Name = "L1STBtxt";
-            this.L1STBtxt.ReadOnly = true;
-            this.L1STBtxt.Size = new System.Drawing.Size(30, 20);
-            this.L1STBtxt.TabIndex = 193;
-            this.L1STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // R3STBtxt
-            // 
-            this.R3STBtxt.Location = new System.Drawing.Point(370, 544);
-            this.R3STBtxt.Name = "R3STBtxt";
-            this.R3STBtxt.ReadOnly = true;
-            this.R3STBtxt.Size = new System.Drawing.Size(30, 20);
-            this.R3STBtxt.TabIndex = 192;
-            this.R3STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // R2STBtxt
-            // 
-            this.R2STBtxt.Location = new System.Drawing.Point(370, 524);
-            this.R2STBtxt.Name = "R2STBtxt";
-            this.R2STBtxt.ReadOnly = true;
-            this.R2STBtxt.Size = new System.Drawing.Size(30, 20);
-            this.R2STBtxt.TabIndex = 191;
-            this.R2STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // R1STBtxt
-            // 
-            this.R1STBtxt.Location = new System.Drawing.Point(370, 504);
-            this.R1STBtxt.Name = "R1STBtxt";
-            this.R1STBtxt.ReadOnly = true;
-            this.R1STBtxt.Size = new System.Drawing.Size(30, 20);
-            this.R1STBtxt.TabIndex = 190;
-            this.R1STBtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // L3WGTtxt
             // 
             this.L3WGTtxt.Location = new System.Drawing.Point(341, 604);
@@ -1933,26 +1810,6 @@
             this.STRlbl2.TabIndex = 206;
             this.STRlbl2.Text = "STR";
             // 
-            // DURlbl
-            // 
-            this.DURlbl.AutoSize = true;
-            this.DURlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.DURlbl.Location = new System.Drawing.Point(399, 486);
-            this.DURlbl.Name = "DURlbl";
-            this.DURlbl.Size = new System.Drawing.Size(34, 15);
-            this.DURlbl.TabIndex = 212;
-            this.DURlbl.Text = "DUR";
-            // 
-            // STBlbl
-            // 
-            this.STBlbl.AutoSize = true;
-            this.STBlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.STBlbl.Location = new System.Drawing.Point(371, 486);
-            this.STBlbl.Name = "STBlbl";
-            this.STBlbl.Size = new System.Drawing.Size(30, 15);
-            this.STBlbl.TabIndex = 211;
-            this.STBlbl.Text = "STB";
-            // 
             // WGTlbl
             // 
             this.WGTlbl.AutoSize = true;
@@ -1982,16 +1839,6 @@
             this.ScalingRatinglbl.Size = new System.Drawing.Size(103, 17);
             this.ScalingRatinglbl.TabIndex = 214;
             this.ScalingRatinglbl.Text = "Scaling Rating:";
-            // 
-            // Otherlbl
-            // 
-            this.Otherlbl.AutoSize = true;
-            this.Otherlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Otherlbl.Location = new System.Drawing.Point(357, 469);
-            this.Otherlbl.Name = "Otherlbl";
-            this.Otherlbl.Size = new System.Drawing.Size(48, 17);
-            this.Otherlbl.TabIndex = 215;
-            this.Otherlbl.Text = "Other:";
             // 
             // WeaponsStatslbl
             // 
@@ -2389,11 +2236,8 @@
             this.Controls.Add(this.Attunementtxt);
             this.Controls.Add(this.Vigortxt);
             this.Controls.Add(this.WeaponsStatslbl);
-            this.Controls.Add(this.Otherlbl);
             this.Controls.Add(this.ScalingRatinglbl);
             this.Controls.Add(this.RequiredStatslbl);
-            this.Controls.Add(this.DURlbl);
-            this.Controls.Add(this.STBlbl);
             this.Controls.Add(this.WGTlbl);
             this.Controls.Add(this.FTHlbl2);
             this.Controls.Add(this.INTlbl2);
@@ -2403,18 +2247,6 @@
             this.Controls.Add(this.INTlbl);
             this.Controls.Add(this.DEXlbl);
             this.Controls.Add(this.STRlbl);
-            this.Controls.Add(this.L3DURtxt);
-            this.Controls.Add(this.L2DURtxt);
-            this.Controls.Add(this.L1DURtxt);
-            this.Controls.Add(this.R3DURtxt);
-            this.Controls.Add(this.R2DURtxt);
-            this.Controls.Add(this.R1DURtxt);
-            this.Controls.Add(this.L3STBtxt);
-            this.Controls.Add(this.L2STBtxt);
-            this.Controls.Add(this.L1STBtxt);
-            this.Controls.Add(this.R3STBtxt);
-            this.Controls.Add(this.R2STBtxt);
-            this.Controls.Add(this.R1STBtxt);
             this.Controls.Add(this.L3WGTtxt);
             this.Controls.Add(this.L2WGTtxt);
             this.Controls.Add(this.L1WGTtxt);
@@ -2725,18 +2557,6 @@
         private System.Windows.Forms.TextBox R3ScalingSTRtxt;
         private System.Windows.Forms.TextBox R2ScalingSTRtxt;
         private System.Windows.Forms.TextBox R1ScalingSTRtxt;
-        private System.Windows.Forms.TextBox L3DURtxt;
-        private System.Windows.Forms.TextBox L2DURtxt;
-        private System.Windows.Forms.TextBox L1DURtxt;
-        private System.Windows.Forms.TextBox R3DURtxt;
-        private System.Windows.Forms.TextBox R2DURtxt;
-        private System.Windows.Forms.TextBox R1DURtxt;
-        private System.Windows.Forms.TextBox L3STBtxt;
-        private System.Windows.Forms.TextBox L2STBtxt;
-        private System.Windows.Forms.TextBox L1STBtxt;
-        private System.Windows.Forms.TextBox R3STBtxt;
-        private System.Windows.Forms.TextBox R2STBtxt;
-        private System.Windows.Forms.TextBox R1STBtxt;
         private System.Windows.Forms.TextBox L3WGTtxt;
         private System.Windows.Forms.TextBox L2WGTtxt;
         private System.Windows.Forms.TextBox L1WGTtxt;
@@ -2751,12 +2571,9 @@
         private System.Windows.Forms.Label INTlbl2;
         private System.Windows.Forms.Label DEXlbl2;
         private System.Windows.Forms.Label STRlbl2;
-        private System.Windows.Forms.Label DURlbl;
-        private System.Windows.Forms.Label STBlbl;
         private System.Windows.Forms.Label WGTlbl;
         private System.Windows.Forms.Label RequiredStatslbl;
         private System.Windows.Forms.Label ScalingRatinglbl;
-        private System.Windows.Forms.Label Otherlbl;
         private System.Windows.Forms.Label WeaponsStatslbl;
         private System.Windows.Forms.TextBox Faithtxt;
         private System.Windows.Forms.TextBox Intelligencetxt;

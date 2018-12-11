@@ -14,11 +14,8 @@ namespace DarkSoulsIIICalculator
         private int _minFTH;
 
         public string name { get; private set; }
-
         public int attunement { get; private set; }
-
         public int minINT { get; private set; }
-
         public int minFTH { get; private set; }
 
         public Spell(string name, int attunement, int minINT, int minFTH)

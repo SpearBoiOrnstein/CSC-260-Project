@@ -8,13 +8,3 @@ c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Deb
 c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.csproj.CoreCompileInputs.cache
 c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.exe
 c:\users\will\source\repos\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.pdb
-C:\Users\Will\Documents\GitHub\CSC-260-Project\DarkSoulsIIICalculator\DarkSoulsIIICalculator\bin\Debug\DarkSoulsIIICalculator.exe.config
-C:\Users\Will\Documents\GitHub\CSC-260-Project\DarkSoulsIIICalculator\DarkSoulsIIICalculator\bin\Debug\DarkSoulsIIICalculator.exe
-C:\Users\Will\Documents\GitHub\CSC-260-Project\DarkSoulsIIICalculator\DarkSoulsIIICalculator\bin\Debug\DarkSoulsIIICalculator.pdb
-C:\Users\Will\Documents\GitHub\CSC-260-Project\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.csprojAssemblyReference.cache
-C:\Users\Will\Documents\GitHub\CSC-260-Project\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.Calculator.resources
-C:\Users\Will\Documents\GitHub\CSC-260-Project\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.Properties.Resources.resources
-C:\Users\Will\Documents\GitHub\CSC-260-Project\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.csproj.GenerateResource.cache
-C:\Users\Will\Documents\GitHub\CSC-260-Project\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.csproj.CoreCompileInputs.cache
-C:\Users\Will\Documents\GitHub\CSC-260-Project\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.exe
-C:\Users\Will\Documents\GitHub\CSC-260-Project\DarkSoulsIIICalculator\DarkSoulsIIICalculator\obj\Debug\DarkSoulsIIICalculator.pdb
